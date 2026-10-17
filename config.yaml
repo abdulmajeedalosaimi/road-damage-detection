@@ -1,0 +1,48 @@
+project_name: rdd2022-road-damage
+seed: 42
+
+paths:
+  raw_dir: data/raw/RDD2022
+  processed_dir: data/processed
+  reports_dir: reports
+  runs_dir: runs
+
+classes: [D00, D10, D20, D40]
+class_descriptions:
+  D00: Longitudinal crack
+  D10: Transverse crack
+  D20: Alligator crack
+  D40: Pothole
+
+audit:
+  image_extensions: [.jpg, .jpeg, .png]
+  verify_perceptual_duplicates: true
+
+split:
+  mode: country_disjoint
+  train_fraction: 0.70
+  val_fraction: 0.15
+  test_fraction: 0.15
+  # The project brief describes six countries. Keep both China capture variants
+  # together so that a China camera source never appears in more than one split.
+  source_group_map:
+    China_Drone: China
+    China_MotorBike: China
+    Norway-002: Norway
+  hold_out_exactly_one_source: true
+
+classification:
+  image_size: 224
+  crop_padding_fraction: 0.10
+  max_train_per_class: 3000
+  batch_size: 32
+  num_workers: 2
+  epochs: 15
+  scratch_learning_rate: 0.001
+  transfer_learning_rate: 0.0003
+  weight_decay: 0.0001
+
+wandb:
+  entity: null
+  project: rdd2022-road-damage
+  mode: online

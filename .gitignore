@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+config.local.yaml
+data/raw/
+data/processed/
+runs/
+reports/m1/
+reports/DATASET_CARD.md
+wandb/
