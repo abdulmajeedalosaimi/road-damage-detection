@@ -16,10 +16,10 @@ To avoid copying a large dataset, each team member should keep it in their chose
 Copy `config.local.example.yaml` to `config.local.yaml` and set `paths.raw_dir` to the shared dataset root.
 `config.local.yaml` is ignored by Git, so every team member can use a different local path.
 
-For Abdul's current extraction, use:
+For example:
 
 ```text
-C:/Users/abdul/OneDrive/سطح المكتب/AI CAUST/Appled computer vision/Capston project/data/Images
+C:/your-shared-data-folder/Images
 ```
 
 Example expected files:
@@ -36,7 +36,7 @@ The text files are useful references, but this project needs the **JPG images** 
 Use Python 3.12 or 3.13 for the most reliable PyTorch installation.
 
 ```powershell
-cd "C:\Users\abdul\OneDrive\Documents\ChatGPT\summery of lecture 7\rdd2022-road-damage"
+cd "<your-local-project-folder>\road-damage-detection"
 py -3.13 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
