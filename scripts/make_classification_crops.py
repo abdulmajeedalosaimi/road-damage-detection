@@ -24,7 +24,33 @@ def main() -> None:
     cfg = yaml.safe_load(local_path(args.config).read_text(encoding="utf-8"))
     processed_dir = local_path(cfg["paths"]["processed_dir"])
     annotations = pd.read_csv(processed_dir / "annotations.csv")
+        # Exclude the confirmed misplaced D40 box found in audit image 044.
+    bad_annotation = (
+        (annotations["image_id"] == "Japan_Japan_003187")
+        & (annotations["object_index"] == 0)
+        & (annotations["class"] == "D40")
+    )
+
+    excluded = annotations.loc[bad_annotation].copy()
+    excluded["exclusion_reason"] = (
+        "Audit 044: D40 box above road; source XML coordinates "
+        "match processed coordinates."
+    )
+
+    report_dir = local_path(cfg["paths"]["reports_dir"]) / "m1"
+    report_dir.mkdir(parents=True, exist_ok=True)
+    excluded.to_csv(
+        report_dir / "excluded_crop_annotations.csv", index=False
+    )
+
+    annotations = annotations.loc[~bad_annotation].copy()
+    print(f"Excluded {len(excluded)} confirmed bad annotation(s).")
     crop_root = processed_dir / "classification_crops"
+    if crop_root.exists() and any(crop_root.iterdir()):
+        raise RuntimeError(
+            "classification_crops is not empty. Rename that folder "
+            "to classification_crops_backup before generating fresh crops."
+        )
     crop_root.mkdir(parents=True, exist_ok=True)
     samples = []
     for split, split_data in annotations.groupby("split"):

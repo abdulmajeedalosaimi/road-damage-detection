@@ -5,6 +5,7 @@ config.local.yaml
 data/raw/
 data/processed/
 runs/
-reports/m1/
+reports/m1/*
+!reports/m1/crop_verification.md
 reports/DATASET_CARD.md
 wandb/
