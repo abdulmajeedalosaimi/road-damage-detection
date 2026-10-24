@@ -1,99 +1,163 @@
-# M2 + M3 — Road Damage Classification
+# Road Damage Classification — M2 and M3
 
-This package builds on the reviewed M1 files. **It contains a training workflow, not completed project training results.**
+## Overview
 
-## Getting started
+This folder contains the completed M2–M3 classification experiments for four RDD2022 damage classes:
 
-Open Road_Damage_M2_M3_Colab.ipynb in Google Colab. The notebook is self-contained and includes the complete code and instructions in English. Separate Python file uploads are not required.
+| Label | Damage type |
+|---|---|
+| D00 | Longitudinal crack |
+| D10 | Transverse crack |
+| D20 | Alligator crack |
+| D40 | Pothole |
 
-1. Select a GPU runtime.
-2. Mount Drive and set DATA_FOLDER to your data directory.
-3. Confirm that the directory contains:
-   - annotations.csv
-   - classification_manifest.csv
-   - split_manifest.csv
-   - classification_crops.zip
-4. Complete manifest and image validation, then sign in to W&B.
-5. Run scratch, frozen and finetune in that order.
-6. Review validation results and error images. Enable FINAL_TEST_READY only after completing this review and fixing the experiments.
+The main notebook is **`Road_Damage_M2_M3_.ipynb`**. It contains the training code, saved outputs, learning curves, model comparisons, validation error analysis, a proposed data-improvement plan, and final test interpretation.
 
-The default data path is an example that must be updated. Results are saved to a separate folder in Drive. If Colab disconnects, rerun the setup cells and the relevant training cell using the same configuration and output folder to resume from the last completed epoch.
+Three models were trained and evaluated:
 
-Training time depends on the available hardware. If memory runs out, start a new experiment with a new output folder and a smaller batch_size, and record the change.
+1. **Scratch:** a small CNN trained from random initialization.
+2. **Frozen:** an ImageNet-pretrained ResNet18 with a frozen backbone and a trainable classification head. Backbone BatchNorm statistics remain fixed.
+3. **Finetune:** an independently initialized ImageNet-pretrained ResNet18 with all layers trainable.
 
-## Package contents
+The fine-tuned ResNet18 checkpoint from **epoch 4** was selected using validation macro F1 before final testing.
+
+## Files and workflow
 
 | File | Purpose |
 |---|---|
-| Road_Damage_M2_M3_Colab.ipynb | Self-contained Colab workflow with English instructions |
-| m2m3_data.py | Manifest checks, Windows path normalization and image verification |
-| m2m3_models.py | SmallCNN, ResNet18 and correct backbone freezing |
-| m2m3_metrics.py | Metrics, figures, error samples and a provisional improvement plan |
-| m2m3_train.py | Training, checkpoints, resuming, W&B tracking and final evaluation |
-| sync_notebook.py | Refreshes the embedded code after editing the Python modules |
-| M1_validation_report.json | Results and file hashes from validation of the actual M1 CSV files |
-| VERIFICATION.md | Completed software checks and their limitations |
-| requirements-colab.txt | Additional W&B dependency; actual runtime versions are recorded during execution |
+| `Road_Damage_M2_M3_.ipynb` | Main executable notebook with completed results and interpretation |
+| `requirements.txt` | Package versions recorded for the completed experiment |
+| `requirements-colab.txt` | Additional dependencies for Colab setup |
+| `M1_validation_report.json` | Earlier checks of the supplied M1 manifests |
+| `VERIFICATION.md` | Verification notes and limitations |
 
-After editing the Python modules, run python sync_notebook.py and upload the updated notebook. Edit the modules rather than the long embedded source-code cell.
+The `m2m3_*.py` files and `sync_notebook.py` belong to an earlier modular implementation. The completed notebook is self-contained and does not import them. Use the notebook to reproduce the reported results; do not use `sync_notebook.py` to update it.
 
-## Verified M1 manifest properties
+## Data and evaluation protocol
 
-- The split manifest contains 38,384 original images; there are 55,002 annotations and 32,692 crops.
-- Crop counts: train = 12,000; validation = 9,463; test = 11,229.
-- Every crop matches a source image_id/object_index, class and split.
-- Validation and test crops exactly cover the annotations in their respective splits.
-- The training subset contains 3,000 crops per class.
-- Training sources: India, Japan and United_States. Validation sources: China and Czech. Test source: Norway.
-- No parent image crosses splits in the manifests, and no recorded SHA256 value is duplicated.
-- Japan_Japan_003187, object 0, is excluded from the crop manifest; its original annotation remains present.
-- All annotation bounding boxes are within their parent-image dimensions.
+The experiments use the existing M1 classification crops and split assignments. No new split was created.
 
-These are manifest checks. The notebook verifies the actual project images in Colab when classification_crops.zip is available. The existing M1 crop-verification report states that the images were checked previously; that project-image check was not repeated during package preparation.
+| Split | Crops | Countries |
+|---|---:|---|
+| Training | 12,000 | India, Japan, United States |
+| Validation | 9,463 | China, Czech |
+| Test | 11,229 | Norway |
 
-## Label-audit issue requiring reconciliation
+Training contains 3,000 crops per class. Validation and test retain their existing class distributions. The notebook checks required manifest fields, valid labels, unique crop paths, and separation of parent images across splits.
 
-Some M1 audit decisions appear to have been transferred by row number between different samples. Rows 27 and 44 in the crop-audit CSV refer to different images from those associated with the decisions in the original image sample:
+The required input files are:
 
-- Crop sample: row 27 = China_MotorBike_China_MotorBike_001424; row 44 = Norway-002_Norway_007278.
-- Original sample described in the notebook: 027 = China_Drone_China_Drone_001616; 044 = Japan_Japan_003187.
+- `classification_manifest.csv`
+- `classification_crops.zip`
 
-A shared row number does not establish that a decision applies to both samples. Reconcile decisions with the M1 author using image_id/object_index before reporting a label-error rate or changing labels. This package does not use the disputed decisions to remove images or change M1 splits.
+The original M1 annotations and split manifest remain supporting provenance records.
 
-## Experiment design
+Each model’s checkpoint is selected by its highest validation macro F1, retaining the earlier epoch on ties. The preferred model is also selected using validation macro F1. All three fixed checkpoints are then evaluated on the held-out Norway test set. Test results were not used for model selection or subsequent tuning.
 
-SmallCNN retains the architecture from the existing training script. ResNet18 uses ImageNet1K_V1 weights. The frozen and finetune experiments independently start from the same ImageNet weights; fine-tuning does not resume the frozen-head experiment.
+## Training configuration
 
-Training transforms resize images to 224 × 224, apply horizontal flipping and rotation of up to 10 degrees, and use ImageNet normalization. Evaluation uses resizing and normalization only. RandomResizedCrop was removed from this training workflow to reduce the risk of cutting damage out of an existing crop. This does not undo distortion or detail loss introduced when the M1 crops were created.
+| Setting | Value |
+|---|---|
+| Random seed | 42 |
+| Epochs per model | 10 |
+| Batch size | 32 |
+| Input resolution | 224 × 224 RGB |
+| Optimizer | AdamW |
+| Weight decay | 0.0001 |
+| Scratch learning rate | 0.001 |
+| Frozen and finetune learning rate | 0.0003 |
+| Loss | Cross-entropy |
+| Hardware | Google Colab, NVIDIA Tesla T4 |
 
-Select each checkpoint using the highest validation macro F1, retaining the earlier epoch on ties. The test split is not used for training or checkpoint selection. After fixing the experiments, evaluate all three models on Norway. Training and final evaluation use separate W&B runs within the same group, with an additional combined comparison.
+Training images are resized and randomly flipped horizontally, then normalized using ImageNet statistics. Validation and test use resizing and normalization without random augmentation.
 
-Each run records the configuration, seed, data and code hashes, and package versions. This practical comparison does not isolate pretraining while holding architecture fixed. Additional seeds can measure training variability if resources permit; no multi-seed project experiments have been completed here.
+Predictions use the class with the highest softmax probability. No confidence-rejection threshold is applied. Top-2 accuracy measures whether the true class is among the two highest-scoring classes.
 
-## Interpreting outputs
+ECE uses ten equal-width confidence bins and the original softmax probabilities. Temperature scaling was not applied.
 
-- Macro F1 gives equal weight to the four classes. Accuracy can appear high because D00 dominates the Norway test set.
-- Confusion matrices show both raw counts and normalization by the true class.
-- ECE uses 10 equal-width confidence bins. The reliability diagram compares accuracy with confidence.
-- Probabilities are raw softmax outputs; this version does not apply temperature scaling.
-- Multiclass Brier score is the mean of the summed squared probability errors across classes.
-- The accuracy confidence interval uses 2,000 bootstrap draws over parent images, keeping all crops from a sampled image together. It does not measure variability across training seeds or new countries.
-- Top-2 accuracy uses stable ordering when probabilities tie.
-- Country-level macro metrics use the same four-class label set; support is documented in the reports.
-- Training metrics are measured during optimization on augmented images; validation metrics use evaluation mode.
+Python, NumPy and PyTorch seeds are fixed. These results represent one training seed; identical results across different hardware or software environments are not guaranteed.
 
-The generated data-improvement plan uses validation statistics to prioritize classes and confusion pairs. It is **provisional**: complete error_review.csv with visual observations, then link proposed actions to verified causes. Metrics alone do not establish why an error occurred.
+## Results
 
-## Saving and submission
+All results below use the fixed M1 splits and 224 × 224 inputs. Accuracy columns are percentages; macro F1 and ECE are on a 0–1 scale.
 
-The notebook saves checkpoints, learning curves, metric JSON files, per-class probabilities for every crop, confusion matrices, reliability diagrams, an error-review sample and an improvement plan to Drive. It also saves the actual environment's requirements.lock.txt and a copy of the code.
+| Model | Best epoch | Validation macro F1 | Test accuracy | Test top-2 accuracy | Test macro F1 | Test ECE |
+|---|---:|---:|---:|---:|---:|---:|
+| Scratch | 8 | 0.63004 | 54.55% | 86.89% | 0.42669 | 0.08334 |
+| Frozen | 10 | 0.72635 | 57.32% | 90.28% | 0.48508 | 0.15102 |
+| Finetune | 4 | **0.78494** | **78.45%** | **94.88%** | **0.61935** | **0.06534** |
 
-Upload the code and notebook to the team's working branch for review. Keep images, large checkpoints and account credentials outside the GitHub repository. Package preparation did not modify M1 source files or upload anything to GitHub.
+The selected fine-tuned model achieved **85.65% validation accuracy**. Its test-accuracy 95% confidence interval was **77.46%–79.44%**, calculated using 1,000 bootstrap resamples of parent images, keeping crops from the same parent together. This interval does not measure variation across training seeds or countries.
 
-## Implementation references
+Per-class precision, recall and F1, confusion matrices, reliability diagrams, losses and learning curves are available in the saved reports and W&B evaluation runs. The notebook also displays the selected model’s test per-class metrics and diagnostic plots.
 
-- [PyTorch ResNet18](https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.resnet18.html)
-- [PyTorch BatchNorm](https://docs.pytorch.org/docs/stable/generated/torch.nn.BatchNorm2d.html)
-- [W&B logging](https://docs.wandb.ai/models/track/log)
-- [Colab FAQ](https://research.google.com/colaboratory/faq.html)
+## Error analysis and limitations
 
+The most frequent validation confusion was **D00 → D20**, with 428 crops. The largest test confusion was **D00 → D40**, with 1,167 crops.
+
+On the test set, D40 recall was 0.8373 but precision was 0.2240, indicating many false-positive pothole predictions. D20 and D40 had lower F1 scores than D00 and D10.
+
+The notebook’s validation gallery deliberately shows eight highly confident mistakes. Their displayed confidence rounds to 1.00; this selected gallery is not representative of all predictions. Several crops appear blurry or have low contrast, and some contain road markings. These observations do not establish that their labels are incorrect.
+
+The proposed training-data improvements are:
+
+- Add diverse examples of easily confused crack types, including road markings and textured backgrounds.
+- Review ambiguous training labels against the original images.
+- Include varied lighting and sharpness, and test mild blur or contrast augmentation that preserves the damage label.
+- Assess changes using validation macro F1, per-class metrics and calibration.
+
+These are proposed future experiments, not improvements already implemented. Validation and test labels were not changed.
+
+Country differences, class imbalance and detail lost during crop resizing may contribute to the validation-to-test performance gap. D00 represents approximately 76.32% of test crops, so accuracy must be interpreted alongside macro F1 and per-class results.
+
+The M1 visual-audit records require reconciliation by image identity before reporting a verified label-error percentage. The manifest checks do not establish visual label correctness.
+
+## Experiment tracking
+
+- [W&B project](https://wandb.ai/alharby6626-a/rdd2022-road-damage)
+- Group: `alharby6626_simple_v1`
+- [Validation comparison](https://wandb.ai/alharby6626-a/rdd2022-road-damage/runs/21x5c025)
+- [Test comparison](https://wandb.ai/alharby6626-a/rdd2022-road-damage/runs/upe9cn2v)
+
+Training, validation evaluation and test evaluation were logged as separate runs for each model. Evaluation runs include per-class tables, confusion matrices, reliability diagrams and learning curves.
+
+## Saved results and checkpoints
+
+The completed experiment was saved under:
+
+`/content/drive/MyDrive/AI Project /Results/m2_m3/alharby6626/simple_v1`
+
+The folder name `AI Project ` contains a trailing space. Teammates can use different locations by changing the notebook’s path settings.
+
+Each model folder contains:
+
+- `best.pt`
+- `config.json`
+- `history.csv`
+- `training_complete.txt`
+- `learning_curves.png`
+- `wandb_url.txt`
+- `val/` and `test/` reports
+
+Evaluation reports include metrics, per-class results, predictions, confusion matrices and calibration outputs. The experiment folder also contains validation and test comparison tables, the validation error list and error gallery.
+
+The selected checkpoint is `finetune/best.pt`. Access checkpoints through the shared project Drive folder; access permissions must allow the intended reviewer or teammate to retrieve them. Datasets and model checkpoints are kept outside GitHub.
+
+## Reviewing or reproducing the experiment
+
+To review the completed work, open the notebook’s saved outputs and follow the comparison links above. Retraining is not required to inspect the results.
+
+For a fresh reproduction:
+
+1. Open `Road_Damage_M2_M3_.ipynb` in a Colab GPU runtime.
+2. Use the recorded package versions as the environment reference. The notebook setup pins `wandb==0.22.3` and `protobuf==6.33.5`; the completed run used `torch==2.11.0+cu130` and `torchvision==0.26.0+cu130`.
+3. Mount Drive and set `DATA_FOLDER` and `RESULTS_FOLDER` for your account.
+4. Choose a new `EXPERIMENT` name to preserve the completed run.
+5. Set `FINAL_TEST_READY = False` before running the notebook.
+6. Run the cells in order and train all three models using the recorded settings.
+7. Review validation results and fix model choices before enabling final testing.
+8. Save the notebook with outputs and retain the generated reports, configuration and package versions.
+
+The simple notebook does not resume an interrupted optimizer. It prevents training over an existing checkpoint and prevents repeating final testing in an experiment folder that already contains the test comparison. After reconnecting, completed models can be reviewed without rerunning their training cells.
+
+A teammate reproduction has not yet been independently verified.
