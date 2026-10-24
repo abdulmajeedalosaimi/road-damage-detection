@@ -1,44 +1,122 @@
-# Verification — 24 October 2026
+# Verification — M2 and M3 Classification
 
-## Passed
+**Review date:** 24 October 2026  
+**Reviewed notebook:** `Road_Damage_M2_M3_.ipynb`  
+**Experiment:** `simple_v1`  
+**Random seed:** 42
 
-- All 27 notebook cells are valid notebook JSON; every Python code cell compiles.
-- Embedded modules are byte-for-byte equivalent to the delivered Python sources (UTF-8 BOM normalized).
-- Actual M1 CSVs: all 32,692 crops join to unique source annotation objects; class, split and parent metadata match.
-- Validation/test crops exactly cover their source annotations. Training retains 3,000 crops per class.
-- Source-image dimensions and bounding-box constraints checked across all 55,002 annotations.
-- Recorded SHA256 uniqueness and country/parent-image separation checked across 38,384 parent records.
-- Windows crop paths normalize correctly; absolute and traversal paths rejected.
-- Safe ZIP extraction, complete-cache reuse and image decoding checked on a synthetic archive.
-- Metrics checked against analytically known perfect, completely wrong and uniform predictions, including confidence exactly 1.0 and stable top-2 ties.
-- Parent-image bootstrap confidence interval checked on a known perfect example.
-- Real CPU forward/backward operations verified frozen ResNet weights AND BatchNorm buffers stay fixed while the classifier updates.
-- Full-training mode verified backbone gradients and BatchNorm updates.
-- Synthetic SmallCNN training interrupted after a saved epoch, resumed, and compared with uninterrupted training: final CPU weights matched exactly.
-- DataLoader checked with two worker processes on Windows; Colab worker behavior still depends on its runtime.
-- Synthetic scratch/frozen/finetune workflows completed two epochs each, generated validation reports and selected checkpoints.
-- Training succeeded before any synthetic test-image files existed, confirming that training does not read test pixels.
-- Explicit final-test gate, locked checkpoint comparison, final three-model metrics and reuse of completed test results checked.
-- A changed configuration was rejected for an existing run directory.
-- W&B 0.19.8 real SDK tested in offline mode: init, scalar logging, summary, Image, Table, evaluation artifact and finish.
-- Synthetic confusion, calibration and learning-curve figures visually inspected for readable labels/layout.
+## Scope
 
-## Scope and limits
+This document records the evidence available for the completed M2–M3 classification experiment. It distinguishes the completed Colab run from checks that still require independent confirmation.
 
-These checks are software checks, not RDD2022 performance results. Synthetic images were colored squares. ResNet smoke tests used randomly initialized weights to avoid downloading pretrained parameters during verification; the delivered notebook requests ImageNet1K_V1 for actual transfer-learning runs.
+The main notebook is self-contained. The accompanying `m2m3_*.py` files and `sync_notebook.py` belong to an earlier implementation and were not used to produce the reported notebook results.
 
-The actual classification_crops.zip was not available locally, so project-image decode, actual crop archive layout and visual labels were not rechecked in this session. The notebook checks these files before training.
+## Notebook and execution evidence
 
-No actual M2/M3 project training, GPU execution, Colab Drive mount, online W&B authentication/upload, ImageNet weight download, manual error analysis or final project evaluation was performed. These remain user-run steps in Colab.
+The reviewed notebook contains:
 
-The two M1 audit samples still need reconciliation by image ID. Do not use the copied row-number decisions to claim a verified label-error rate.
+- 46 cells, including 26 code cells.
+- 16 code cells with saved outputs.
+- Six embedded PNG images.
+- No saved error outputs.
+- Completed training logs for scratch, frozen and fully fine-tuned models.
+- Training and validation learning curves for all three models.
+- Validation and test comparison tables.
+- A validation error gallery and written data-improvement plan.
+- The selected model’s test per-class metrics, confusion matrix and reliability diagram.
+- Written interpretation of the final test results.
 
-Training tests used Python 3.13, torch 2.13.0+cpu, torchvision 0.28.0+cpu and pandas 2.2.3. Actual M1 table validation also passed with bundled Python 3.12/pandas 3.0.1. Local testing dependencies were installed only inside the task's work directory; the user's Python installation and source M1 files were not modified.
+The saved outputs contain links to eleven W&B runs: three training runs, six evaluation runs and two comparison runs.
 
-Colab keeps its supplied compatible torch/torchvision pair and adds wandb==0.19.8. Each real experiment records its actual environment and pip freeze to requirements.lock.txt; this file, not an assumed Colab version, is the reproduction record.
+These observations confirm that the reviewed notebook contains actual execution results. They do not establish that another environment will reproduce identical numerical results.
 
-## English-language revision
+## Data and protocol checks
 
-All notebook instructions, form labels, messages and the README are in English. The ten deliverable files and decoded notebook/JSON strings were checked for Arabic Unicode characters; none remain. Every Python module and notebook code cell compiles, and the embedded modules match the delivered source files.
+The notebook uses the existing M1 classification manifest and crop archive.
 
-This revision changes documentation and user-facing text only. The training modules, experiment configuration, data hashes and notebook execution logic are unchanged. The previously recorded model tests were not rerun for this text-only revision.
+| Split | Crop count | Countries |
+|---|---:|---|
+| Training | 12,000 | India, Japan, United States |
+| Validation | 9,463 | China, Czech |
+| Test | 11,229 | Norway |
+
+The notebook checks:
+
+- Required manifest fields are present and non-null.
+- Class labels belong to D00, D10, D20 or D40.
+- Train, validation and test splits are present.
+- Crop paths are unique.
+- No parent image appears in multiple splits.
+- Referenced crop files exist after extraction.
+
+The earlier `M1_validation_report.json` records additional manifest consistency checks. These checks do not establish visual label correctness.
+
+The implemented training and selection protocol uses:
+
+- Seed 42 and 224 × 224 RGB inputs.
+- Ten epochs and batch size 32 for each model.
+- AdamW with weight decay 0.0001.
+- Learning rate 0.001 for scratch and 0.0003 for both ResNet18 experiments.
+- Horizontal flipping during training only.
+- ImageNet initialization independently for frozen and fully fine-tuned ResNet18.
+- A frozen backbone, including BatchNorm statistics, in the frozen experiment.
+- Validation macro F1 for checkpoint and model selection.
+
+The fine-tuned model was selected before final testing. Test results were used for reporting, without subsequent model tuning.
+
+## Recorded evaluation results
+
+| Model | Selected checkpoint epoch | Validation macro F1 | Test accuracy | Test macro F1 |
+|---|---:|---:|---:|---:|
+| Scratch | 8 | 0.63004 | 54.55% | 0.42669 |
+| Frozen | 10 | 0.72635 | 57.32% | 0.48508 |
+| Finetune | 4 | 0.78494 | 78.45% | 0.61935 |
+
+For the selected fine-tuned model:
+
+- Test top-2 accuracy: **94.88%**.
+- Test ECE: **0.06534**.
+- Test-accuracy 95% confidence interval: **77.46%–79.44%**.
+
+The accuracy interval uses 1,000 bootstrap resamples of parent images, retaining their crops together.
+
+Classification uses the highest softmax probability without a confidence-rejection threshold. ECE uses ten equal-width confidence bins, including predictions with confidence 1.0. Temperature scaling was not applied.
+
+Evaluation exports and W&B runs include per-class precision, recall and F1, confusion matrices, reliability diagrams and aggregate metrics.
+
+## Error analysis
+
+The notebook documents:
+
+- Validation confusion between D00 and D20.
+- The largest test confusion, D00 → D40, involving 1,167 crops.
+- Low test precision for D40 despite relatively high recall.
+- Class imbalance, country differences and possible loss of image detail.
+- Signs of overfitting during full fine-tuning.
+- Proposed improvements to training examples, image-quality coverage and review of ambiguous training labels.
+
+The eight displayed validation errors were selected for high confidence. Their confidence values round to 1.00; they are not a representative sample of all predictions.
+
+The data-improvement plan describes future experiments. It does not claim that those improvements were implemented or that displayed labels were verified as incorrect.
+
+## Traceability
+
+- [W&B project](https://wandb.ai/alharby6626-a/rdd2022-road-damage)
+- Group: `alharby6626_simple_v1`
+- [Validation comparison](https://wandb.ai/alharby6626-a/rdd2022-road-damage/runs/21x5c025)
+- [Test comparison](https://wandb.ai/alharby6626-a/rdd2022-road-damage/runs/upe9cn2v)
+
+The completed run used a Tesla T4 in Colab. The recorded PyTorch and Torchvision versions were `2.11.0+cu130` and `0.26.0+cu130`. The notebook setup pins `wandb==0.22.3` and `protobuf==6.33.5`.
+
+The notebook saves model configurations, histories, best checkpoints and evaluation reports to Drive. Evaluation loads each model’s `best.pt`, rather than using its final training epoch automatically.
+
+## Limits and handover checks
+
+- An independent reproduction by another teammate has not yet been verified.
+- Current reviewer access to W&B and the saved Drive checkpoints requires confirmation.
+- Dependency files and setup instructions must match the completed notebook’s environment.
+- Results come from one training seed. The bootstrap interval does not measure variation across training seeds or countries.
+- M1 visual-audit records require reconciliation by image identity before a verified label-error percentage can be reported.
+- The saved outputs demonstrate completion of this experiment; they do not establish deployment readiness.
+
+The completed results should remain preserved. Any reproduction should use a separate experiment folder and follow the same fixed evaluation protocol.
