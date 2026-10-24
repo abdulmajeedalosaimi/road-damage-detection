@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "scope": "Manifest consistency only; pixels and visual labels not checked here.",
+  "original_images": 38384,
+  "annotations": 55002,
+  "crops": 32692,
+  "crop_counts": {
+    "train": 12000,
+    "test": 11229,
+    "val": 9463
+  },
+  "class_counts": {
+    "D00": {
+      "train": 3000,
+      "val": 5092,
+      "test": 8570
+    },
+    "D10": {
+      "train": 3000,
+      "val": 2758,
+      "test": 1730
+    },
+    "D20": {
+      "train": 3000,
+      "val": 1095,
+      "test": 468
+    },
+    "D40": {
+      "train": 3000,
+      "val": 518,
+      "test": 461
+    }
+  },
+  "parent_counts": {
+    "test": 2914,
+    "train": 8414,
+    "val": 4925
+  },
+  "country_allocation": {
+    "China": "val",
+    "Czech": "val",
+    "India": "train",
+    "Japan": "train",
+    "Norway": "test",
+    "United_States": "train"
+  },
+  "excluded_japan_annotation_present": true,
+  "excluded_japan_crop_present": false,
+  "recorded_sha256_duplicates": 0,
+  "manifest_sha256": {
+    "annotations.csv": "c68af856e49181af0ed2133739390b10a6bd25b99daba24061e8862a7451d84d",
+    "classification_manifest.csv": "1ea96d97860f74ea2ef06d95a31f33d431462a297492d4650e76a04c3badf369",
+    "split_manifest.csv": "923e6d22b73992eb57b5287dc7c9f45e6554ff555d1dfa4912ba9c1b3c35aa86"
+  }
+}
