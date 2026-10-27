@@ -88,7 +88,7 @@ RDD2022 provides boxes but no instance masks, so it is not ground truth for segm
 
 ### Label-quality audit
 
--### 6. Visual Label Audit
+### Visual Label Audit
 
 The original audit used a reproducible random sample of **100 images**,
 not a stratified sample of classification crops.
@@ -143,5 +143,5 @@ added to the original audit counts.
 - Automated checks verify structure and inherited labels, not the
   visual correctness of every annotation.
 - Country differences and class imbalance affect generalization.
-- Test-accuracy confidence intervals will be reported after model
-  evaluation.
+- Test-accuracy confidence intervals have been reported in the
+  Phase 1 report (Section 3.5) for the three evaluated classifiers.
