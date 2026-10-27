@@ -1,0 +1,32 @@
+{
+  "finetune_checkpoint": {
+    "filename": "best.pt",
+    "size_bytes": 44786635,
+    "sha256": "89d410b78306c864ce069f3a24b35bd45b74cdd8139c812f204cfea24c3b9d39"
+  },
+  "finetune_config": {
+    "filename": "config.json",
+    "size_bytes": 368,
+    "sha256": "b8d7b5cd946c133f4b535cea9caaeb347aa7dfc40354667c7cc56e179a3a57dc"
+  },
+  "original_test_comparison": {
+    "filename": "test_comparison.csv",
+    "size_bytes": 547,
+    "sha256": "1a80d92f4693d22a081cb21fdda1c8da9fb6d809f66bf1234115dca75e4e79e6"
+  },
+  "split_manifest": {
+    "filename": "split_manifest.csv",
+    "size_bytes": 18918117,
+    "sha256": "923e6d22b73992eb57b5287dc7c9f45e6554ff555d1dfa4912ba9c1b3c35aa86"
+  },
+  "classification_manifest": {
+    "filename": "classification_manifest.csv",
+    "size_bytes": 3742552,
+    "sha256": "1ea96d97860f74ea2ef06d95a31f33d431462a297492d4650e76a04c3badf369"
+  },
+  "annotations": {
+    "filename": "annotations.csv",
+    "size_bytes": 12595011,
+    "sha256": "c68af856e49181af0ed2133739390b10a6bd25b99daba24061e8862a7451d84d"
+  }
+}

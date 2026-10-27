@@ -1,0 +1,39 @@
+{
+  "scope": "Saved finetune checkpoint evaluation; no retraining",
+  "model": "finetune",
+  "seed": 42,
+  "python": "3.14.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "device": "cpu",
+  "packages": {
+    "ipykernel": "7.3.0",
+    "numpy": "2.5.2",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.1",
+    "torchvision": "0.29.1",
+    "wandb": "0.22.3"
+  },
+  "torch_runtime_version": "2.14.1+cpu",
+  "torchvision_runtime_version": "0.29.1+cpu",
+  "classes": [
+    "D00",
+    "D10",
+    "D20",
+    "D40"
+  ],
+  "test_crops": 11229,
+  "image_size": 224,
+  "batch_size": 32,
+  "ece_bins": 10,
+  "absolute_tolerance": 1e-06,
+  "local_metrics": {
+    "accuracy": 0.7844865972036691,
+    "macro_f1": 0.6193483986555928,
+    "top2_accuracy": 0.9487933030545908,
+    "ece": 0.0653387695028071
+  },
+  "all_compared_metrics_passed": true
+}
