@@ -145,3 +145,12 @@ added to the original audit counts.
 - Country differences and class imbalance affect generalization.
 - Test-accuracy confidence intervals have been reported in the
   Phase 1 report (Section 3.5) for the three evaluated classifiers.
+  
+## Privacy and data handling
+
+The project uses the RDD2022 road-damage dataset and does not collect new personal information.
+
+Original images and generated classification crops are stored outside the public GitHub repository.
+
+Before external redistribution, images must be reviewed for potentially identifiable information, including vehicle licence plates and faces. Dataset use and redistribution must comply with the applicable licence.
+
