@@ -1,0 +1,4 @@
+Source,Images,Precision,Recall,mAP50,mAP50_95
+China_Drone,2401,0.2987,0.2953,0.213,0.0901
+China_MotorBike,1977,0.3588,0.3148,0.2603,0.1078
+Czech,2829,0.2297,0.2054,0.1427,0.048
