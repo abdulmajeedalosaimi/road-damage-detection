@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.pt
+*.pth
+*.onnx
+*.zip
+wandb/
+runs/
+data/raw/
+config.local.yaml
+.env

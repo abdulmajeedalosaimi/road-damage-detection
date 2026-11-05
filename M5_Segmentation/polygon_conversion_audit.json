@@ -1,0 +1,11 @@
+{
+  "frames": 7428,
+  "minimum_polygon_iou": 0.9999557698261754,
+  "mean_polygon_iou": 0.9999999747047866,
+  "frames_below_0_95": 0,
+  "mean_derived_components": 1.1000269251480883,
+  "maximum_derived_components": 8,
+  "frames_with_multiple_components": 556,
+  "reference_preserved": "Final metrics use resized binary reference PNG masks, not polygon labels.",
+  "semantic_instance_limitation": "Connected components are derived region IDs; the source has no native instance IDs."
+}

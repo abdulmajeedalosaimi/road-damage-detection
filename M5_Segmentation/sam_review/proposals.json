@@ -1,0 +1,98 @@
+[
+  {
+    "video_id": "0528",
+    "frame_index": 24,
+    "split": "train",
+    "figure": "sam_0528.png",
+    "proposal_mask": "sam_0528_mask.png",
+    "prompt_bbox_from_training_gt": [
+      222,
+      0,
+      518,
+      571
+    ],
+    "foreground_iou": 0.7739334380027524,
+    "dice": 0.8725619816650094,
+    "used_to_replace_reference": false
+  },
+  {
+    "video_id": "0058",
+    "frame_index": 24,
+    "split": "train",
+    "figure": "sam_0058.png",
+    "proposal_mask": "sam_0058_mask.png",
+    "prompt_bbox_from_training_gt": [
+      108,
+      168,
+      532,
+      499
+    ],
+    "foreground_iou": 0.6981151596094881,
+    "dice": 0.8222235761325306,
+    "used_to_replace_reference": false
+  },
+  {
+    "video_id": "0013",
+    "frame_index": 24,
+    "split": "train",
+    "figure": "sam_0013.png",
+    "proposal_mask": "sam_0013_mask.png",
+    "prompt_bbox_from_training_gt": [
+      122,
+      124,
+      626,
+      443
+    ],
+    "foreground_iou": 0.8295218295218295,
+    "dice": 0.9068181818181819,
+    "used_to_replace_reference": false
+  },
+  {
+    "video_id": "0221",
+    "frame_index": 24,
+    "split": "train",
+    "figure": "sam_0221.png",
+    "proposal_mask": "sam_0221_mask.png",
+    "prompt_bbox_from_training_gt": [
+      165,
+      248,
+      542,
+      355
+    ],
+    "foreground_iou": 0.7072417465388712,
+    "dice": 0.8285197429979415,
+    "used_to_replace_reference": false
+  },
+  {
+    "video_id": "0206",
+    "frame_index": 24,
+    "split": "train",
+    "figure": "sam_0206.png",
+    "proposal_mask": "sam_0206_mask.png",
+    "prompt_bbox_from_training_gt": [
+      68,
+      296,
+      627,
+      579
+    ],
+    "foreground_iou": 0.5964586859005151,
+    "dice": 0.7472272112874258,
+    "used_to_replace_reference": false
+  },
+  {
+    "video_id": "0155",
+    "frame_index": 24,
+    "split": "train",
+    "figure": "sam_0155.png",
+    "proposal_mask": "sam_0155_mask.png",
+    "prompt_bbox_from_training_gt": [
+      115,
+      43,
+      486,
+      594
+    ],
+    "foreground_iou": 0.8488602384373423,
+    "dice": 0.9182524679689141,
+    "used_to_replace_reference": false
+  }
+]

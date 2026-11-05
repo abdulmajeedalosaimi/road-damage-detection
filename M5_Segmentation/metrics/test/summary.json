@@ -1,0 +1,30 @@
+{
+  "split": "test",
+  "fingerprint": "c7255fb198c59e733d716a91f849c9b132581a82f079687bf9a5699a3eaf86b9",
+  "protocol_hash": "afa31e30cdda91decf7cf693f6c0b0b9fc9f7a25177ca4746eb41a456f8c725b",
+  "checkpoint_sha256": "5fb5f6925489060792d160f4a04bc3620c0b59a5de5aba013f2e6f5523254d44",
+  "ap": {
+    "mask_map50_95": 0.6855512214062577,
+    "mask_ap50": 0.94883654033878,
+    "mask_ap75": 0.7669764819646371
+  },
+  "thresholds": [
+    {
+      "threshold": 0.05,
+      "frames": 1476,
+      "videos": 123,
+      "mean_iou": 0.9010192679542389,
+      "foreground_iou": 0.8367469872325624,
+      "dice": 0.9040945561406913,
+      "severity_mae_pp": 1.8444764672256098,
+      "severity_rmse_pp": 2.74497245599182,
+      "severity_bias_pp": 0.7592799902608401
+    }
+  ],
+  "derived_gt_instances": 1533,
+  "ap_scope": "COCO segmentation AP of derived connected regions; not a native-instance benchmark",
+  "metric_resolution": [
+    640,
+    640
+  ]
+}

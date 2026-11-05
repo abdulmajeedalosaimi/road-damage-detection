@@ -1,0 +1,50 @@
+{
+  "reviewer": "Abdulrahman Alsalmi",
+  "reviews": [
+    {
+      "video_id": "0528",
+      "frame_index": 24,
+      "decision": "needs_refinement",
+      "note": "The SAM mask covers most of the reference region but includes extra surrounding pixels, especially near the top. Its boundaries are noisy and need refinement.",
+      "reference_retained": true
+    },
+    {
+      "video_id": "0058",
+      "frame_index": 24,
+      "decision": "needs_refinement",
+      "note": "The SAM mask captures the central region but misses parts of the reference mask around the edges. Small gaps inside the mask also need refinement.",
+      "reference_retained": true
+    },
+    {
+      "video_id": "0013",
+      "frame_index": 24,
+      "decision": "acceptable",
+      "note": "The SAM mask follows the elongated pothole shape and aligns well with most of the reference region. Minor boundary differences and a small internal gap remain.",
+      "reference_retained": true
+    },
+    {
+      "video_id": "0221",
+      "frame_index": 24,
+      "decision": "needs_refinement",
+      "note": "The SAM mask captures the main pothole region but is narrower than the reference mask and misses parts of the boundary. Refinement is needed to improve coverage.",
+      "reference_retained": true
+    },
+    {
+      "video_id": "0206",
+      "frame_index": 24,
+      "decision": "reject",
+      "note": "The SAM proposal is highly fragmented, contains many gaps, and includes surrounding background. It does not follow the reference boundary well and is unsuitable as a training label in its current form.",
+      "reference_retained": true
+    },
+    {
+      "video_id": "0155",
+      "frame_index": 24,
+      "decision": "acceptable",
+      "note": "The SAM mask captures most of the reference region and follows the overall pothole shape. Some coverage is missing near the top, and the lower boundary contains noisy pixels.",
+      "reference_retained": true
+    }
+  ],
+  "complete": true,
+  "saved_utc": "2026-11-05T14:25:45.124337+00:00",
+  "scope": "Six training-frame proposals only; not an exhaustive label audit."
+}
