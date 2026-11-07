@@ -1,0 +1,2 @@
+Model,Dataset,Split,Images,Instances,Precision,Recall,mAP50,mAP50_95,Image_size,Confidence,NMS_IoU,Training_epochs,Seed
+YOLO11n,Norway-002,Independent test,8161,11229,0.2410031510061721,0.12350906124201118,0.07919043644176825,0.03192458599964542,640,0.001,0.7,30,42

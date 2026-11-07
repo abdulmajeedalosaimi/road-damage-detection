@@ -1,0 +1,13 @@
+# M4 YOLO11n training dataset configuration
+# Reconstructed from the committed M4 notebook's local training YAML cell.
+# Colab runtime path is temporary; regenerate local files after runtime reset.
+# The Norway independent test set is intentionally excluded.
+path: /content/m4_local/yolo_dataset
+train: images/train
+val: images/val
+nc: 4
+names:
+  0: D00
+  1: D10
+  2: D20
+  3: D40
