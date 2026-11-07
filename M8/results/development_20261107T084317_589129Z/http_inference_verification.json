@@ -1,0 +1,23 @@
+{
+  "service_url": "http://127.0.0.1:8765",
+  "process_id": 29124,
+  "interpreter": "c:\\Users\\PC\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "health": {
+    "status": "ready",
+    "device": "cpu",
+    "m4_sha256": "e034ca9b5610017d20b22e9014d99439ea3f98117d783faf09113c82a3d9098a",
+    "m5_sha256": "5fb5f6925489060792d160f4a04bc3620c0b59a5de5aba013f2e6f5523254d44",
+    "max_upload_bytes": 10485760,
+    "max_image_pixels": 12000000
+  },
+  "http_status": 200,
+  "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000061.jpg",
+  "checks": {
+    "report_exact_match": true,
+    "mask_exact_match": true,
+    "overlay_exact_match": true,
+    "model_fingerprints_match": true
+  },
+  "all_passed": true,
+  "scope": "localhost HTTP inference in the current environment"
+}

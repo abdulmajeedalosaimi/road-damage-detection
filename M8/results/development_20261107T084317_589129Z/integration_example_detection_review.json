@@ -1,0 +1,22 @@
+{
+  "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000061.jpg",
+  "matching_iou": 0.5,
+  "reference_d40_boxes": 1,
+  "matched_reference_boxes": 1,
+  "missed_reference_boxes": 0,
+  "prediction_matches": [
+    {
+      "confidence": 0.29654064774513245,
+      "bbox_xyxy": [
+        384.9507141113281,
+        278.53399658203125,
+        451.95086669921875,
+        338.8736267089844
+      ],
+      "best_available_reference_iou": 0.8275049686845443,
+      "outcome": "TP",
+      "matched_reference_index": 0
+    }
+  ],
+  "segmentation_accuracy_evaluated": false
+}

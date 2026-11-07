@@ -1,0 +1,11 @@
+{
+  "module_sha256": "886b7a1d8acc0d7607f7d62f41b63f4bfdfb7dd7f0d1f11bbd22fd601342c8a8",
+  "config_sha256": "cc1dbac162e93881cb3ee3f502fd0c8ca898c3b7369a5190101dee166a6f803e",
+  "source_notebook_sha256": "0a88031bd71af97ed54e228f8c0396d0cf0f08b4fbb3f49f2356d11e3d644554",
+  "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000061.jpg",
+  "report_exact_match": true,
+  "mask_exact_match": true,
+  "overlay_exact_match": true,
+  "verification_scope": "Same-process module extraction and real-model output consistency",
+  "clean_environment_tested": false
+}

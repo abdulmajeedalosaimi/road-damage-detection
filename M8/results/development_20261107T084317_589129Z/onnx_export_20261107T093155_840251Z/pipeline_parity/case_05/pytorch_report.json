@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "status": "no_d40_detected",
+  "image_width": 512,
+  "image_height": 512,
+  "m4_settings": {
+    "imgsz": 640,
+    "conf": 0.1,
+    "iou": 0.5,
+    "max_det": 300,
+    "rect": false
+  },
+  "m5_settings": {
+    "imgsz": 640,
+    "conf": 0.05,
+    "iou": 0.7,
+    "max_det": 100,
+    "rect": false
+  },
+  "detections": [
+    {
+      "class_id": 1,
+      "damage_code": "D10",
+      "confidence": 0.15546587109565735,
+      "bbox_xyxy": [
+        0.0,
+        234.1759033203125,
+        240.38247680664062,
+        283.44989013671875
+      ],
+      "segmentation": {
+        "status": "not_applicable",
+        "mask_pixels": null,
+        "mask_percent_of_crop": null,
+        "mask_percent_of_full_image": null
+      },
+      "severity": null,
+      "severity_status": "not_estimated"
+    },
+    {
+      "class_id": 1,
+      "damage_code": "D10",
+      "confidence": 0.1281810998916626,
+      "bbox_xyxy": [
+        0.014233398251235485,
+        234.11392211914062,
+        141.7070770263672,
+        271.302734375
+      ],
+      "segmentation": {
+        "status": "not_applicable",
+        "mask_pixels": null,
+        "mask_percent_of_crop": null,
+        "mask_percent_of_full_image": null
+      },
+      "severity": null,
+      "severity_status": "not_estimated"
+    },
+    {
+      "class_id": 1,
+      "damage_code": "D10",
+      "confidence": 0.11155479401350021,
+      "bbox_xyxy": [
+        3.2279052734375,
+        230.17050170898438,
+        294.37078857421875,
+        309.9950256347656
+      ],
+      "segmentation": {
+        "status": "not_applicable",
+        "mask_pixels": null,
+        "mask_percent_of_crop": null,
+        "mask_percent_of_full_image": null
+      },
+      "severity": null,
+      "severity_status": "not_estimated"
+    }
+  ],
+  "detection_count": 3,
+  "d40_detection_count": 0,
+  "segmentation_calls": 0,
+  "m4_max_det_reached": false,
+  "m5_crops_reaching_max_det": 0,
+  "union_mask_pixels": 0,
+  "union_mask_percent_of_full_image": 0.0,
+  "area_units": "pixels_and_image_percent",
+  "severity_status": "not_estimated"
+}

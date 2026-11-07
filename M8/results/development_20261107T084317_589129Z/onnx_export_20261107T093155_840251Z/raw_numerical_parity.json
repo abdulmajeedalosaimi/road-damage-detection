@@ -1,0 +1,353 @@
+{
+  "purpose": "raw_export_graph_numerical_parity",
+  "atol": 0.001,
+  "rtol": 0.0001,
+  "preprocessing": "640x640 INTER_AREA, BGR-to-RGB, BCHW FP32 / 255",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "models": {
+    "M4": {
+      "checkpoint_sha256": "e034ca9b5610017d20b22e9014d99439ea3f98117d783faf09113c82a3d9098a",
+      "onnx_sha256": "dcf3215c853c0b065cfa1c8ad6585b21983e028e45ed00b58492d2f8a7423ba3"
+    },
+    "M5": {
+      "checkpoint_sha256": "5fb5f6925489060792d160f4a04bc3620c0b59a5de5aba013f2e6f5523254d44",
+      "onnx_sha256": "c71f79dadf957d06c59c136dc077d017fb76e711c9847f15b91628e563f63fbf"
+    }
+  },
+  "comparisons": [
+    {
+      "model": "M4",
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000062.jpg",
+      "image_sha256": "d56676890181efc675d9a3bb1bd084e081687d2fb8336d7ff0531a0aea60d579",
+      "input_tensor_sha256": "439e93fef6652aa64714d33d24e6050b71098ce7eef8049e9844a5d38526a158",
+      "output": "output0",
+      "shape": [
+        1,
+        8,
+        8400
+      ],
+      "max_absolute_error": 0.0009765625,
+      "mean_absolute_error": 1.638342001226826e-05,
+      "failing_elements": 0,
+      "total_elements": 67200,
+      "passed": true
+    },
+    {
+      "model": "M4",
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000057.jpg",
+      "image_sha256": "0e03be24543223b140c7761a1b5a732e35e956e4d779f96a6ea113ccf43913fe",
+      "input_tensor_sha256": "05aed9aac72527e5d6359f96665812132170bb6cf84cbb034ac5e0132baa3411",
+      "output": "output0",
+      "shape": [
+        1,
+        8,
+        8400
+      ],
+      "max_absolute_error": 0.0010986328125,
+      "mean_absolute_error": 1.7389725080317964e-05,
+      "failing_elements": 0,
+      "total_elements": 67200,
+      "passed": true
+    },
+    {
+      "model": "M4",
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000013.jpg",
+      "image_sha256": "47dc8f8f3160b52b961b9962fc01f0146f1cc8703dea9d5e3c463cbd421d9684",
+      "input_tensor_sha256": "df3a6e14757707af02916d4224eaac1ce67c6a9b0b6a76c79e68623a1c4b95fa",
+      "output": "output0",
+      "shape": [
+        1,
+        8,
+        8400
+      ],
+      "max_absolute_error": 0.00103759765625,
+      "mean_absolute_error": 1.7453843448948424e-05,
+      "failing_elements": 0,
+      "total_elements": 67200,
+      "passed": true
+    },
+    {
+      "model": "M4",
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000004.jpg",
+      "image_sha256": "ad29bc20587b1e674943fd200db4d6e039b9472260c39ab854f37bb792aa1320",
+      "input_tensor_sha256": "40dbbbd31b7274d2a78831100242fd26a45127e2a36493867dd54801ce8db729",
+      "output": "output0",
+      "shape": [
+        1,
+        8,
+        8400
+      ],
+      "max_absolute_error": 0.001251220703125,
+      "mean_absolute_error": 1.5405853089462094e-05,
+      "failing_elements": 0,
+      "total_elements": 67200,
+      "passed": true
+    },
+    {
+      "model": "M4",
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000243.jpg",
+      "image_sha256": "315f279ba5442d87f2ba975f3e975c2a99c062c8bf010208536d22f003903bed",
+      "input_tensor_sha256": "e97fcbb94b71fc8762ef3c2a940a6f8133fce427d59d906e749898fb96b48e80",
+      "output": "output0",
+      "shape": [
+        1,
+        8,
+        8400
+      ],
+      "max_absolute_error": 0.00103759765625,
+      "mean_absolute_error": 1.381066315163163e-05,
+      "failing_elements": 0,
+      "total_elements": 67200,
+      "passed": true
+    },
+    {
+      "model": "M4",
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000270.jpg",
+      "image_sha256": "a150ce3eb666ca6d412674993886cef9815f9c1853c1d5b831951302890d308d",
+      "input_tensor_sha256": "a1723f819e1ffc4e67cf9d13e03e331c33e47b0d27b630d5e229a59a14228b30",
+      "output": "output0",
+      "shape": [
+        1,
+        8,
+        8400
+      ],
+      "max_absolute_error": 0.001007080078125,
+      "mean_absolute_error": 1.2521870955552825e-05,
+      "failing_elements": 0,
+      "total_elements": 67200,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000062.jpg",
+      "image_sha256": "d56676890181efc675d9a3bb1bd084e081687d2fb8336d7ff0531a0aea60d579",
+      "input_tensor_sha256": "439e93fef6652aa64714d33d24e6050b71098ce7eef8049e9844a5d38526a158",
+      "output": "output0",
+      "shape": [
+        1,
+        37,
+        8400
+      ],
+      "max_absolute_error": 0.003326416015625,
+      "mean_absolute_error": 4.397223119129262e-06,
+      "failing_elements": 0,
+      "total_elements": 310800,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000062.jpg",
+      "image_sha256": "d56676890181efc675d9a3bb1bd084e081687d2fb8336d7ff0531a0aea60d579",
+      "input_tensor_sha256": "439e93fef6652aa64714d33d24e6050b71098ce7eef8049e9844a5d38526a158",
+      "output": "output1",
+      "shape": [
+        1,
+        32,
+        160,
+        160
+      ],
+      "max_absolute_error": 3.2961368560791016e-05,
+      "mean_absolute_error": 1.2608202601569786e-06,
+      "failing_elements": 0,
+      "total_elements": 819200,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000057.jpg",
+      "image_sha256": "0e03be24543223b140c7761a1b5a732e35e956e4d779f96a6ea113ccf43913fe",
+      "input_tensor_sha256": "05aed9aac72527e5d6359f96665812132170bb6cf84cbb034ac5e0132baa3411",
+      "output": "output0",
+      "shape": [
+        1,
+        37,
+        8400
+      ],
+      "max_absolute_error": 0.00323486328125,
+      "mean_absolute_error": 4.402805290652389e-06,
+      "failing_elements": 0,
+      "total_elements": 310800,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000057.jpg",
+      "image_sha256": "0e03be24543223b140c7761a1b5a732e35e956e4d779f96a6ea113ccf43913fe",
+      "input_tensor_sha256": "05aed9aac72527e5d6359f96665812132170bb6cf84cbb034ac5e0132baa3411",
+      "output": "output1",
+      "shape": [
+        1,
+        32,
+        160,
+        160
+      ],
+      "max_absolute_error": 3.0517578125e-05,
+      "mean_absolute_error": 1.1302523367443667e-06,
+      "failing_elements": 0,
+      "total_elements": 819200,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000013.jpg",
+      "image_sha256": "47dc8f8f3160b52b961b9962fc01f0146f1cc8703dea9d5e3c463cbd421d9684",
+      "input_tensor_sha256": "df3a6e14757707af02916d4224eaac1ce67c6a9b0b6a76c79e68623a1c4b95fa",
+      "output": "output0",
+      "shape": [
+        1,
+        37,
+        8400
+      ],
+      "max_absolute_error": 0.00341796875,
+      "mean_absolute_error": 4.3578859145048915e-06,
+      "failing_elements": 0,
+      "total_elements": 310800,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000013.jpg",
+      "image_sha256": "47dc8f8f3160b52b961b9962fc01f0146f1cc8703dea9d5e3c463cbd421d9684",
+      "input_tensor_sha256": "df3a6e14757707af02916d4224eaac1ce67c6a9b0b6a76c79e68623a1c4b95fa",
+      "output": "output1",
+      "shape": [
+        1,
+        32,
+        160,
+        160
+      ],
+      "max_absolute_error": 2.2649765014648438e-05,
+      "mean_absolute_error": 8.012807247137835e-07,
+      "failing_elements": 0,
+      "total_elements": 819200,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000004.jpg",
+      "image_sha256": "ad29bc20587b1e674943fd200db4d6e039b9472260c39ab854f37bb792aa1320",
+      "input_tensor_sha256": "40dbbbd31b7274d2a78831100242fd26a45127e2a36493867dd54801ce8db729",
+      "output": "output0",
+      "shape": [
+        1,
+        37,
+        8400
+      ],
+      "max_absolute_error": 0.00091552734375,
+      "mean_absolute_error": 3.5360158181849133e-06,
+      "failing_elements": 0,
+      "total_elements": 310800,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000004.jpg",
+      "image_sha256": "ad29bc20587b1e674943fd200db4d6e039b9472260c39ab854f37bb792aa1320",
+      "input_tensor_sha256": "40dbbbd31b7274d2a78831100242fd26a45127e2a36493867dd54801ce8db729",
+      "output": "output1",
+      "shape": [
+        1,
+        32,
+        160,
+        160
+      ],
+      "max_absolute_error": 2.9087066650390625e-05,
+      "mean_absolute_error": 8.437301888345947e-07,
+      "failing_elements": 0,
+      "total_elements": 819200,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000243.jpg",
+      "image_sha256": "315f279ba5442d87f2ba975f3e975c2a99c062c8bf010208536d22f003903bed",
+      "input_tensor_sha256": "e97fcbb94b71fc8762ef3c2a940a6f8133fce427d59d906e749898fb96b48e80",
+      "output": "output0",
+      "shape": [
+        1,
+        37,
+        8400
+      ],
+      "max_absolute_error": 0.0014190673828125,
+      "mean_absolute_error": 3.6946947822662575e-06,
+      "failing_elements": 0,
+      "total_elements": 310800,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000243.jpg",
+      "image_sha256": "315f279ba5442d87f2ba975f3e975c2a99c062c8bf010208536d22f003903bed",
+      "input_tensor_sha256": "e97fcbb94b71fc8762ef3c2a940a6f8133fce427d59d906e749898fb96b48e80",
+      "output": "output1",
+      "shape": [
+        1,
+        32,
+        160,
+        160
+      ],
+      "max_absolute_error": 2.4557113647460938e-05,
+      "mean_absolute_error": 8.64629550577714e-07,
+      "failing_elements": 0,
+      "total_elements": 819200,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000270.jpg",
+      "image_sha256": "a150ce3eb666ca6d412674993886cef9815f9c1853c1d5b831951302890d308d",
+      "input_tensor_sha256": "a1723f819e1ffc4e67cf9d13e03e331c33e47b0d27b630d5e229a59a14228b30",
+      "output": "output0",
+      "shape": [
+        1,
+        37,
+        8400
+      ],
+      "max_absolute_error": 0.001434326171875,
+      "mean_absolute_error": 3.4701243875964913e-06,
+      "failing_elements": 0,
+      "total_elements": 310800,
+      "passed": true
+    },
+    {
+      "model": "M5",
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000270.jpg",
+      "image_sha256": "a150ce3eb666ca6d412674993886cef9815f9c1853c1d5b831951302890d308d",
+      "input_tensor_sha256": "a1723f819e1ffc4e67cf9d13e03e331c33e47b0d27b630d5e229a59a14228b30",
+      "output": "output1",
+      "shape": [
+        1,
+        32,
+        160,
+        160
+      ],
+      "max_absolute_error": 2.8312206268310547e-05,
+      "mean_absolute_error": 9.072882097295281e-07,
+      "failing_elements": 0,
+      "total_elements": 819200,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "postprocessed_parity_tested": false
+}

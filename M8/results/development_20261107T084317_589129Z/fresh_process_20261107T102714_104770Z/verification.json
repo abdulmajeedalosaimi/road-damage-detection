@@ -1,0 +1,12 @@
+{
+  "purpose": "fresh_process_reproducibility",
+  "same_installed_environment": true,
+  "clean_environment_installation_tested": false,
+  "return_code": 0,
+  "checks": {
+    "report_exact_match": true,
+    "mask_exact_match": true,
+    "overlay_exact_match": true
+  },
+  "passed": true
+}

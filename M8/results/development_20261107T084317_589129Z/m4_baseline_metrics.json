@@ -1,0 +1,65 @@
+{
+  "purpose": "development_baseline",
+  "inference_settings": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.7,
+    "max_det": 300
+  },
+  "matching_iou": 0.5,
+  "matching_method": "confidence_ordered_same_class_one_to_one",
+  "prediction_file_sha256": "bb75a5ba455fa04044e3e8a0affa5c855c10d0f778f7aff68796390284929362",
+  "ground_truth_file_sha256": "0ad4bab59616f57b0cf643fdc79027727495e0a2eb026b07b153377f51ba623e",
+  "per_class": {
+    "D00": {
+      "TP": 12,
+      "FP": 4,
+      "FN": 69,
+      "reference_boxes": 81,
+      "predicted_boxes": 16,
+      "precision": 0.75,
+      "recall": 0.14814814814814814,
+      "f1": 0.24742268041237114
+    },
+    "D10": {
+      "TP": 5,
+      "FP": 9,
+      "FN": 31,
+      "reference_boxes": 36,
+      "predicted_boxes": 14,
+      "precision": 0.35714285714285715,
+      "recall": 0.1388888888888889,
+      "f1": 0.2
+    },
+    "D20": {
+      "TP": 3,
+      "FP": 0,
+      "FN": 7,
+      "reference_boxes": 10,
+      "predicted_boxes": 3,
+      "precision": 1.0,
+      "recall": 0.3,
+      "f1": 0.46153846153846156
+    },
+    "D40": {
+      "TP": 2,
+      "FP": 2,
+      "FN": 3,
+      "reference_boxes": 5,
+      "predicted_boxes": 4,
+      "precision": 0.5,
+      "recall": 0.4,
+      "f1": 0.4444444444444444
+    }
+  },
+  "micro": {
+    "TP": 22,
+    "FP": 15,
+    "FN": 110,
+    "reference_boxes": 132,
+    "predicted_boxes": 37,
+    "precision": 0.5945945945945946,
+    "recall": 0.16666666666666666,
+    "f1": 0.2603550295857988
+  }
+}

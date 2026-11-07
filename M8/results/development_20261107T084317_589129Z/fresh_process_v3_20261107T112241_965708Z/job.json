@@ -1,0 +1,12 @@
+{
+  "bundle": "C:\\Users\\PC\\Downloads\\project\\project\\phase2\\M8\\results\\development_20261107T084317_589129Z\\service_bundle_v3_20261107T105413_863679Z",
+  "project_root": "C:\\Users\\PC\\Downloads\\project\\project\\phase2",
+  "pipeline_sha256": "5f8c0a53b551bfe6ef40ccb00c02cf64cfd6d74ae01ed2c5a34b5530f5b3770a",
+  "config_sha256": "402e1bfa0d371e8dab365fa6cdb1c8481d68d51ddbd9b4a036fab51797dcceae",
+  "reference_sha256": {
+    "input.png": "fc0d2396b6d38fea30648a5f96d0395a2d3d61ca5caa7f89ef1f74b93f2e0353",
+    "reference_mask.png": "6bae5f32fb3018b69c14b8b127dddda8e040efb02926fd0cd724d3daa54698d8",
+    "reference_overlay.png": "6fc39e80a8b78c1dd80f5fba8a8471689b0fd054c25a23234377df304069ba0d",
+    "reference_report.json": "725b2ef3538dc8c7d24631fb45cc383b99f7c46928a1ab4ac2a2b93817570077"
+  }
+}

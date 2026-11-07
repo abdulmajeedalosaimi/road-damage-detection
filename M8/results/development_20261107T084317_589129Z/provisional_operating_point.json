@@ -1,0 +1,159 @@
+{
+  "status": "provisional_development_choice",
+  "selection_timing": "post_hoc_after_development_sweep",
+  "selection_basis": "Highest general-cohort micro-F1 among evaluated grid points",
+  "m4_settings": {
+    "imgsz": 640,
+    "conf": 0.1,
+    "iou": 0.5,
+    "max_det": 300
+  },
+  "m5_settings": {
+    "imgsz": 640,
+    "conf": 0.05,
+    "iou": 0.7,
+    "max_det": 100
+  },
+  "matching_iou": 0.5,
+  "checkpoint_sha256": "e034ca9b5610017d20b22e9014d99439ea3f98117d783faf09113c82a3d9098a",
+  "comparison_file_sha256": "03b137940f26f892d5291b4bbff0ee81095fe335e6ddbaf2f5ac704095fd2a58",
+  "selected_development_results": {
+    "general": {
+      "cohort": "general",
+      "confidence": 0.1,
+      "nms_iou": 0.5,
+      "matching_iou": 0.5,
+      "prediction_file": "predictions_nms_0.50.json",
+      "prediction_file_sha256": "6d97266a8a37bd11908823dcac5389ab66f0a65df4b6a7f2972c010a3e799637",
+      "images": 90,
+      "per_class": {
+        "D00": {
+          "TP": 21,
+          "FP": 24,
+          "FN": 60,
+          "reference_boxes": 81,
+          "predicted_boxes": 45,
+          "precision": 0.4666666666666667,
+          "recall": 0.25925925925925924,
+          "f1": 0.3333333333333333
+        },
+        "D10": {
+          "TP": 14,
+          "FP": 25,
+          "FN": 22,
+          "reference_boxes": 36,
+          "predicted_boxes": 39,
+          "precision": 0.358974358974359,
+          "recall": 0.3888888888888889,
+          "f1": 0.37333333333333335
+        },
+        "D20": {
+          "TP": 3,
+          "FP": 4,
+          "FN": 7,
+          "reference_boxes": 10,
+          "predicted_boxes": 7,
+          "precision": 0.42857142857142855,
+          "recall": 0.3,
+          "f1": 0.35294117647058826
+        },
+        "D40": {
+          "TP": 3,
+          "FP": 8,
+          "FN": 2,
+          "reference_boxes": 5,
+          "predicted_boxes": 11,
+          "precision": 0.2727272727272727,
+          "recall": 0.6,
+          "f1": 0.375
+        }
+      },
+      "micro": {
+        "TP": 41,
+        "FP": 61,
+        "FN": 91,
+        "reference_boxes": 132,
+        "predicted_boxes": 102,
+        "precision": 0.4019607843137255,
+        "recall": 0.3106060606060606,
+        "f1": 0.3504273504273504
+      },
+      "d40_fp_per_image": 0.08888888888888889,
+      "background_images": 21,
+      "background_images_with_detections": 0,
+      "background_image_fp_rate": 0.0
+    },
+    "d40_diagnostic": {
+      "cohort": "d40_diagnostic",
+      "confidence": 0.1,
+      "nms_iou": 0.5,
+      "matching_iou": 0.5,
+      "prediction_file": "predictions_nms_0.50.json",
+      "prediction_file_sha256": "6d97266a8a37bd11908823dcac5389ab66f0a65df4b6a7f2972c010a3e799637",
+      "images": 90,
+      "per_class": {
+        "D00": {
+          "TP": 1,
+          "FP": 6,
+          "FN": 35,
+          "reference_boxes": 36,
+          "predicted_boxes": 7,
+          "precision": 0.14285714285714285,
+          "recall": 0.027777777777777776,
+          "f1": 0.046511627906976744
+        },
+        "D10": {
+          "TP": 8,
+          "FP": 19,
+          "FN": 25,
+          "reference_boxes": 33,
+          "predicted_boxes": 27,
+          "precision": 0.2962962962962963,
+          "recall": 0.24242424242424243,
+          "f1": 0.26666666666666666
+        },
+        "D20": {
+          "TP": 7,
+          "FP": 21,
+          "FN": 18,
+          "reference_boxes": 25,
+          "predicted_boxes": 28,
+          "precision": 0.25,
+          "recall": 0.28,
+          "f1": 0.2641509433962264
+        },
+        "D40": {
+          "TP": 26,
+          "FP": 21,
+          "FN": 96,
+          "reference_boxes": 122,
+          "predicted_boxes": 47,
+          "precision": 0.5531914893617021,
+          "recall": 0.21311475409836064,
+          "f1": 0.3076923076923077
+        }
+      },
+      "micro": {
+        "TP": 42,
+        "FP": 67,
+        "FN": 174,
+        "reference_boxes": 216,
+        "predicted_boxes": 109,
+        "precision": 0.3853211009174312,
+        "recall": 0.19444444444444445,
+        "f1": 0.25846153846153846
+      },
+      "d40_fp_per_image": 0.23333333333333334,
+      "background_images": 0,
+      "background_images_with_detections": 0,
+      "background_image_fp_rate": null
+    }
+  },
+  "limitations": [
+    "Small development cohorts; no independent performance estimate.",
+    "D40-enriched cohort does not represent deployment prevalence.",
+    "Detector-gated segmentation cannot recover undetected potholes.",
+    "M5 mask quality on M4 images remains unquantified.",
+    "No final acceptance or production-readiness decision."
+  ]
+}

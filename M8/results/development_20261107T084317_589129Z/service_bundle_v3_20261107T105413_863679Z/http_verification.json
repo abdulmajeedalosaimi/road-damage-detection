@@ -1,0 +1,22 @@
+{
+  "purpose": "updated_HTTP_functional_smoke_test",
+  "service_url": "http://127.0.0.1:8766",
+  "pid": 29196,
+  "artifact_sha256": {
+    "pipeline.py": "5f8c0a53b551bfe6ef40ccb00c02cf64cfd6d74ae01ed2c5a34b5530f5b3770a",
+    "app.py": "657b2f14a95d99c37b93645eda80f8fc0e5b7477a857048b0b2ef10517defde9",
+    "config.json": "402e1bfa0d371e8dab365fa6cdb1c8481d68d51ddbd9b4a036fab51797dcceae"
+  },
+  "checks": {
+    "schema_version_1_2": true,
+    "model_fingerprints_match": true,
+    "mask_exact_match": true,
+    "overlay_exact_match": true,
+    "mask_area_consistent": true,
+    "detection_and_segmentation_counts_match": true,
+    "timing_valid": true,
+    "nonempty_pothole_proxy_verified": true
+  },
+  "passed": true,
+  "full_report_numerical_comparison_performed": false
+}

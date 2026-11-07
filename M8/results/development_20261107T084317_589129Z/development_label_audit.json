@@ -1,0 +1,19 @@
+{
+  "purpose": "development_only",
+  "images": 90,
+  "background_images": 21,
+  "annotated_images": 69,
+  "total_boxes": 132,
+  "boxes_per_class": {
+    "D00": 81,
+    "D10": 36,
+    "D20": 10,
+    "D40": 5
+  },
+  "images_per_class": {
+    "D00": 45,
+    "D10": 28,
+    "D20": 8,
+    "D40": 2
+  }
+}

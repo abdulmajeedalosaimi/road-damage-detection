@@ -1,0 +1,30 @@
+{
+  "purpose": "fresh_process_v3_verification",
+  "checks": {
+    "schema_version_1_2": true,
+    "prediction_report_within_declared_tolerances": true,
+    "mask_exact_match": true,
+    "overlay_exact_match": true,
+    "timing_valid": true,
+    "input_preserved": true
+  },
+  "differences": [],
+  "pipeline_sha256": "5f8c0a53b551bfe6ef40ccb00c02cf64cfd6d74ae01ed2c5a34b5530f5b3770a",
+  "config_sha256": "402e1bfa0d371e8dab365fa6cdb1c8481d68d51ddbd9b4a036fab51797dcceae",
+  "checkpoint_sha256": {
+    "m4": "e034ca9b5610017d20b22e9014d99439ea3f98117d783faf09113c82a3d9098a",
+    "m5": "5fb5f6925489060792d160f4a04bc3620c0b59a5de5aba013f2e6f5523254d44"
+  },
+  "reference_sha256": {
+    "input.png": "fc0d2396b6d38fea30648a5f96d0395a2d3d61ca5caa7f89ef1f74b93f2e0353",
+    "reference_mask.png": "6bae5f32fb3018b69c14b8b127dddda8e040efb02926fd0cd724d3daa54698d8",
+    "reference_overlay.png": "6fc39e80a8b78c1dd80f5fba8a8471689b0fd054c25a23234377df304069ba0d",
+    "reference_report.json": "725b2ef3538dc8c7d24631fb45cc383b99f7c46928a1ab4ac2a2b93817570077"
+  },
+  "python_executable": "c:\\Users\\PC\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "bbox_absolute_tolerance_pixels": 0.0001,
+  "confidence_absolute_tolerance": 1e-06,
+  "timing_values_compared_for_equality": false,
+  "clean_install_verified": false
+}

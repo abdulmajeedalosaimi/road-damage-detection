@@ -1,0 +1,11 @@
+{
+  "purpose": "integrated_system_model_card",
+  "report_schema_version": "1.2",
+  "backend": "PyTorch",
+  "active_bundle": "C:\\Users\\PC\\Downloads\\project\\project\\phase2\\M8\\results\\development_20261107T084317_589129Z\\service_bundle_v3_20261107T105413_863679Z",
+  "pipeline_sha256": "5f8c0a53b551bfe6ef40ccb00c02cf64cfd6d74ae01ed2c5a34b5530f5b3770a",
+  "config_sha256": "402e1bfa0d371e8dab365fa6cdb1c8481d68d51ddbd9b4a036fab51797dcceae",
+  "model_card_sha256": "ec2f6565087218e81aa913e0ff964770823ddeaf4f0d8c508152bc57b7f92808",
+  "metrics_source": "Recorded development experiment summaries",
+  "production_approved": false
+}

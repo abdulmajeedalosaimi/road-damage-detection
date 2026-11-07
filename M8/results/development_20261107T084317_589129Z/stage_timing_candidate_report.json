@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.2",
+  "status": "d40_detected_with_mask_predictions",
+  "image_width": 512,
+  "image_height": 512,
+  "m4_settings": {
+    "imgsz": 640,
+    "conf": 0.1,
+    "iou": 0.5,
+    "max_det": 300
+  },
+  "m5_settings": {
+    "imgsz": 640,
+    "conf": 0.05,
+    "iou": 0.7,
+    "max_det": 100
+  },
+  "detections": [
+    {
+      "class_id": 1,
+      "damage_code": "D10",
+      "confidence": 0.4476197063922882,
+      "bbox_xyxy": [
+        0.514331042766571,
+        144.3737030029297,
+        109.590087890625,
+        191.3500213623047
+      ],
+      "segmentation": {
+        "status": "not_applicable",
+        "mask_pixels": null,
+        "mask_percent_of_crop": null,
+        "mask_percent_of_full_image": null
+      },
+      "severity": null,
+      "severity_status": "unsupported_damage_class"
+    },
+    {
+      "class_id": 1,
+      "damage_code": "D10",
+      "confidence": 0.4160200357437134,
+      "bbox_xyxy": [
+        263.32904052734375,
+        51.97459030151367,
+        494.37139892578125,
+        94.45624542236328
+      ],
+      "segmentation": {
+        "status": "not_applicable",
+        "mask_pixels": null,
+        "mask_percent_of_crop": null,
+        "mask_percent_of_full_image": null
+      },
+      "severity": null,
+      "severity_status": "unsupported_damage_class"
+    },
+    {
+      "class_id": 3,
+      "damage_code": "D40",
+      "confidence": 0.2965405583381653,
+      "bbox_xyxy": [
+        384.9507141113281,
+        278.53399658203125,
+        451.95086669921875,
+        338.8736267089844
+      ],
+      "segmentation": {
+        "status": "mask_predicted",
+        "crop_bounds_xyxy": [
+          384,
+          278,
+          452,
+          339
+        ],
+        "predicted_instances": 5,
+        "max_det_reached": false,
+        "mask_pixels": 1521,
+        "mask_percent_of_crop": 36.66827386692382,
+        "mask_percent_of_full_image": 0.5802154541015625
+      },
+      "severity": {
+        "measure": "predicted_pothole_area_percent_of_full_image",
+        "value": 0.5802154541015625,
+        "units": "percent",
+        "mask_pixels": 1521,
+        "denominator_pixels": 262144,
+        "interpretation": "image_area_proxy_only",
+        "physical_area_estimated": false,
+        "depth_estimated": false,
+        "engineering_category": null
+      },
+      "severity_status": "area_proxy_estimated"
+    }
+  ],
+  "detection_count": 3,
+  "d40_detection_count": 1,
+  "segmentation_calls": 1,
+  "m4_max_det_reached": false,
+  "m5_crops_reaching_max_det": 0,
+  "union_mask_pixels": 1521,
+  "union_mask_percent_of_full_image": 0.5802154541015625,
+  "area_units": "pixels_and_image_percent",
+  "severity_status": "area_proxy_estimated",
+  "timing": {
+    "device": "cpu",
+    "units": "milliseconds",
+    "stages": {
+      "input_validation": 0.39439997635781765,
+      "m4_predict": 101.74900002311915,
+      "detection_postprocess": 0.24540000595152378,
+      "crop_preparation": 0.6537999724969268,
+      "m5_predict": 162.58400003425777,
+      "mask_restoration": 4.13799996022135,
+      "severity_calculation": 0.17660000594332814,
+      "annotation": 1.4844000106677413,
+      "report_creation": 0.08059997344389558
+    },
+    "total_ms": 271.5061999624595,
+    "scope": "Input validation through prediction-report JSON validation",
+    "excluded": [
+      "model loading",
+      "file decoding",
+      "PNG encoding",
+      "HTTP",
+      "timing metadata assembly"
+    ],
+    "predict_scope": "Model predict calls include their preprocessing and postprocessing"
+  }
+}

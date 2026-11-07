@@ -1,0 +1,49 @@
+{
+  "service_url": "http://127.0.0.1:8766",
+  "passed": 6,
+  "total": 6,
+  "tests": [
+    {
+      "test": "Missing file field",
+      "expected_status": 422,
+      "actual_status": 422,
+      "healthy_after_request": true,
+      "passed": true
+    },
+    {
+      "test": "Empty file",
+      "expected_status": 400,
+      "actual_status": 400,
+      "healthy_after_request": true,
+      "passed": true
+    },
+    {
+      "test": "Invalid image bytes",
+      "expected_status": 400,
+      "actual_status": 400,
+      "healthy_after_request": true,
+      "passed": true
+    },
+    {
+      "test": "Unsupported GIF",
+      "expected_status": 415,
+      "actual_status": 415,
+      "healthy_after_request": true,
+      "passed": true
+    },
+    {
+      "test": "Upload exceeds byte limit",
+      "expected_status": 413,
+      "actual_status": 413,
+      "healthy_after_request": true,
+      "passed": true
+    },
+    {
+      "test": "Image exceeds pixel limit",
+      "expected_status": 413,
+      "actual_status": 413,
+      "healthy_after_request": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "status": "no_d40_detected",
+  "image_width": 600,
+  "image_height": 600,
+  "m4_settings": {
+    "imgsz": 640,
+    "conf": 0.1,
+    "iou": 0.5,
+    "max_det": 300,
+    "rect": false
+  },
+  "m5_settings": {
+    "imgsz": 640,
+    "conf": 0.05,
+    "iou": 0.7,
+    "max_det": 100,
+    "rect": false
+  },
+  "detections": [
+    {
+      "class_id": 2,
+      "damage_code": "D20",
+      "confidence": 0.2482936680316925,
+      "bbox_xyxy": [
+        316.7003479003906,
+        473.491943359375,
+        457.0057067871094,
+        534.9138793945312
+      ],
+      "segmentation": {
+        "status": "not_applicable",
+        "mask_pixels": null,
+        "mask_percent_of_crop": null,
+        "mask_percent_of_full_image": null
+      },
+      "severity": null,
+      "severity_status": "not_estimated"
+    },
+    {
+      "class_id": 2,
+      "damage_code": "D20",
+      "confidence": 0.1584179401397705,
+      "bbox_xyxy": [
+        3.3527181148529053,
+        416.58544921875,
+        238.0697479248047,
+        514.8109130859375
+      ],
+      "segmentation": {
+        "status": "not_applicable",
+        "mask_pixels": null,
+        "mask_percent_of_crop": null,
+        "mask_percent_of_full_image": null
+      },
+      "severity": null,
+      "severity_status": "not_estimated"
+    }
+  ],
+  "detection_count": 2,
+  "d40_detection_count": 0,
+  "segmentation_calls": 0,
+  "m4_max_det_reached": false,
+  "m5_crops_reaching_max_det": 0,
+  "union_mask_pixels": 0,
+  "union_mask_percent_of_full_image": 0.0,
+  "area_units": "pixels_and_image_percent",
+  "severity_status": "not_estimated"
+}

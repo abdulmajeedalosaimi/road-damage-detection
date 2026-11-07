@@ -1,0 +1,12 @@
+# Observed direct service dependencies.
+# Not a complete dependency lock; clean installation is unverified.
+# PyTorch wheel availability depends on Python, platform and index.
+ultralytics==8.4.197
+torch==2.14.1
+torchvision==0.29.1
+numpy==2.5.2
+opencv-python==5.0.0.93
+Pillow==12.3.0
+fastapi==0.162.0
+uvicorn==0.54.0
+python-multipart==0.0.33

@@ -1,0 +1,112 @@
+{
+  "purpose": "development_HTTP_benchmark_summary",
+  "backend": "PyTorch",
+  "concurrency": 1,
+  "successful_requests": 540,
+  "failed_requests": 0,
+  "unique_images": 180,
+  "measurement_loop_wall_seconds": 89.95327820000239,
+  "successful_requests_per_second": 6.003116404489033,
+  "latency_groups": {
+    "all_mixed": {
+      "requests": 540,
+      "unique_images": 180,
+      "mean_ms": 151.6936494453586,
+      "p50_ms": 130.18305000150576,
+      "p95_ms": 319.71366997458966,
+      "p99_ms": 451.68910901178623,
+      "min_ms": 71.82680000551045,
+      "max_ms": 528.2197999767959
+    },
+    "general": {
+      "requests": 270,
+      "unique_images": 90,
+      "mean_ms": 130.83634111120503,
+      "p50_ms": 122.26835000910796,
+      "p95_ms": 222.07080500375014,
+      "p99_ms": 355.49791303579696,
+      "min_ms": 76.65290002478287,
+      "max_ms": 413.78169995732605
+    },
+    "d40_diagnostic": {
+      "requests": 270,
+      "unique_images": 90,
+      "mean_ms": 172.55095777951215,
+      "p50_ms": 140.8311999985017,
+      "p95_ms": 375.84977002989,
+      "p99_ms": 489.23441797029227,
+      "min_ms": 71.82680000551045,
+      "max_ms": 528.2197999767959
+    },
+    "M5_skipped": {
+      "requests": 423,
+      "unique_images": 141,
+      "mean_ms": 120.19810425632261,
+      "p50_ms": 121.02680001407862,
+      "p95_ms": 160.55088001303372,
+      "p99_ms": 177.7959659788757,
+      "min_ms": 71.82680000551045,
+      "max_ms": 190.08550001308322
+    },
+    "M5_invoked": {
+      "requests": 117,
+      "unique_images": 39,
+      "mean_ms": 265.56215897495025,
+      "p50_ms": 246.45400000736117,
+      "p95_ms": 446.8728799954987,
+      "p99_ms": 496.825528035406,
+      "min_ms": 143.40280002215877,
+      "max_ms": 528.2197999767959
+    }
+  },
+  "latency_by_repeat": {
+    "1": {
+      "requests": 180,
+      "unique_images": 180,
+      "mean_ms": 133.35723999932978,
+      "p50_ms": 111.92125000525266,
+      "p95_ms": 260.84365498973045,
+      "p99_ms": 370.6044100067814,
+      "min_ms": 71.82680000551045,
+      "max_ms": 444.5234999875538
+    },
+    "2": {
+      "requests": 180,
+      "unique_images": 180,
+      "mean_ms": 167.9133116665374,
+      "p50_ms": 139.29520000237972,
+      "p95_ms": 343.42484497756203,
+      "p99_ms": 485.9046500106342,
+      "min_ms": 85.75930004008114,
+      "max_ms": 494.61489997338504
+    },
+    "3": {
+      "requests": 180,
+      "unique_images": 180,
+      "mean_ms": 153.81039667020863,
+      "p50_ms": 130.2949500095565,
+      "p95_ms": 323.690444996464,
+      "p99_ms": 441.7081780196173,
+      "min_ms": 81.47189998999238,
+      "max_ms": 528.2197999767959
+    }
+  },
+  "memory": {
+    "server_baseline_rss_mib": 470.6953125,
+    "server_sampled_peak_rss_mib": 525.1015625,
+    "sampled_peak_above_baseline_mib": 54.40625,
+    "sample_count": 1622
+  },
+  "latency_target_ms": null,
+  "memory_target_bytes": null,
+  "production_readiness_assessed": false,
+  "limitations": [
+    "Local CPU service with one worker and sequential requests.",
+    "PNG preparation and response validation excluded from latency.",
+    "Measurement-loop throughput includes client validation overhead.",
+    "RSS is sampled for the server process only.",
+    "The mixed cohort has an artificial 50/50 composition.",
+    "Three repeats per image are not independent image samples.",
+    "Backend speed and prediction accuracy are separate evaluations."
+  ]
+}

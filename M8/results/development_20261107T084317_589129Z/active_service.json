@@ -1,0 +1,8 @@
+{
+  "bundle_relative_to_run": "service_bundle_v3_20261107T105413_863679Z",
+  "service_url": "http://127.0.0.1:8766",
+  "backend": "PyTorch",
+  "report_schema_version": "1.2",
+  "status": "development_candidate",
+  "production_approved": false
+}

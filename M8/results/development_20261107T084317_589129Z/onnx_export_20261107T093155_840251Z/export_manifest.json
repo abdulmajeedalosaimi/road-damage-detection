@@ -1,0 +1,104 @@
+{
+  "M4": {
+    "source_checkpoint_sha256": "e034ca9b5610017d20b22e9014d99439ea3f98117d783faf09113c82a3d9098a",
+    "onnx_path": "m4/m4.onnx",
+    "onnx_sha256": "dcf3215c853c0b065cfa1c8ad6585b21983e028e45ed00b58492d2f8a7423ba3",
+    "size_bytes": 10626943,
+    "export_settings": {
+      "format": "onnx",
+      "imgsz": 640,
+      "batch": 1,
+      "dynamic": false,
+      "half": false,
+      "simplify": false,
+      "opset": 18,
+      "nms": false,
+      "device": "cpu"
+    },
+    "runtime_providers": [
+      "CPUExecutionProvider"
+    ],
+    "inputs": [
+      {
+        "name": "images",
+        "shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "type": "tensor(float)"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "output0",
+        "shape": [
+          1,
+          8,
+          8400
+        ],
+        "type": "tensor(float)"
+      }
+    ],
+    "structure_check": "PASS",
+    "runtime_load": "PASS",
+    "numerical_parity": "NOT_TESTED"
+  },
+  "M5": {
+    "source_checkpoint_sha256": "5fb5f6925489060792d160f4a04bc3620c0b59a5de5aba013f2e6f5523254d44",
+    "onnx_path": "m5/m5.onnx",
+    "onnx_sha256": "c71f79dadf957d06c59c136dc077d017fb76e711c9847f15b91628e563f63fbf",
+    "size_bytes": 11642062,
+    "export_settings": {
+      "format": "onnx",
+      "imgsz": 640,
+      "batch": 1,
+      "dynamic": false,
+      "half": false,
+      "simplify": false,
+      "opset": 18,
+      "nms": false,
+      "device": "cpu"
+    },
+    "runtime_providers": [
+      "CPUExecutionProvider"
+    ],
+    "inputs": [
+      {
+        "name": "images",
+        "shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "type": "tensor(float)"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "output0",
+        "shape": [
+          1,
+          37,
+          8400
+        ],
+        "type": "tensor(float)"
+      },
+      {
+        "name": "output1",
+        "shape": [
+          1,
+          32,
+          160,
+          160
+        ],
+        "type": "tensor(float)"
+      }
+    ],
+    "structure_check": "PASS",
+    "runtime_load": "PASS",
+    "numerical_parity": "NOT_TESTED"
+  }
+}

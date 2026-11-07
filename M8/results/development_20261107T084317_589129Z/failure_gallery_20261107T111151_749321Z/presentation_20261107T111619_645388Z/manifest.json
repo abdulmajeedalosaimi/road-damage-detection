@@ -1,0 +1,343 @@
+{
+  "purpose": "failure_gallery_presentation",
+  "source_manifest_sha256": "bdfc77e1b5c3e54e7940ab06ed5c21c9119192fdbdcb146ccaa14b9195408985",
+  "inference_inputs_modified": false,
+  "metrics_modified": false,
+  "examples": [
+    {
+      "source_image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000057.jpg",
+      "source_image_sha256": "0e03be24543223b140c7761a1b5a732e35e956e4d779f96a6ea113ccf43913fe",
+      "presentation_image": "01_China_Drone_China_Drone_000057_presentation.png",
+      "presentation_image_sha256": "4365e843c407dde84d1a3c02400bcaa40e10f87ca0c6a39145034b7a9d2f45f1",
+      "redactions": [],
+      "legend": [
+        {
+          "outcome": "FN",
+          "class": "D40",
+          "box": [
+            200.99999744000002,
+            236.00000256,
+            244.0,
+            274.00000256
+          ],
+          "confidence": null,
+          "number": 1
+        },
+        {
+          "outcome": "FN",
+          "class": "D40",
+          "box": [
+            200.00000256,
+            388.0,
+            238.00000256,
+            428.0
+          ],
+          "confidence": null,
+          "number": 2
+        }
+      ],
+      "final_visual_review": "pending"
+    },
+    {
+      "source_image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000487.jpg",
+      "source_image_sha256": "74072deed261b0c02f7fcf321c56d2a4300905bf92e1c15e790d19876d526303",
+      "presentation_image": "02_China_Drone_China_Drone_000487_presentation.png",
+      "presentation_image_sha256": "f4f20d6085566f746e4496a80ea8754ad4ba49e7e46e56e990aa114144479dbc",
+      "redactions": [],
+      "legend": [
+        {
+          "outcome": "GT",
+          "class": "D40",
+          "box": [
+            0.9999974400000013,
+            285.00000256,
+            124.0,
+            370.0
+          ],
+          "confidence": null,
+          "number": 1
+        },
+        {
+          "outcome": "FN",
+          "class": "D20",
+          "box": [
+            1.0,
+            218.99999744000002,
+            107.0,
+            274.0
+          ],
+          "confidence": null,
+          "number": 2
+        },
+        {
+          "outcome": "TP",
+          "class": "D40",
+          "box": [
+            0.0,
+            271.67242431640625,
+            132.98336791992188,
+            385.889404296875
+          ],
+          "confidence": 0.4619126319885254,
+          "number": 3
+        },
+        {
+          "outcome": "FP",
+          "class": "D20",
+          "box": [
+            0.0,
+            204.3035888671875,
+            138.24270629882812,
+            386.9560241699219
+          ],
+          "confidence": 0.31554439663887024,
+          "number": 4
+        },
+        {
+          "outcome": "FP",
+          "class": "D40",
+          "box": [
+            1.020349144935608,
+            211.9599609375,
+            109.83750915527344,
+            273.2835998535156
+          ],
+          "confidence": 0.24003244936466217,
+          "number": 5
+        },
+        {
+          "outcome": "FP",
+          "class": "D40",
+          "box": [
+            41.465110778808594,
+            288.1080017089844,
+            128.09884643554688,
+            340.24298095703125
+          ],
+          "confidence": 0.18520872294902802,
+          "number": 6
+        }
+      ],
+      "final_visual_review": "pending"
+    },
+    {
+      "source_image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000004.jpg",
+      "source_image_sha256": "ad29bc20587b1e674943fd200db4d6e039b9472260c39ab854f37bb792aa1320",
+      "presentation_image": "03_China_MotorBike_China_MotorBike_000004_presentation.png",
+      "presentation_image_sha256": "fc05ffa58d4979543e1cc86f5f1f3b008950b53a50430377d9b58fc1dcaa55f3",
+      "redactions": [
+        {
+          "rectangle_xyxy_exclusive": [
+            0,
+            0,
+            512,
+            85
+          ],
+          "method": "opaque_fill",
+          "purpose": "conceal_people_and_vehicles"
+        }
+      ],
+      "legend": [
+        {
+          "outcome": "FN",
+          "class": "D40",
+          "box": [
+            115.0,
+            92.99999744,
+            137.0,
+            108.99999744
+          ],
+          "confidence": null,
+          "number": 1
+        }
+      ],
+      "final_visual_review": "pending"
+    },
+    {
+      "source_image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000163.jpg",
+      "source_image_sha256": "0fcc4d78cc0b81596656975630742c4543c0c25b7cbd567e75227790a1ece9d1",
+      "presentation_image": "04_China_MotorBike_China_MotorBike_000163_presentation.png",
+      "presentation_image_sha256": "143309a95e29811f9604125d8cff463fafef901dd9cb4a9e58b891c5ae6cc9d7",
+      "redactions": [],
+      "legend": [
+        {
+          "outcome": "FN",
+          "class": "D40",
+          "box": [
+            77.00000256000001,
+            320.99999744,
+            142.0,
+            512.0
+          ],
+          "confidence": null,
+          "number": 1
+        },
+        {
+          "outcome": "FP",
+          "class": "D40",
+          "box": [
+            89.200927734375,
+            417.27813720703125,
+            149.12844848632812,
+            511.7417907714844
+          ],
+          "confidence": 0.12068286538124084,
+          "number": 2
+        }
+      ],
+      "final_visual_review": "pending"
+    },
+    {
+      "source_image": "data/yolo_dataset/images/val/Czech_Czech_000270.jpg",
+      "source_image_sha256": "a150ce3eb666ca6d412674993886cef9815f9c1853c1d5b831951302890d308d",
+      "presentation_image": "05_Czech_Czech_000270_presentation.png",
+      "presentation_image_sha256": "4307af2da4b01afae781a7e8521f26f54b8cf81fd7f37e90b9c062ce9776cb5c",
+      "redactions": [],
+      "legend": [
+        {
+          "outcome": "GT",
+          "class": "D20",
+          "box": [
+            294.999999,
+            461.000001,
+            428.00000100000005,
+            531.999999
+          ],
+          "confidence": null,
+          "number": 1
+        },
+        {
+          "outcome": "FN",
+          "class": "D00",
+          "box": [
+            81.000003,
+            429.999999,
+            176.00000100000003,
+            512.999997
+          ],
+          "confidence": null,
+          "number": 2
+        },
+        {
+          "outcome": "FN",
+          "class": "D40",
+          "box": [
+            99.000003,
+            442.000002,
+            158.000001,
+            496.00000200000005
+          ],
+          "confidence": null,
+          "number": 3
+        },
+        {
+          "outcome": "FN",
+          "class": "D00",
+          "box": [
+            182.999997,
+            403.99999800000006,
+            243.999999,
+            505.999998
+          ],
+          "confidence": null,
+          "number": 4
+        },
+        {
+          "outcome": "TP",
+          "class": "D20",
+          "box": [
+            316.7003479003906,
+            473.491943359375,
+            457.0057067871094,
+            534.9138793945312
+          ],
+          "confidence": 0.24829362332820892,
+          "number": 5
+        },
+        {
+          "outcome": "FP",
+          "class": "D20",
+          "box": [
+            3.3527181148529053,
+            416.58544921875,
+            238.0697479248047,
+            514.8109130859375
+          ],
+          "confidence": 0.158417746424675,
+          "number": 6
+        }
+      ],
+      "final_visual_review": "pending"
+    },
+    {
+      "source_image": "data/yolo_dataset/images/val/Czech_Czech_001251.jpg",
+      "source_image_sha256": "490b3405a83af621a5316d5ea2cb89ffe7974c589cb949e45a5cbd424fa9baf3",
+      "presentation_image": "06_Czech_Czech_001251_presentation.png",
+      "presentation_image_sha256": "870ef6dd631eea47cf09de735a294d026a4769a6e373698023b06083690a336b",
+      "redactions": [],
+      "legend": [
+        {
+          "outcome": "GT",
+          "class": "D40",
+          "box": [
+            348.999999,
+            417.000003,
+            389.99999699999995,
+            431.00000100000005
+          ],
+          "confidence": null,
+          "number": 1
+        },
+        {
+          "outcome": "FN",
+          "class": "D00",
+          "box": [
+            465.000003,
+            447.999999,
+            491.00000100000005,
+            512.000001
+          ],
+          "confidence": null,
+          "number": 2
+        },
+        {
+          "outcome": "FN",
+          "class": "D00",
+          "box": [
+            279.999999,
+            489.00000299999994,
+            341.00000099999994,
+            527.000001
+          ],
+          "confidence": null,
+          "number": 3
+        },
+        {
+          "outcome": "FP",
+          "class": "D40",
+          "box": [
+            303.2796936035156,
+            465.1663818359375,
+            351.3065490722656,
+            496.2065124511719
+          ],
+          "confidence": 0.29791805148124695,
+          "number": 4
+        },
+        {
+          "outcome": "TP",
+          "class": "D40",
+          "box": [
+            349.1353759765625,
+            415.4596862792969,
+            388.79193115234375,
+            433.6896057128906
+          ],
+          "confidence": 0.19063036143779755,
+          "number": 5
+        }
+      ],
+      "final_visual_review": "pending"
+    }
+  ]
+}

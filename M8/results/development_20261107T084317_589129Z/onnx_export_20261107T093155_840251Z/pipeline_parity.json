@@ -1,0 +1,189 @@
+{
+  "purpose": "end_to_end_backend_agreement",
+  "m4_settings": {
+    "imgsz": 640,
+    "conf": 0.1,
+    "iou": 0.5,
+    "max_det": 300,
+    "rect": false
+  },
+  "m5_settings": {
+    "imgsz": 640,
+    "conf": 0.05,
+    "iou": 0.7,
+    "max_det": 100,
+    "rect": false
+  },
+  "box_coordinate_atol_pixels": 0.5,
+  "confidence_atol": 0.0001,
+  "minimum_union_mask_iou": 0.99,
+  "nonempty_reference_mask_cases": 1,
+  "cases": [
+    {
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000057.jpg",
+      "image_sha256": "0e03be24543223b140c7761a1b5a732e35e956e4d779f96a6ea113ccf43913fe",
+      "pytorch_detection_count": 0,
+      "onnx_detection_count": 0,
+      "pytorch_mask_pixels": 0,
+      "onnx_mask_pixels": 0,
+      "union_mask_iou": 1.0,
+      "both_masks_empty": true,
+      "pipeline_status_match": true,
+      "segmentation_calls_match": true,
+      "detection_comparisons": [],
+      "passed": true
+    },
+    {
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000061.jpg",
+      "image_sha256": "167f7cd8b0d68148dfb44c770515314818f7d64389569ab7051328ff786c8661",
+      "pytorch_detection_count": 3,
+      "onnx_detection_count": 3,
+      "pytorch_mask_pixels": 1521,
+      "onnx_mask_pixels": 1521,
+      "union_mask_iou": 1.0,
+      "both_masks_empty": false,
+      "pipeline_status_match": true,
+      "segmentation_calls_match": true,
+      "detection_comparisons": [
+        {
+          "class_id": 1,
+          "box_iou": 0.9999997759547579,
+          "max_coordinate_error_pixels": 2.4437904357910156e-05,
+          "confidence_error": 3.5762786865234375e-07,
+          "segmentation_status_match": true,
+          "passed": true
+        },
+        {
+          "class_id": 1,
+          "box_iou": 0.9999996408146288,
+          "max_coordinate_error_pixels": 7.62939453125e-06,
+          "confidence_error": 1.1920928955078125e-07,
+          "segmentation_status_match": true,
+          "passed": true
+        },
+        {
+          "class_id": 3,
+          "box_iou": 0.9999981780616762,
+          "max_coordinate_error_pixels": 9.1552734375e-05,
+          "confidence_error": 0.0,
+          "segmentation_status_match": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000062.jpg",
+      "image_sha256": "d56676890181efc675d9a3bb1bd084e081687d2fb8336d7ff0531a0aea60d579",
+      "pytorch_detection_count": 0,
+      "onnx_detection_count": 0,
+      "pytorch_mask_pixels": 0,
+      "onnx_mask_pixels": 0,
+      "union_mask_iou": 1.0,
+      "both_masks_empty": true,
+      "pipeline_status_match": true,
+      "segmentation_calls_match": true,
+      "detection_comparisons": [],
+      "passed": true
+    },
+    {
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000004.jpg",
+      "image_sha256": "ad29bc20587b1e674943fd200db4d6e039b9472260c39ab854f37bb792aa1320",
+      "pytorch_detection_count": 0,
+      "onnx_detection_count": 0,
+      "pytorch_mask_pixels": 0,
+      "onnx_mask_pixels": 0,
+      "union_mask_iou": 1.0,
+      "both_masks_empty": true,
+      "pipeline_status_match": true,
+      "segmentation_calls_match": true,
+      "detection_comparisons": [],
+      "passed": true
+    },
+    {
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000013.jpg",
+      "image_sha256": "47dc8f8f3160b52b961b9962fc01f0146f1cc8703dea9d5e3c463cbd421d9684",
+      "pytorch_detection_count": 3,
+      "onnx_detection_count": 3,
+      "pytorch_mask_pixels": 0,
+      "onnx_mask_pixels": 0,
+      "union_mask_iou": 1.0,
+      "both_masks_empty": true,
+      "pipeline_status_match": true,
+      "segmentation_calls_match": true,
+      "detection_comparisons": [
+        {
+          "class_id": 1,
+          "box_iou": 0.9999993806557741,
+          "max_coordinate_error_pixels": 3.0517578125e-05,
+          "confidence_error": 0.0,
+          "segmentation_status_match": true,
+          "passed": true
+        },
+        {
+          "class_id": 1,
+          "box_iou": 1.0,
+          "max_coordinate_error_pixels": 0.0,
+          "confidence_error": 1.1920928955078125e-07,
+          "segmentation_status_match": true,
+          "passed": true
+        },
+        {
+          "class_id": 1,
+          "box_iou": 0.999999025743688,
+          "max_coordinate_error_pixels": 6.103515625e-05,
+          "confidence_error": 1.862645149230957e-07,
+          "segmentation_status_match": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000243.jpg",
+      "image_sha256": "315f279ba5442d87f2ba975f3e975c2a99c062c8bf010208536d22f003903bed",
+      "pytorch_detection_count": 0,
+      "onnx_detection_count": 0,
+      "pytorch_mask_pixels": 0,
+      "onnx_mask_pixels": 0,
+      "union_mask_iou": 1.0,
+      "both_masks_empty": true,
+      "pipeline_status_match": true,
+      "segmentation_calls_match": true,
+      "detection_comparisons": [],
+      "passed": true
+    },
+    {
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000270.jpg",
+      "image_sha256": "a150ce3eb666ca6d412674993886cef9815f9c1853c1d5b831951302890d308d",
+      "pytorch_detection_count": 2,
+      "onnx_detection_count": 2,
+      "pytorch_mask_pixels": 0,
+      "onnx_mask_pixels": 0,
+      "union_mask_iou": 1.0,
+      "both_masks_empty": true,
+      "pipeline_status_match": true,
+      "segmentation_calls_match": true,
+      "detection_comparisons": [
+        {
+          "class_id": 2,
+          "box_iou": 1.0,
+          "max_coordinate_error_pixels": 0.0,
+          "confidence_error": 1.341104507446289e-07,
+          "segmentation_status_match": true,
+          "passed": true
+        },
+        {
+          "class_id": 2,
+          "box_iou": 0.9999999045176015,
+          "max_coordinate_error_pixels": 1.52587890625e-05,
+          "confidence_error": 2.5331974029541016e-07,
+          "segmentation_status_match": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

@@ -1,0 +1,172 @@
+{
+  "purpose": "current_run_submission_evidence_index",
+  "paths_relative_to": "M8",
+  "run_relative_to_M8": "results/development_20261107T084317_589129Z",
+  "files": [
+    {
+      "title": "Notebook",
+      "path_relative_to_M8": "M8.ipynb",
+      "description": "Main notebook; save after running this cell.",
+      "sha256": null,
+      "bytes": null,
+      "mutable_notebook": true
+    },
+    {
+      "title": "Demo recording",
+      "path_relative_to_M8": "Screen Recording 2026-11-07 145250.mp4",
+      "description": "Recorded fallback. This cell does not assess video content.",
+      "sha256": "b316ed23e8f67dce6c337782fd0c7b21a0320d7f7ab71a2713a5f501819e69f8",
+      "bytes": 145537111,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Updated service ZIP",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/service_package_v3_20261107T113714_763360Z/M8_service_bundle_v3.zip",
+      "description": "Selected schema 1.2 service delivery archive.",
+      "sha256": "3268c7219ff9bb57bbf7965a1cf02da00fd4a56e1f6d132b2b6eb543bcdd767b",
+      "bytes": 22350,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Package verification",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/service_package_v3_20261107T113714_763360Z/package_verification.json",
+      "description": "Archive integrity and fingerprint checks.",
+      "sha256": "9c6fe0e96e1a86c305eefb13fcb8602fc8fcad747c0209114419e4d80751974f",
+      "bytes": 354,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Model card",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/model_card_v3.md",
+      "description": "Intended use, recorded results, and limitations.",
+      "sha256": "ec2f6565087218e81aa913e0ff964770823ddeaf4f0d8c508152bc57b7f92808",
+      "bytes": 6207,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Operating point",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/provisional_operating_point.json",
+      "description": "Development-selected detector settings.",
+      "sha256": "721bfecdc156a0e3efbed7911a8b73fcd5be2b956685ca78f52828602ae3bebb",
+      "bytes": 4753,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Threshold comparison",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/threshold_sweep_20261107T085057_136070Z/operating_point_comparison.csv",
+      "description": "Detection metrics across development operating points.",
+      "sha256": "03b137940f26f892d5291b4bbff0ee81095fe335e6ddbaf2f5ac704095fd2a58",
+      "bytes": 3674,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Updated pipeline edge cases",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/pipeline_v3_edge_case_tests.json",
+      "description": "Pipeline logic, severity-proxy, and timing checks.",
+      "sha256": "cd7c7b2be8dfbd226c477ba8b9ec490b95614a066ff1de564e52f8de61e31aea",
+      "bytes": 2828,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Updated HTTP validation",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/service_bundle_v3_20261107T105413_863679Z/http_input_validation.json",
+      "description": "Updated service input validation evidence.",
+      "sha256": "253975a7bf09ba4c63e35c5cdce6668082282b8ca8acaf716fe2336fc7de0c9e",
+      "bytes": 1134,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Updated HTTP benchmark",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/http_benchmark_v3_20261107T105731_616795Z/summary.json",
+      "description": "PyTorch HTTP latency, throughput, and memory.",
+      "sha256": "e040475c1eb71e1258f71dbf2f50247f89610a57cb86b1c3a6f0f0a81913ae57",
+      "bytes": 3502,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Isolated backend benchmark",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/isolated_backend_benchmark_20261107T110252_891074Z/summary.json",
+      "description": "Fresh-process direct-pipeline measurements.",
+      "sha256": "659cca3f15527904fe293af470c7d79d339cca0509f824765f7025a83576c939",
+      "bytes": 1944,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Updated fresh-process verification",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/fresh_process_v3_20261107T112241_965708Z/verification.json",
+      "description": "Reproduction in the existing installed environment.",
+      "sha256": "36e0c8b969a256f52ad727f4aeb232a420ae7022005c04c1b88a5526117253e3",
+      "bytes": 1457,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Extracted archive rehearsal",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/delivery_rehearsal_20261107T113958_987260Z/verification.json",
+      "description": "HTTP rehearsal of the selected delivery archive.",
+      "sha256": "5374df72101c76f03a7fa549d51debbfd86877f95dd96b6febaaa0020548846d",
+      "bytes": 929,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Failure gallery presentation",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/failure_gallery_20261107T111151_749321Z/presentation_20261107T111619_645388Z/README.md",
+      "description": "Presentation copies; visual review applies to the inspected version.",
+      "sha256": "0cd1ecb4d73905c084332e693507dd1c96a6e0bdd2333f0088a577246acccb89",
+      "bytes": 867,
+      "mutable_notebook": false
+    },
+    {
+      "title": "M4 ONNX",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/onnx_export_20261107T093155_840251Z/m4/m4.onnx",
+      "description": "Exported detector.",
+      "sha256": "dcf3215c853c0b065cfa1c8ad6585b21983e028e45ed00b58492d2f8a7423ba3",
+      "bytes": 10626943,
+      "mutable_notebook": false
+    },
+    {
+      "title": "M5 ONNX",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/onnx_export_20261107T093155_840251Z/m5/m5.onnx",
+      "description": "Exported segmenter.",
+      "sha256": "c71f79dadf957d06c59c136dc077d017fb76e711c9847f15b91628e563f63fbf",
+      "bytes": 11642062,
+      "mutable_notebook": false
+    },
+    {
+      "title": "ONNX export manifest",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/onnx_export_20261107T093155_840251Z/export_manifest.json",
+      "description": "Export settings and artifact records.",
+      "sha256": "7846713542068dbef63d28c41a172133429e145cc78a01e448b8775415ca1549",
+      "bytes": 2262,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Raw numerical parity",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/onnx_export_20261107T093155_840251Z/raw_numerical_parity.json",
+      "description": "Raw-output agreement on the recorded sample.",
+      "sha256": "b3e9a0613553d90346503bd11342e3d5112d445e41cf22bd0985d0de743ad6a2",
+      "bytes": 11983,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Pipeline parity",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/onnx_export_20261107T093155_840251Z/pipeline_parity.json",
+      "description": "Agreement within its recorded version and sample scope.",
+      "sha256": "861a9a3771e92a7cdf7156d4be5193609ad003ea99a2bad5ff24ac656675b036",
+      "bytes": 6289,
+      "mutable_notebook": false
+    },
+    {
+      "title": "Crop-mask parity",
+      "path_relative_to_M8": "results/development_20261107T084317_589129Z/onnx_export_20261107T093155_840251Z/crop_mask_parity.json",
+      "description": "Union-mask agreement on the recorded crops.",
+      "sha256": "b11cc1c64ace1b820ecb443eac5ea12d7fccc38c9aa18b5ce24d272eff4c24d8",
+      "bytes": 29173,
+      "mutable_notebook": false
+    }
+  ],
+  "package_and_rehearsal_consistent": true,
+  "pipeline_and_config_versions_consistent": true,
+  "notebook_hash_omitted_because_still_editable": true,
+  "video_playback_verified_by_this_cell": false,
+  "production_approved": false
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.2",
+  "status": "development_prototype",
+  "device": "cpu",
+  "m4": {
+    "checkpoint": "Drive_assests/M4_Combined/runs/yolo11n_baseline/weights/best.pt",
+    "sha256": "e034ca9b5610017d20b22e9014d99439ea3f98117d783faf09113c82a3d9098a",
+    "settings": {
+      "imgsz": 640,
+      "conf": 0.1,
+      "iou": 0.5,
+      "max_det": 300
+    }
+  },
+  "m5": {
+    "checkpoint": "Drive_assests/M5_Segmentation-20261106T135443Z-1-001/M5_Segmentation/exports/m5_yolo11n_seg_v1_with_lab/best.pt",
+    "sha256": "5fb5f6925489060792d160f4a04bc3620c0b59a5de5aba013f2e6f5523254d44",
+    "settings": {
+      "imgsz": 640,
+      "conf": 0.05,
+      "iou": 0.7,
+      "max_det": 100
+    }
+  },
+  "input": {
+    "decoded_format": "uint8_BGR"
+  },
+  "output": {
+    "area_units": "pixels_and_image_percent",
+    "severity_status": "area_proxy_only",
+    "severity_measure": "predicted_pothole_area_percent_of_full_image",
+    "physical_area_estimated": false,
+    "depth_estimated": false,
+    "per_stage_timing": true,
+    "timing_device": "cpu"
+  }
+}

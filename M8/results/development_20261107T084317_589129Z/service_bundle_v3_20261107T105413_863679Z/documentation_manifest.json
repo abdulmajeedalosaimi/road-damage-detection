@@ -1,0 +1,22 @@
+{
+  "purpose": "active_service_documentation",
+  "report_schema_version": "1.2",
+  "backend": "PyTorch",
+  "protected_artifacts_unchanged": true,
+  "protected_artifact_sha256": {
+    "pipeline.py": "5f8c0a53b551bfe6ef40ccb00c02cf64cfd6d74ae01ed2c5a34b5530f5b3770a",
+    "app.py": "657b2f14a95d99c37b93645eda80f8fc0e5b7477a857048b0b2ef10517defde9",
+    "config.json": "402e1bfa0d371e8dab365fa6cdb1c8481d68d51ddbd9b4a036fab51797dcceae",
+    "launch.local.json": "52548ae9662d6f39296a4788018d21488cb7efab30ba153f1be4134aab77952f"
+  },
+  "documentation_sha256": {
+    "requirements-service.txt": "5ce5fd0d01a5958d4f22f608f182c566577c82604489ba3e0db8de29895f24d7",
+    "requirements-verification.txt": "d0f0ef68d65bf5dda10ab18e9e8380c10e6aab43b5a9980cade08eff6d746a4e",
+    "environment_inventory.json": "817d4d820f500d23b5e0ca7e614b6cfdf883ca1d0b16d2c8322f77f43b6b43e9",
+    "MODEL_CARD.md": "ec2f6565087218e81aa913e0ff964770823ddeaf4f0d8c508152bc57b7f92808",
+    "model_card_provenance.json": "51e6532bfd849c7a87027198379d4fd79f9cb7077fa1c47a20c3fa1794fee711",
+    "README.md": "53ed941447416f8b0f0030c830def0bb75c8800ab29e5118896656453a8acb41"
+  },
+  "clean_install_verified": false,
+  "server_started_by_this_cell": false
+}

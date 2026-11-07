@@ -1,0 +1,101 @@
+{
+  "purpose": "updated_HTTP_and_stage_benchmark_summary",
+  "backend": "PyTorch",
+  "report_schema_version": "1.2",
+  "artifact_hashes": {
+    "pipeline.py": "5f8c0a53b551bfe6ef40ccb00c02cf64cfd6d74ae01ed2c5a34b5530f5b3770a",
+    "app.py": "657b2f14a95d99c37b93645eda80f8fc0e5b7477a857048b0b2ef10517defde9",
+    "config.json": "402e1bfa0d371e8dab365fa6cdb1c8481d68d51ddbd9b4a036fab51797dcceae"
+  },
+  "successful_requests": 540,
+  "failed_requests": 0,
+  "latency_groups": {
+    "general": {
+      "requests": 270,
+      "unique_images": 90,
+      "mean_ms": 110.66607777870053,
+      "p50_ms": 95.6329500186257,
+      "p95_ms": 193.88379000884,
+      "p99_ms": 312.6127959787846
+    },
+    "d40_diagnostic": {
+      "requests": 270,
+      "unique_images": 90,
+      "mean_ms": 145.83714222169,
+      "p50_ms": 120.06384995765984,
+      "p95_ms": 308.96819500485424,
+      "p99_ms": 412.41132898721844
+    },
+    "M5_skipped": {
+      "requests": 423,
+      "unique_images": 141,
+      "mean_ms": 100.8816815603934,
+      "p50_ms": 93.84799998952076,
+      "p95_ms": 142.70321998628788,
+      "p99_ms": 163.55998600600276
+    },
+    "M5_invoked": {
+      "requests": 117,
+      "unique_images": 39,
+      "mean_ms": 227.20442820563275,
+      "p50_ms": 212.9863000009209,
+      "p95_ms": 372.04463999951247,
+      "p99_ms": 433.19485199637717
+    }
+  },
+  "stage_times": {
+    "input_validation": {
+      "mean_all_requests_ms": 0.20905092630224922,
+      "mean_M5_invoked_requests_ms": 0.14457863339613009
+    },
+    "m4_predict": {
+      "mean_all_requests_ms": 63.0112627765845,
+      "mean_M5_invoked_requests_ms": 63.11747521305313
+    },
+    "detection_postprocess": {
+      "mean_all_requests_ms": 0.1373100021198668,
+      "mean_M5_invoked_requests_ms": 0.1503931628102357
+    },
+    "crop_preparation": {
+      "mean_all_requests_ms": 0.21176703664456942,
+      "mean_M5_invoked_requests_ms": 0.9773863229749358
+    },
+    "m5_predict": {
+      "mean_all_requests_ms": 26.845159074313145,
+      "mean_M5_invoked_requests_ms": 123.9007341891376
+    },
+    "mask_restoration": {
+      "mean_all_requests_ms": 0.604066481658568,
+      "mean_M5_invoked_requests_ms": 2.7879991461164675
+    },
+    "severity_calculation": {
+      "mean_all_requests_ms": 0.30123055373594443,
+      "mean_M5_invoked_requests_ms": 0.24532307383134708
+    },
+    "annotation": {
+      "mean_all_requests_ms": 0.6531466690055957,
+      "mean_M5_invoked_requests_ms": 1.550588038407712
+    },
+    "report_creation": {
+      "mean_all_requests_ms": 0.0713707408134791,
+      "mean_M5_invoked_requests_ms": 0.08776154056684966
+    }
+  },
+  "M5_invoked_requests": 117,
+  "M5_skipped_requests": 423,
+  "total_M5_calls": 174,
+  "aggregate_M5_time_per_call_ms": 83.31256264442011,
+  "successful_requests_per_loop_second": 7.0540155400823386,
+  "server_baseline_rss_mib": 467.4296875,
+  "server_sampled_peak_rss_mib": 518.45703125,
+  "performance_acceptance_assessed": false,
+  "notes": [
+    "HTTP latency includes receipt of the full response body.",
+    "Loop throughput includes client-side response validation.",
+    "M5 stage time accumulates all segmentation calls per request.",
+    "Per-call M5 mean is aggregate duration divided by call count.",
+    "No per-call latency percentiles were recorded.",
+    "Memory is sampled server-process RSS.",
+    "Three repeats per image are not independent image samples."
+  ]
+}

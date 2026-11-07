@@ -1,0 +1,19 @@
+{
+  "purpose": "extracted_archive_HTTP_rehearsal",
+  "archive": "C:\\Users\\PC\\Downloads\\project\\project\\phase2\\M8\\results\\development_20261107T084317_589129Z\\service_package_v3_20261107T113714_763360Z\\M8_service_bundle_v3.zip",
+  "archive_sha256": "3268c7219ff9bb57bbf7965a1cf02da00fd4a56e1f6d132b2b6eb543bcdd767b",
+  "extracted_bundle": "C:\\Users\\PC\\Downloads\\project\\project\\phase2\\M8\\results\\development_20261107T084317_589129Z\\delivery_rehearsal_20261107T113958_987260Z\\service",
+  "checks": {
+    "schema_version_1_2": true,
+    "model_fingerprints_match": true,
+    "mask_exact_match": true,
+    "overlay_exact_match": true,
+    "detection_count_matches": true,
+    "severity_fields_match": true,
+    "timing_valid": true
+  },
+  "full_report_numerical_comparison_performed": false,
+  "clean_install_verified": false,
+  "service_url": "http://127.0.0.1:8767",
+  "service_pid": 7320
+}

@@ -1,0 +1,1168 @@
+{
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000062.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000066.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000076.jpg": {
+    "source": "China_Drone",
+    "predictions": [
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.529697597026825,
+        "bbox_xyxy": [
+          300.11944580078125,
+          249.75735473632812,
+          508.5810546875,
+          301.73883056640625
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.816211603726331
+      }
+    ],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000081.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000213.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000229.jpg": {
+    "source": "China_Drone",
+    "predictions": [
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.2994159758090973,
+        "bbox_xyxy": [
+          330.65460205078125,
+          476.27490234375,
+          512.0,
+          511.03466796875
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.40064676252570564
+      }
+    ],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000256.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000280.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000351.jpg": {
+    "source": "China_Drone",
+    "predictions": [
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.27355581521987915,
+        "bbox_xyxy": [
+          264.22052001953125,
+          107.3111572265625,
+          436.3324279785156,
+          138.20657348632812
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.0
+      }
+    ],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000503.jpg": {
+    "source": "China_Drone",
+    "predictions": [
+      {
+        "class_id": 3,
+        "damage_code": "D40",
+        "confidence": 0.5471949577331543,
+        "bbox_xyxy": [
+          136.61630249023438,
+          398.72784423828125,
+          198.23146057128906,
+          461.0430603027344
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.7883665926078565
+      },
+      {
+        "class_id": 3,
+        "damage_code": "D40",
+        "confidence": 0.426327645778656,
+        "bbox_xyxy": [
+          111.9542236328125,
+          0.0,
+          164.8533477783203,
+          29.555477142333984
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 1,
+        "best_available_same_class_iou": 0.7253149670250937
+      }
+    ],
+    "missed_gt_indices": [
+      2
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000551.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000563.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000586.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000617.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_000691.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001077.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001283.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001398.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001441.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001516.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001541.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001636.jpg": {
+    "source": "China_Drone",
+    "predictions": [
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.489490270614624,
+        "bbox_xyxy": [
+          324.986328125,
+          5.041386604309082,
+          512.0,
+          53.953155517578125
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.7297531404790759
+      }
+    ],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001662.jpg": {
+    "source": "China_Drone",
+    "predictions": [
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.35014399886131287,
+        "bbox_xyxy": [
+          0.0,
+          384.88336181640625,
+          150.48312377929688,
+          419.0306091308594
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.5806385285554385
+      }
+    ],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001730.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001791.jpg": {
+    "source": "China_Drone",
+    "predictions": [
+      {
+        "class_id": 3,
+        "damage_code": "D40",
+        "confidence": 0.4020598530769348,
+        "bbox_xyxy": [
+          244.10360717773438,
+          245.1792449951172,
+          289.52056884765625,
+          285.8229064941406
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.0
+      }
+    ],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001827.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001884.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001894.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_001896.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "data/yolo_dataset/images/val/China_Drone_China_Drone_002286.jpg": {
+    "source": "China_Drone",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000013.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000092.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.5673668384552002,
+        "bbox_xyxy": [
+          335.24444580078125,
+          101.06611633300781,
+          385.02484130859375,
+          226.5308837890625
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 1,
+        "best_available_same_class_iou": 0.7959134598599458
+      },
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.49824059009552,
+        "bbox_xyxy": [
+          146.8750457763672,
+          100.35858154296875,
+          337.456298828125,
+          127.81068420410156
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.4872329150863885
+      },
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.2942509055137634,
+        "bbox_xyxy": [
+          208.1269073486328,
+          102.8582763671875,
+          333.8023986816406,
+          126.7880630493164
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.726237852203018
+      }
+    ],
+    "missed_gt_indices": [
+      2,
+      3
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000197.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.6211418509483337,
+        "bbox_xyxy": [
+          351.241455078125,
+          102.30715942382812,
+          413.3387145996094,
+          185.5504150390625
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.3969683344629588
+      },
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.2707076966762543,
+        "bbox_xyxy": [
+          248.0304718017578,
+          0.9349120855331421,
+          288.9517517089844,
+          126.7854995727539
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 1,
+        "best_available_same_class_iou": 0.5499064237948607
+      }
+    ],
+    "missed_gt_indices": [
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000208.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000219.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 2,
+        "damage_code": "D20",
+        "confidence": 0.399194598197937,
+        "bbox_xyxy": [
+          1.0176270008087158,
+          240.20932006835938,
+          211.06576538085938,
+          435.3155822753906
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.9523497548349679
+      }
+    ],
+    "missed_gt_indices": [
+      1,
+      2,
+      3
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000330.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000338.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.37484800815582275,
+        "bbox_xyxy": [
+          200.75665283203125,
+          157.02426147460938,
+          252.2233428955078,
+          307.0870666503906
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 1,
+        "best_available_same_class_iou": 0.7471865332886943
+      }
+    ],
+    "missed_gt_indices": [
+      0,
+      2,
+      3
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000455.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000466.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1,
+      2
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000556.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.38604870438575745,
+        "bbox_xyxy": [
+          154.8342742919922,
+          213.6286163330078,
+          452.8985290527344,
+          332.7333068847656
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.0
+      }
+    ],
+    "missed_gt_indices": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000586.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000708.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.38838672637939453,
+        "bbox_xyxy": [
+          62.39140701293945,
+          63.41948318481445,
+          261.74481201171875,
+          97.99995422363281
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.43440574366221324
+      }
+    ],
+    "missed_gt_indices": [
+      0,
+      1,
+      2
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000715.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.4547315835952759,
+        "bbox_xyxy": [
+          191.11618041992188,
+          134.39004516601562,
+          222.3126678466797,
+          211.29623413085938
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 2,
+        "best_available_same_class_iou": 0.5326769218534807
+      },
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.37154170870780945,
+        "bbox_xyxy": [
+          164.05804443359375,
+          198.9630889892578,
+          202.72750854492188,
+          388.7047424316406
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.1880202615881838
+      },
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.28992486000061035,
+        "bbox_xyxy": [
+          104.66357421875,
+          203.70010375976562,
+          206.27133178710938,
+          511.903564453125
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 1,
+        "best_available_same_class_iou": 0.8034266732872986
+      }
+    ],
+    "missed_gt_indices": [
+      0,
+      3
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000723.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 2,
+        "damage_code": "D20",
+        "confidence": 0.5005438327789307,
+        "bbox_xyxy": [
+          0.0,
+          118.28511047363281,
+          354.64288330078125,
+          389.6239318847656
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.7736077278999005
+      }
+    ],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000754.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000797.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000879.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000885.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.5406485795974731,
+        "bbox_xyxy": [
+          51.60460662841797,
+          102.62538146972656,
+          194.4917755126953,
+          331.25799560546875
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 1,
+        "best_available_same_class_iou": 0.5841306946631303
+      },
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.26296427845954895,
+        "bbox_xyxy": [
+          248.35693359375,
+          131.27285766601562,
+          383.2391662597656,
+          488.2059631347656
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.5164691501780106
+      },
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.2529830038547516,
+        "bbox_xyxy": [
+          243.3361358642578,
+          131.79443359375,
+          445.83770751953125,
+          512.0
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.07224728699738434
+      }
+    ],
+    "missed_gt_indices": [
+      2,
+      3
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000941.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.4368603825569153,
+        "bbox_xyxy": [
+          75.46751403808594,
+          129.13656616210938,
+          212.0641326904297,
+          512.0
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 1,
+        "best_available_same_class_iou": 0.9162153383593684
+      },
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.3256475627422333,
+        "bbox_xyxy": [
+          278.1636657714844,
+          163.09066772460938,
+          435.00579833984375,
+          512.0
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.8831023050473317
+      }
+    ],
+    "missed_gt_indices": [
+      2
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001144.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.2688603401184082,
+        "bbox_xyxy": [
+          0.789746105670929,
+          65.18701171875,
+          413.20281982421875,
+          180.79391479492188
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.0
+      },
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.26351046562194824,
+        "bbox_xyxy": [
+          76.43876647949219,
+          50.7701416015625,
+          509.3916015625,
+          143.0297088623047
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.0
+      },
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.25939247012138367,
+        "bbox_xyxy": [
+          36.884620666503906,
+          59.28289031982422,
+          495.5873107910156,
+          167.31906127929688
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.0
+      }
+    ],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001234.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 3,
+        "damage_code": "D40",
+        "confidence": 0.25464922189712524,
+        "bbox_xyxy": [
+          1.219152808189392,
+          276.64520263671875,
+          75.013671875,
+          310.0812683105469
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.0
+      }
+    ],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001264.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.3944568634033203,
+        "bbox_xyxy": [
+          0.560437023639679,
+          111.575439453125,
+          127.54893493652344,
+          142.122802734375
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.4231881671939979
+      },
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.3614093065261841,
+        "bbox_xyxy": [
+          196.1447296142578,
+          62.944725036621094,
+          248.39175415039062,
+          454.7494201660156
+        ],
+        "outcome": "FP",
+        "matched_gt_index": null,
+        "best_available_same_class_iou": 0.41911667465894165
+      }
+    ],
+    "missed_gt_indices": [
+      0,
+      1,
+      2
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001459.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001588.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001597.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001687.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 1,
+        "damage_code": "D10",
+        "confidence": 0.3054558038711548,
+        "bbox_xyxy": [
+          237.13589477539062,
+          235.91128540039062,
+          454.04937744140625,
+          287.7850036621094
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.6247717626383208
+      }
+    ],
+    "missed_gt_indices": [
+      1,
+      2
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001689.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001695.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001775.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 2,
+        "damage_code": "D20",
+        "confidence": 0.5318108797073364,
+        "bbox_xyxy": [
+          143.55941772460938,
+          98.058837890625,
+          453.12420654296875,
+          512.0
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 1,
+        "best_available_same_class_iou": 0.5516702056338116
+      }
+    ],
+    "missed_gt_indices": [
+      0,
+      2
+    ]
+  },
+  "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001820.jpg": {
+    "source": "China_MotorBike",
+    "predictions": [
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.5454471111297607,
+        "bbox_xyxy": [
+          28.068939208984375,
+          116.28657531738281,
+          200.36410522460938,
+          398.93115234375
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 2,
+        "best_available_same_class_iou": 0.7472662632724607
+      },
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.34016701579093933,
+        "bbox_xyxy": [
+          254.61056518554688,
+          139.13119506835938,
+          402.0247802734375,
+          512.0
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.6447917841630595
+      }
+    ],
+    "missed_gt_indices": [
+      1,
+      3
+    ]
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_000243.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_000366.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_000419.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_000425.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_000531.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_000647.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_000838.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_000987.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001079.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001177.jpg": {
+    "source": "Czech",
+    "predictions": [
+      {
+        "class_id": 0,
+        "damage_code": "D00",
+        "confidence": 0.36394286155700684,
+        "bbox_xyxy": [
+          81.40200805664062,
+          469.50958251953125,
+          143.46395874023438,
+          522.5213623046875
+        ],
+        "outcome": "TP",
+        "matched_gt_index": 0,
+        "best_available_same_class_iou": 0.7782786833978069
+      }
+    ],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001205.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001453.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001515.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001531.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001855.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001883.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001901.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001932.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1,
+      2
+    ]
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001969.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_001979.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_002372.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_002405.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_002811.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_002900.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": [
+      0,
+      1
+    ]
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_003033.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_003237.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_003286.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_003323.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_003449.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": []
+  },
+  "data/yolo_dataset/images/val/Czech_Czech_003494.jpg": {
+    "source": "Czech",
+    "predictions": [],
+    "missed_gt_indices": [
+      0
+    ]
+  }
+}

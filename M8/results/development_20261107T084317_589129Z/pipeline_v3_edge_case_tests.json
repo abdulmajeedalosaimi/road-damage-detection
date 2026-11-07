@@ -1,0 +1,117 @@
+{
+  "test_type": "controlled_model_doubles",
+  "real_models_used": false,
+  "pipeline_sha256": "5f8c0a53b551bfe6ef40ccb00c02cf64cfd6d74ae01ed2c5a34b5530f5b3770a",
+  "passed": 27,
+  "total": 27,
+  "tests": [
+    {
+      "test": "no_detections: prediction report unchanged",
+      "passed": true
+    },
+    {
+      "test": "no_detections: image outputs unchanged",
+      "passed": true
+    },
+    {
+      "test": "no_detections: timing valid",
+      "passed": true
+    },
+    {
+      "test": "no_detections: input preserved",
+      "passed": true
+    },
+    {
+      "test": "crack_only: prediction report unchanged",
+      "passed": true
+    },
+    {
+      "test": "crack_only: image outputs unchanged",
+      "passed": true
+    },
+    {
+      "test": "crack_only: timing valid",
+      "passed": true
+    },
+    {
+      "test": "crack_only: input preserved",
+      "passed": true
+    },
+    {
+      "test": "pothole_without_mask: prediction report unchanged",
+      "passed": true
+    },
+    {
+      "test": "pothole_without_mask: image outputs unchanged",
+      "passed": true
+    },
+    {
+      "test": "pothole_without_mask: timing valid",
+      "passed": true
+    },
+    {
+      "test": "pothole_without_mask: input preserved",
+      "passed": true
+    },
+    {
+      "test": "overlapping_potholes: prediction report unchanged",
+      "passed": true
+    },
+    {
+      "test": "overlapping_potholes: image outputs unchanged",
+      "passed": true
+    },
+    {
+      "test": "overlapping_potholes: timing valid",
+      "passed": true
+    },
+    {
+      "test": "overlapping_potholes: input preserved",
+      "passed": true
+    },
+    {
+      "test": "no_detections: segmentation skipped with zero crop-stage times",
+      "passed": true
+    },
+    {
+      "test": "crack_only: segmentation skipped with zero crop-stage times",
+      "passed": true
+    },
+    {
+      "test": "Crack severity explicitly unsupported",
+      "passed": true
+    },
+    {
+      "test": "Missing mask means unavailable severity, not zero severity",
+      "passed": true
+    },
+    {
+      "test": "Overlapping masks union to 700 pixels",
+      "passed": true
+    },
+    {
+      "test": "Each pothole proxy uses the full-image denominator",
+      "passed": true
+    },
+    {
+      "test": "None: rejected before model inference",
+      "passed": true
+    },
+    {
+      "test": "grayscale: rejected before model inference",
+      "passed": true
+    },
+    {
+      "test": "float: rejected before model inference",
+      "passed": true
+    },
+    {
+      "test": "empty: rejected before model inference",
+      "passed": true
+    },
+    {
+      "test": "four_channel: rejected before model inference",
+      "passed": true
+    }
+  ]
+}

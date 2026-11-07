@@ -1,0 +1,61 @@
+{
+  "purpose": "isolated_backend_benchmark_summary",
+  "results": {
+    "PyTorch": {
+      "calls": 540,
+      "mean_ms": 94.7477051854582,
+      "p50_ms": 64.11240002489649,
+      "p95_ms": 235.8986649691358,
+      "p99_ms": 354.6713860047749,
+      "successful_calls_per_loop_second": 10.54783761379034,
+      "baseline_rss_mib": 599.875,
+      "sampled_peak_rss_mib": 638.953125,
+      "cohorts": {
+        "general": {
+          "calls": 270,
+          "mean_ms": 76.9750144457686,
+          "p50_ms": 61.61155001609586,
+          "p95_ms": 149.8871250019874,
+          "p99_ms": 299.2862240417162
+        },
+        "d40_diagnostic": {
+          "calls": 270,
+          "mean_ms": 112.52039592514781,
+          "p50_ms": 73.44920001924038,
+          "p95_ms": 300.66543499706313,
+          "p99_ms": 373.58416100440087
+        }
+      }
+    },
+    "ONNX": {
+      "calls": 540,
+      "mean_ms": 182.3158348153811,
+      "p50_ms": 119.32995001552626,
+      "p95_ms": 616.8373400287236,
+      "p99_ms": 750.1447839941831,
+      "successful_calls_per_loop_second": 5.483144250015501,
+      "baseline_rss_mib": 753.21875,
+      "sampled_peak_rss_mib": 787.4921875,
+      "cohorts": {
+        "general": {
+          "calls": 270,
+          "mean_ms": 131.5747874077513,
+          "p50_ms": 91.80214998195879,
+          "p95_ms": 386.8032649974338,
+          "p99_ms": 656.1197799933144
+        },
+        "d40_diagnostic": {
+          "calls": 270,
+          "mean_ms": 233.0568822230109,
+          "p50_ms": 156.24784998362884,
+          "p95_ms": 671.8504250049591,
+          "p99_ms": 780.5331970064436
+        }
+      }
+    }
+  },
+  "mixed_workload_is_deployment_representative": false,
+  "performance_acceptance_assessed": false,
+  "memory_scope": "Process RSS including models, libraries and preloaded inputs",
+  "thread_policy": "Installed runtime defaults; not normalized"
+}

@@ -1,0 +1,89 @@
+{
+  "purpose": "verified_service_delivery_package",
+  "report_schema_version": "1.2",
+  "backend": "PyTorch",
+  "device": "cpu",
+  "source_bundle_relative_to_run": "service_bundle_v3_20261107T105413_863679Z",
+  "fresh_verification_relative_to_run": "fresh_process_v3_20261107T112241_965708Z",
+  "files": {
+    "pipeline.py": {
+      "sha256": "5f8c0a53b551bfe6ef40ccb00c02cf64cfd6d74ae01ed2c5a34b5530f5b3770a",
+      "bytes": 11519
+    },
+    "app.py": {
+      "sha256": "657b2f14a95d99c37b93645eda80f8fc0e5b7477a857048b0b2ef10517defde9",
+      "bytes": 5997
+    },
+    "config.json": {
+      "sha256": "402e1bfa0d371e8dab365fa6cdb1c8481d68d51ddbd9b4a036fab51797dcceae",
+      "bytes": 1096
+    },
+    "launch.local.json": {
+      "sha256": "52548ae9662d6f39296a4788018d21488cb7efab30ba153f1be4134aab77952f",
+      "bytes": 61
+    },
+    "requirements-service.txt": {
+      "sha256": "5ce5fd0d01a5958d4f22f608f182c566577c82604489ba3e0db8de29895f24d7",
+      "bytes": 353
+    },
+    "requirements-verification.txt": {
+      "sha256": "d0f0ef68d65bf5dda10ab18e9e8380c10e6aab43b5a9980cade08eff6d746a4e",
+      "bytes": 151
+    },
+    "environment_inventory.json": {
+      "sha256": "817d4d820f500d23b5e0ca7e614b6cfdf883ca1d0b16d2c8322f77f43b6b43e9",
+      "bytes": 11317
+    },
+    "README.md": {
+      "sha256": "53ed941447416f8b0f0030c830def0bb75c8800ab29e5118896656453a8acb41",
+      "bytes": 5937
+    },
+    "MODEL_CARD.md": {
+      "sha256": "ec2f6565087218e81aa913e0ff964770823ddeaf4f0d8c508152bc57b7f92808",
+      "bytes": 6207
+    },
+    "model_card_provenance.json": {
+      "sha256": "51e6532bfd849c7a87027198379d4fd79f9cb7077fa1c47a20c3fa1794fee711",
+      "bytes": 647
+    },
+    "documentation_manifest.json": {
+      "sha256": "e7d3f6c4b0e287dead7f4955b9d448da814087bdc0d4d19f12917fee32e10249",
+      "bytes": 1245
+    },
+    "verification/fresh_process_verification.json": {
+      "sha256": "36e0c8b969a256f52ad727f4aeb232a420ae7022005c04c1b88a5526117253e3",
+      "bytes": 1457
+    },
+    "verification/fresh_process_prediction_report.json": {
+      "sha256": "3e5351f4fdc982bcdbae2b0ff073634da9f13496a9b20fde6bab6cfdaebc26a4",
+      "bytes": 3669
+    },
+    "verification/fresh_process_worker.py": {
+      "sha256": "6c885559261d524ca626508a9dd3befba15e9af8146578e182d28e481309c0b8",
+      "bytes": 5497
+    }
+  },
+  "external_checkpoints": {
+    "m4": {
+      "path_relative_to_project_root": "Drive_assests/M4_Combined/runs/yolo11n_baseline/weights/best.pt",
+      "sha256": "e034ca9b5610017d20b22e9014d99439ea3f98117d783faf09113c82a3d9098a"
+    },
+    "m5": {
+      "path_relative_to_project_root": "Drive_assests/M5_Segmentation-20261106T135443Z-1-001/M5_Segmentation/exports/m5_yolo11n_seg_v1_with_lab/best.pt",
+      "sha256": "5fb5f6925489060792d160f4a04bc3620c0b59a5de5aba013f2e6f5523254d44"
+    }
+  },
+  "external_artifacts": [
+    "Model checkpoints",
+    "Datasets",
+    "ONNX exports",
+    "Full evaluation and benchmark evidence",
+    "Failure gallery",
+    "Notebook"
+  ],
+  "fresh_process_checks_passed": true,
+  "clean_install_verified": false,
+  "production_approved": false,
+  "relocation_instruction": "Set M8_PROJECT_ROOT explicitly.",
+  "verification_note": "Archived verification files record the original local run. Its complete input/reference files remain in the external fresh-process evidence directory."
+}

@@ -1,0 +1,10 @@
+{
+  "archive": "M8_service_bundle_v3.zip",
+  "archive_sha256": "3268c7219ff9bb57bbf7965a1cf02da00fd4a56e1f6d132b2b6eb543bcdd767b",
+  "archived_files_including_manifest": 15,
+  "zip_integrity_passed": true,
+  "all_file_hashes_passed": true,
+  "checkpoint_hashes_passed": true,
+  "clean_install_verified": false,
+  "production_approved": false
+}

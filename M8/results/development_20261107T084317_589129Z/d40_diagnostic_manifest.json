@@ -1,0 +1,3357 @@
+{
+  "purpose": "d40_enriched_development_diagnostics",
+  "seed": 42,
+  "images_per_source": 30,
+  "selection_basis": "reference D40 presence, not model predictions",
+  "inventory_sha256": "0041f1ccd5e16d04c9478ac808f55e0425fdd574fee7e35a2917f2bd8867ddff",
+  "excluded_general_manifest_sha256": "61cbc672366a1e9830915d7d406fc00a5c4a6dd79d0060c34e568faf09c0044d",
+  "per_source": {
+    "China_Drone": {
+      "images": 30,
+      "d40_boxes": 40,
+      "all_class_boxes": 61
+    },
+    "China_MotorBike": {
+      "images": 30,
+      "d40_boxes": 42,
+      "all_class_boxes": 90
+    },
+    "Czech": {
+      "images": 30,
+      "d40_boxes": 40,
+      "all_class_boxes": 65
+    }
+  },
+  "records": [
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000057",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000057.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000057.txt",
+      "image_sha256": "0e03be24543223b140c7761a1b5a732e35e956e4d779f96a6ea113ccf43913fe",
+      "label_sha256": "7a7a9108ed0df9f0fc0ba3484004a07277e722ba5ef3130a7bcf024a849d44f6",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            200.99999744000002,
+            236.00000256,
+            244.0,
+            274.00000256
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            200.00000256,
+            388.0,
+            238.00000256,
+            428.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000061",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000061.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000061.txt",
+      "image_sha256": "167f7cd8b0d68148dfb44c770515314818f7d64389569ab7051328ff786c8661",
+      "label_sha256": "077c7d2c4717a15b4300804c40dd83cb4170e85f3a9576c16bfd75861a8e1958",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            1.0,
+            157.00000255999998,
+            103.0,
+            186.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            195.00000255999998,
+            58.0,
+            476.0,
+            98.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            384.0,
+            274.0,
+            447.00000256,
+            337.00000256
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000160",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000160.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000160.txt",
+      "image_sha256": "270696f32290febdd416e326c8275927dd325b6a603706846e625f2b80a29f61",
+      "label_sha256": "2cc4433dea023c3012413801748c95afc170f044cd8a33e9d53ca444ceeb9eb1",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            97.99999744,
+            32.0,
+            135.99999744000002,
+            67.00000256
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            260.99999744,
+            71.0,
+            460.0,
+            245.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000205",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000205.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000205.txt",
+      "image_sha256": "d1fca0bd34927bc920d9b5a3e324d4cd5723f35805c0720fc651da1249ef977d",
+      "label_sha256": "ec20619728f0fc68f991bf3f0421de1f80aa0c44de9c368cb8888d0968c5be7a",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            71.0,
+            184.99999744000002,
+            265.0,
+            404.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            134.0,
+            68.99999744,
+            178.99999744000002,
+            124.99999744
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            0.9999974400000013,
+            0.9999974400000013,
+            112.0,
+            76.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            204.0,
+            21.00000256,
+            332.99999744,
+            121.00000256
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000237",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000237.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000237.txt",
+      "image_sha256": "5bf04af8ee2dd0eec6ef95d185dfd0f6001433397bbdf9c4c6d6c4eb1286650f",
+      "label_sha256": "7f624d199b6756d879821175a893d3bfc0d0f1df81256901f24ee7a30485c14d",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            191.0,
+            229.00000256,
+            237.0,
+            265.00000256
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            191.99999744,
+            387.0,
+            225.99999744,
+            421.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000286",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000286.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000286.txt",
+      "image_sha256": "8fc504e43b86c1587274a9e75796b0b9244dc5c3c52ea8834a6354bbb556a2e8",
+      "label_sha256": "adb702cfa043994dd7f998e5e3429d686668bc72dc00654a9465b918065c1134",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            76.0,
+            276.0,
+            147.00000256,
+            460.99999744
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            86.99999743999999,
+            465.99999744,
+            110.0,
+            511.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000435",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000435.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000435.txt",
+      "image_sha256": "75ec75d58af427169c982fe1e0359401dda8c280af9a4b73fb5ed4c9f7fe210d",
+      "label_sha256": "1223cd5b3377608892e828c59f6784e2bf71a98f2eeb2f7dc76b0ed091478b39",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            480.0,
+            390.0,
+            512.0,
+            422.99999744
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            313.99999744,
+            0.9999974400000013,
+            511.99999744,
+            28.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000451",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000451.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000451.txt",
+      "image_sha256": "0d8e2e6719e7ff4fd262324e38010ba504374428a1173d1da496a18e43dad2ba",
+      "label_sha256": "1d3bf0b286f7724ed3aa205331f5614638790bbeacf0c207f91055151fb64cd2",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            27.00000256,
+            148.99999744000002,
+            64.0,
+            180.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000487",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000487.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000487.txt",
+      "image_sha256": "74072deed261b0c02f7fcf321c56d2a4300905bf92e1c15e790d19876d526303",
+      "label_sha256": "f01397a89f0afebc0a9d122ca9a6b96d1c1476321405f708f762c86ed7386a81",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            0.9999974400000013,
+            285.00000256,
+            124.0,
+            370.0
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            1.0,
+            218.99999744000002,
+            107.0,
+            274.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000541",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000541.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000541.txt",
+      "image_sha256": "e014ea6f662b60479c97defe2d7698e9ba7d98eb5f3f3b849b37ea54bdf9ef06",
+      "label_sha256": "9b3435eae90e2fa72f4d49d55676458101e91002190b3b24b517a6b9cb2a3e91",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            166.0,
+            186.99999744000002,
+            241.00000255999998,
+            286.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            436.0,
+            1.0,
+            512.0,
+            71.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_000695",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000695.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_000695.txt",
+      "image_sha256": "f7a7c4752a1480617d07fc53745444913c389fca836f3d05edc293ab0e33c5dc",
+      "label_sha256": "81380e909a1f42debcd6f075762543059157035517589b93b1eacc6b9bfdd4b8",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            64.99999743999999,
+            240.0,
+            116.0,
+            292.0
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            428.0,
+            445.0,
+            512.0,
+            511.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001050",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001050.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001050.txt",
+      "image_sha256": "8c061dbd410a2ef9ec86ae41aad1a1c609cd2f01ccbf016612d854dfae569dbd",
+      "label_sha256": "c3c81d932db4494e4f2b69dfcd8feffc5d26f2b4083aba2044a68b0caa836e00",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            220.0,
+            55.00000256,
+            251.00000255999998,
+            95.00000256
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            242.0,
+            107.0,
+            301.00000256,
+            193.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001067",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001067.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001067.txt",
+      "image_sha256": "42dfbe47360b14793275f07cf9f25bb2a2a01681a3b74f5d29e5e9420a1dc4b0",
+      "label_sha256": "7305711efff54f6907efde465388195c649297ff5b07f229d1c299d190d982d1",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            112.99999743999999,
+            38.99999744,
+            368.99999744,
+            78.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            281.00000256,
+            251.99999744000002,
+            341.00000256,
+            309.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001287",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001287.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001287.txt",
+      "image_sha256": "04f0f4ba7275a47873bc4a0dc8e1d07c0325321aefe4cffc4c3e0b13e4be9b14",
+      "label_sha256": "326c980d49bfd535cfb36f113d37fbc1b3ba1224a40c25dc81b54773120f1fd4",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            73.0,
+            280.99999744,
+            191.0,
+            376.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001446",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001446.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001446.txt",
+      "image_sha256": "10760b3c46800c921a32c51648023dece7b025401000a53d1c80df5e79d3910f",
+      "label_sha256": "fc62fc4e6698b36d4e406a88cb8298b54f4f18d060a68e8511706956b2516dfd",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            395.00000256,
+            25.00000256,
+            427.00000256,
+            74.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001522",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001522.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001522.txt",
+      "image_sha256": "bff4eabec96dacd333e40d16d32cdc730b4529491f9d880fd0a5a84bd5a87ad5",
+      "label_sha256": "5b0befe8c908ee3a256fc855c0fb825b8de6df7c263767f6a9db6050be80de9c",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            182.00000255999998,
+            115.00000255999998,
+            472.00000256,
+            192.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            402.0,
+            353.99999744,
+            442.99999744,
+            511.99999744
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            465.00000256,
+            300.0,
+            501.00000256,
+            355.00000256
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001531",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001531.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001531.txt",
+      "image_sha256": "275d2c48e3f5eb27fb383a89f8b656c0b27871dbff99f4e3eba7f9e785caefa0",
+      "label_sha256": "87cdc19f771a99f6185b63eaecbc162709b2bc2c6d299dba5f8eb87869570e8d",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            431.00000256,
+            16.0,
+            496.0,
+            55.00000256
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            364.0,
+            82.00000256000001,
+            512.0,
+            276.00000256
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001555",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001555.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001555.txt",
+      "image_sha256": "525af07a721e014db051a4519f5ac940add27253093349c638ff2abcf909f7a4",
+      "label_sha256": "6875bd5cf25375d83f26f0ef9eb2e82143288066c0eeb81920800723a6babf96",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            192.0,
+            173.00000255999998,
+            256.99999744,
+            230.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001628",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001628.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001628.txt",
+      "image_sha256": "563ccf5c6985a9e3e0e84391dc9e0bc5f24b027b7dae4cbef6f3a7616e660fac",
+      "label_sha256": "eb9428a46ac684ea19c1d33b7cc073a7217a3993bbba679794eb523bd2951b48",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            252.99999744000002,
+            0.9999974399999871,
+            340.0,
+            136.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001732",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001732.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001732.txt",
+      "image_sha256": "1a950b72c84b6ee90dcc4e4f04469eea98f3b88f9a1e687ac0caf19320870b95",
+      "label_sha256": "aa422c17b85d677fc129ea296d11d0140b47a784fb247df1206843d4e67532aa",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            107.00000255999998,
+            102.0,
+            184.0,
+            210.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001773",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001773.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001773.txt",
+      "image_sha256": "24abf01fc9d8a04cf4c6656f3dd095c7b120281368f953c090748c8cdf7db265",
+      "label_sha256": "6b020d1556397cdef2256aa24d85a19a00b9efed7e6d18b35a8b831515a6b977",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            198.0,
+            232.0,
+            249.00000255999998,
+            276.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            202.0,
+            392.00000256,
+            237.00000255999998,
+            430.00000256
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001811",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001811.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001811.txt",
+      "image_sha256": "9d1c95f54a45cf8fe782eaf9dfc135a559df2bc25ff7f65869f339bf906a28d3",
+      "label_sha256": "a451fbb30ae8b797683eaba0343ed73452047b72885adcac89d3bd977b580343",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            350.0,
+            108.99999743999999,
+            382.0,
+            156.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001847",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001847.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001847.txt",
+      "image_sha256": "75185df3a399cab34ba124cfae9f5e2b00a1a6bab2ee787d73b9751be2e7cf9f",
+      "label_sha256": "2688c8650e4d0c9d3fedf0f55660ea93c6c86b62b651fd5738bd57d0679ec988",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            0.9999974400000013,
+            1.0000025599999987,
+            100.0,
+            114.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001961",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001961.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001961.txt",
+      "image_sha256": "282c370963e908a7f99735da319dd8b2b6d6e7e8b80623b96ba81df0880807ea",
+      "label_sha256": "a007f80c986339e82b1ca566c004bf762c14c13d298de4354e0a92f52056c6c2",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            395.0,
+            79.0,
+            429.0,
+            205.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            444.00000256,
+            45.00000256,
+            482.00000256,
+            97.00000256
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            308.0,
+            188.99999744,
+            388.99999744,
+            212.99999744
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            392.0,
+            218.0,
+            420.99999744,
+            245.00000255999998
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_001990",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001990.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_001990.txt",
+      "image_sha256": "919b54776e3d14abfeaabda45746b78ad0b0ef8042f03eb53c021f5f9eae1b11",
+      "label_sha256": "2aaa4a206bc2ddf14540b7409cb2c8e5197c44b818204e903acb3cbba00ad1a3",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            195.00000255999998,
+            215.0,
+            244.0,
+            253.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            198.0,
+            366.99999744,
+            241.00000255999998,
+            410.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_002007",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002007.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_002007.txt",
+      "image_sha256": "90b8554e2627cc4bc9de09de4e35e59cd0a42343be230fbb29777b63dfaaef09",
+      "label_sha256": "62ae6b7b087eafa0bd075699928ed96f9b892bd9bc7bb3aa1a70e10e827798a2",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            141.00000256,
+            94.0,
+            249.00000256,
+            210.99999744000002
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            176.0,
+            1.0,
+            228.0,
+            35.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_002137",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002137.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_002137.txt",
+      "image_sha256": "9a1281d036bdd53ba3fd5ab5a3a8176aa51939794fcf101cc5c9390f7c64d2cc",
+      "label_sha256": "a613b3064a2f923522339eb9738d41ab8c3b8d8dbf69cc609d6af2f4b53ac346",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            381.0,
+            270.0,
+            435.0,
+            330.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_002144",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002144.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_002144.txt",
+      "image_sha256": "0bdd1abef6ebe04fb37971765af4b80cb0863f459c846a30a97796448b0e2d54",
+      "label_sha256": "928548428270ada8b820687424a348b76ce945cba90dc37a8a66c201355b9d3d",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            141.00000255999998,
+            43.0,
+            182.0,
+            85.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            208.0,
+            52.999997439999994,
+            251.00000255999998,
+            84.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_002190",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002190.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_002190.txt",
+      "image_sha256": "a8505e7af32a94ad0e67fbefc2a439f7c4d08f58c6b3e6dd7f964f16820a9d69",
+      "label_sha256": "dc6b64f6f7e9e53b6bd3bd5fe1c0fb849ad4c8196d6e914e4490b81b98808ef4",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            1.0000025600000129,
+            427.0,
+            501.00000256,
+            489.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            226.99999744000002,
+            165.00000256,
+            298.0,
+            233.00000256
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_Drone",
+      "image_id": "China_Drone_China_Drone_002245",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002245.jpg",
+      "label": "data/yolo_dataset/labels/val/China_Drone_China_Drone_002245.txt",
+      "image_sha256": "8669f467bf95970279a859092637fecc3fc9d1df675f6013e98c18ac4efdbda0",
+      "label_sha256": "b053ff35bb4fb0b82a1b15b06d0e418c78d63276598c3f5b71263835909499b8",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            48.99999744,
+            161.00000255999998,
+            80.99999744,
+            206.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            187.0,
+            126.0,
+            229.0,
+            162.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            192.0,
+            197.0,
+            363.00000256,
+            243.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            50.99999743999999,
+            206.99999744,
+            190.0,
+            234.99999744
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            355.99999744,
+            100.0,
+            381.99999744,
+            183.00000255999998
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            376.0,
+            145.00000255999998,
+            512.0,
+            178.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000004",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000004.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000004.txt",
+      "image_sha256": "ad29bc20587b1e674943fd200db4d6e039b9472260c39ab854f37bb792aa1320",
+      "label_sha256": "d1d400ad2d7975b2b051a461f91ada9d1cf9b5e92b8149fd8ea20a450ddd47ac",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            115.0,
+            92.99999744,
+            137.0,
+            108.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000099",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000099.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000099.txt",
+      "image_sha256": "b86122b975d60d25aea927439a51afea035bc0670320acf5c8cc9dbc42182210",
+      "label_sha256": "b1647d98f633afab4c608bf610fe884d71f63a73c7d9195b486b761ff330bbf7",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            174.0,
+            104.0,
+            250.0,
+            507.00000256
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000163",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000163.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000163.txt",
+      "image_sha256": "0fcc4d78cc0b81596656975630742c4543c0c25b7cbd567e75227790a1ece9d1",
+      "label_sha256": "8d20b3d2fa8409a0e153607cf2bbec6ba3cf510e8fa4ac3d7ea0f75b355ee30b",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            77.00000256000001,
+            320.99999744,
+            142.0,
+            512.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000195",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000195.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000195.txt",
+      "image_sha256": "0c4032cacd2ed7adef463dbe5c81b202c9c4f2c3b8f39356a5034cd3b2f6c320",
+      "label_sha256": "f8d227a88ce7f6335fd6e7afeba947e919c253207552af964bdee842554d70dc",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 3,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            259.00000256,
+            156.0,
+            275.00000256,
+            175.00000255999998
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            273.00000256,
+            162.99999744,
+            333.00000256,
+            182.99999744
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            263.99999744,
+            181.0,
+            273.99999744,
+            267.0
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            87.00000256,
+            262.0,
+            260.0,
+            366.99999744
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            0.9999974399999871,
+            244.99999744,
+            236.0,
+            260.99999744
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            226.0,
+            258.99999744,
+            238.99999744000002,
+            294.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            100.0,
+            297.00000256,
+            120.99999743999999,
+            334.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            180.0,
+            367.00000256,
+            512.0,
+            448.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            61.00000256,
+            102.0,
+            193.00000255999998,
+            122.99999743999999
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000266",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000266.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000266.txt",
+      "image_sha256": "38380716c150616a1d4663de4dc595e43ef33217d3da08591ab0f526c6bb8a9c",
+      "label_sha256": "0ea7df5c551ddd4de5f9900bc3ab827f4c76d084237e80098d6a435353bfd080",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            290.0,
+            206.99999744000002,
+            497.00000256,
+            506.99999744
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            259.0,
+            87.0,
+            289.0,
+            205.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            276.00000256,
+            48.0,
+            314.00000256,
+            84.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            338.99999744,
+            114.99999743999999,
+            406.99999744,
+            182.99999744
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            110.0,
+            138.99999744000002,
+            154.99999744000002,
+            498.0
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            285.00000256,
+            12.0,
+            305.00000256,
+            40.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000296",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000296.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000296.txt",
+      "image_sha256": "8ae603589d31f2a8eee4b850970e70ace6690b51b59751b508c0cfee9de2e3cb",
+      "label_sha256": "5542b76fee7bdc95636bb5a6b72966581a1d2b65eeca7ee69dbcced778265fb6",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 3,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            292.0,
+            163.0,
+            308.0,
+            181.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            308.0,
+            176.0,
+            368.99999744,
+            191.00000255999998
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            309.99999744,
+            186.0,
+            315.99999744,
+            266.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            94.0,
+            106.99999743999999,
+            226.0,
+            122.0
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            138.99999744,
+            266.00000256,
+            294.99999744,
+            380.00000256
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            265.0,
+            265.0,
+            283.0,
+            299.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            148.0,
+            303.0,
+            168.99999744000002,
+            337.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            28.000000000000014,
+            246.0,
+            272.99999744,
+            265.00000256
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            2.9999974400000013,
+            283.00000256,
+            38.0,
+            355.00000256
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            240.0,
+            376.99999744,
+            512.0,
+            448.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000328",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000328.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000328.txt",
+      "image_sha256": "25d4cc053d714c5b2181be76de828ac4c85b666e09665cd708af451e641caf1d",
+      "label_sha256": "2312913c99c11ed6240f9f8c248181c8b77be9108f5c536d5f9c81abb068db27",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            206.00000256,
+            141.00000255999998,
+            232.00000256,
+            166.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            191.00000255999998,
+            146.99999744000002,
+            200.0,
+            158.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000363",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000363.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000363.txt",
+      "image_sha256": "d2a3f287113bbd53984a1d11b606312895a41e0c37db744d160bfa6d873cfbfb",
+      "label_sha256": "c67983cb2fed64b1b752797203c763a4fb97de2526dfcfbed4d7b104ad641f6a",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            102.0,
+            315.0,
+            182.0,
+            509.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000453",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000453.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000453.txt",
+      "image_sha256": "85e3d9f82bcabf76abba7d12df14c1be18232c97fdb980d5aae4664be38acff6",
+      "label_sha256": "39fd4f339d658e2e0ec122d562e84861fb085685e68126241692091e4a21685b",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            184.99999744000002,
+            262.0,
+            248.0,
+            350.99999744
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            157.00000255999998,
+            291.99999744,
+            174.0,
+            325.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000473",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000473.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000473.txt",
+      "image_sha256": "86a36b5b4eaa6b8372d895bd70ef142f7c6577a0c3a52bf825cff25040123a98",
+      "label_sha256": "9a1c14d844d50ea76682ad2ab8909c31acfbc4ff46005960a26d5e7ea8c082e9",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            125.00000255999998,
+            93.00000256,
+            142.0,
+            105.00000256
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000582",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000582.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000582.txt",
+      "image_sha256": "042f202c6ceae31d54b988a41bc1419f9391426e11af9b48bcb5cf39d396e1a1",
+      "label_sha256": "5bf6554a1b1af16775bcf8c9876db79e5edb4d6639e0afb66d48eb57717b383d",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            126.00000256000001,
+            90.99999744,
+            144.00000256,
+            102.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000709",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000709.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000709.txt",
+      "image_sha256": "f558ff555d901b29927c59370f7e854fb4a281fc2d27fb3aebe330c66a7faaba",
+      "label_sha256": "f8e58d3bd6c73967997751fdfffc98f0628b01efd8e2a4f76e16ef3d7d291028",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            155.00000256,
+            73.00000255999998,
+            243.00000256,
+            402.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000755",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000755.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000755.txt",
+      "image_sha256": "762fde0da6a01d8cd613eccdff96276a6fd29ceb8690f398c63031aea52e7e0b",
+      "label_sha256": "9742f3495cd2344b96fea4d60ef05551b770b890663f97b4cef581ea0ae0f5e0",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            240.99999744000002,
+            214.99999744000002,
+            512.0,
+            346.99999744
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            222.0,
+            240.0,
+            238.99999744000002,
+            260.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            54.00000000000001,
+            362.99999744,
+            101.00000256000001,
+            510.99999744
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            231.0,
+            118.0,
+            329.0,
+            178.99999744000002
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000940",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000940.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000940.txt",
+      "image_sha256": "ce136d256879c29a3e95b85567f3718fee7d93a7c50e1f222900b192d593cafc",
+      "label_sha256": "2f07634b5ce9c3bfdb664926fc33334fc30788e27e6205b15637322e4af87ac6",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            204.0,
+            197.0,
+            236.99999744000002,
+            275.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_000985",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000985.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_000985.txt",
+      "image_sha256": "edd002f142ed4a4db976c94ddb7ed2fc3c2d6b176552399fc81e41047b303817",
+      "label_sha256": "3749aab74314bf4097c872e20c884d351155666f8ac7cb8e5d1d3bfc80765cd1",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            166.0,
+            319.00000256,
+            233.00000255999998,
+            512.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001001",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001001.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001001.txt",
+      "image_sha256": "de19cad6ce58797dadc5c36699be46d7c82e49b6de4c9a848cfe348817223074",
+      "label_sha256": "94a56c7988c5ae9ccfbbde0f55696f12738dbc355c8ef92de6cdccfbe34de801",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            5.0,
+            204.0,
+            147.0,
+            228.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            232.99999744,
+            305.00000256,
+            256.99999744,
+            334.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            245.99999744000002,
+            346.0,
+            339.99999744,
+            362.99999744
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            223.99999744,
+            356.0,
+            249.99999744,
+            512.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            151.0,
+            80.99999744,
+            161.0,
+            120.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001002",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001002.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001002.txt",
+      "image_sha256": "186b36d7490b5e290afa6181da7079ee6c124a653ef518a9a82ec264b34b2a76",
+      "label_sha256": "8196f03f834b1dae19fd82d945a273eaa6df9727865880a26542f6a084184f8b",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            230.0,
+            71.00000256,
+            257.00000256,
+            95.00000256
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            219.00000255999998,
+            77.0,
+            228.0,
+            87.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001073",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001073.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001073.txt",
+      "image_sha256": "613654b3bcd9c58a757050164aa6fa8e31d8d646d5927e4d308ba8e44203997c",
+      "label_sha256": "238ce31ac5989cda954701bc1f32c7a374320725b7c4f3962bcdc29e9b2bae83",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            80.99999743999999,
+            237.0,
+            320.99999744,
+            267.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            129.00000255999998,
+            96.0,
+            142.0,
+            108.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            128.0,
+            110.0,
+            140.99999744000002,
+            173.00000255999998
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            0.9999974400000013,
+            171.0,
+            124.0,
+            193.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            86.0,
+            173.0,
+            98.99999743999999,
+            195.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001084",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001084.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001084.txt",
+      "image_sha256": "0e28ad9264284b599e27a712de2e8876231ad7d5131876ab972c1e87b65c137c",
+      "label_sha256": "a79861e43f257cef03677e81829d5675e95201e2735b4d85b958ae030f5bc445",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            246.99999744000002,
+            206.0,
+            278.0,
+            238.99999744000002
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            228.0,
+            216.00000256,
+            240.0,
+            230.00000256
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001090",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001090.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001090.txt",
+      "image_sha256": "4bd8d59ef52bd4e5ba9fc9029b19bf7c6873c5d68ec1e681ac2d9eb184ed8f0f",
+      "label_sha256": "499698448c200d112a12e77896a11bbbda5041dd1092a24d091cf0f31e6cb8fe",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            128.99999744,
+            409.0,
+            160.99999744,
+            511.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            283.99999744,
+            257.00000256,
+            301.99999744,
+            277.00000256
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            300.99999744,
+            218.99999744000002,
+            512.0,
+            386.0
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            280.0,
+            109.0,
+            400.0,
+            179.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001139",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001139.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001139.txt",
+      "image_sha256": "12dcf0e030976986fd9edb01f332b479de53d996cdb6994345a54c2118ae0594",
+      "label_sha256": "a079f6d4cdda04efb23983347328d500250fc076ed49b2495d1b0d20c1c0c11d",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            171.00000255999998,
+            284.99999744,
+            363.00000256,
+            300.99999744
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            365.00000256,
+            257.00000256,
+            377.00000256,
+            354.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            380.0,
+            248.0,
+            512.0,
+            284.99999744
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            494.00000256,
+            312.99999744,
+            512.0,
+            344.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            322.0,
+            111.00000256000001,
+            458.0,
+            128.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            257.00000256,
+            66.99999743999999,
+            322.0,
+            114.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            243.00000256,
+            22.0,
+            251.00000256,
+            66.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001152",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001152.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001152.txt",
+      "image_sha256": "f694b14d921e0268aab4f4242448305ef138409c038ed8e6ba526e732c7bef83",
+      "label_sha256": "dad0468fa86046303cc93392e16816d90c2f2f303b5939a46f8a9de26eb2a7aa",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            116.0,
+            93.0,
+            139.00000256,
+            107.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001204",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001204.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001204.txt",
+      "image_sha256": "5e669439f3cd5b8ab77af4e9cbc13c5b02aeffe20d4fbb0dcbf43a4bd43603cd",
+      "label_sha256": "20bd4bc47cda1c6008b5e73cdd2e923a65c66a3749e52e0abc38beced9831875",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            184.0,
+            130.0,
+            512.0,
+            206.99999744000002
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            194.99999744,
+            56.999997439999994,
+            286.99999744,
+            104.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            0.9999974400000013,
+            208.0,
+            88.99999744,
+            436.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            409.00000256,
+            405.0,
+            450.0,
+            507.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            186.0,
+            138.99999744,
+            198.99999744000002,
+            150.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001217",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001217.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001217.txt",
+      "image_sha256": "690057954727853bd2cc1f366c405a199a50e94adb6c0575ba82bcb0751c109a",
+      "label_sha256": "1825b329141897d240441c41b71bb6dd0244cdccb1cc84f56bdda5926a85478f",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            222.99999744000002,
+            65.0,
+            250.0,
+            91.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            212.99999744,
+            74.0,
+            220.99999744,
+            86.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001419",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001419.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001419.txt",
+      "image_sha256": "d066ee9c77635e5143751db61f2cb6d999849a29fd2ceb79bae4feb0c2f89ccd",
+      "label_sha256": "8f59f9b7d6debf0655daeb6bf221789277decca606607737494a776e2d1913d3",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            228.99999744000002,
+            273.00000256,
+            248.0,
+            293.00000256
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            236.0,
+            231.99999744000002,
+            512.0,
+            441.99999744
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            236.99999744000002,
+            112.99999744000002,
+            356.0,
+            196.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            44.00000256,
+            439.00000256,
+            74.00000256,
+            512.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001521",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001521.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001521.txt",
+      "image_sha256": "87209f590a36f100e16abc3eb65320cd691ff2a5a31f112daa98777d0eeb13d5",
+      "label_sha256": "dc271c0eae5d3f509a7784ed2b67cebae9c6a1f3e874ade75f6c64bc473cdbc6",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            244.0,
+            390.99999744,
+            348.0,
+            406.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            232.0,
+            344.99999744,
+            251.00000255999998,
+            388.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            219.00000256,
+            407.00000256,
+            243.00000256,
+            512.0
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            13.0,
+            233.0,
+            139.0,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            144.0,
+            94.0,
+            159.00000255999998,
+            142.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001661",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001661.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001661.txt",
+      "image_sha256": "f864c4ab48f66b9c2a2704d09eb6ab010e54936e5fc21e418455daa1cf9b349e",
+      "label_sha256": "26f1f99dfb5cbe02eb933b5d6acbdf01e640406bd3f165db9b4bdd3d4c47c501",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            172.0,
+            129.99999744000002,
+            247.00000255999998,
+            511.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001766",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001766.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001766.txt",
+      "image_sha256": "2441a1b55a532d6ef6468d132595d2c6112b873741f9896e63f6c11da3011724",
+      "label_sha256": "32b63786c0ee923b381ad15dd503ff96e64121291b1a8378992c1ce128f0684b",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            171.00000255999998,
+            298.99999744,
+            236.0,
+            510.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001816",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001816.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001816.txt",
+      "image_sha256": "d0a215d03ab1bc203ec055dbb2d9bbeb94392a50a05c410d84042d0c99abc6a9",
+      "label_sha256": "169e4eb7e397326e23ac6049db2ae56f4b6b3e6ec8ffe4873ae30e750347891c",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            208.0,
+            118.0,
+            236.99999744000002,
+            142.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            198.0,
+            124.99999743999999,
+            205.00000255999998,
+            132.99999744
+          ]
+        }
+      ]
+    },
+    {
+      "source": "China_MotorBike",
+      "image_id": "China_MotorBike_China_MotorBike_001925",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001925.jpg",
+      "label": "data/yolo_dataset/labels/val/China_MotorBike_China_MotorBike_001925.txt",
+      "image_sha256": "654c77b1bdf3461d2f4c46325e400c9bbb3a3ecb9743cc4712d54bcc25e0f009",
+      "label_sha256": "08729bc23f3010d9d5b9f1980d1c090b2a4877eae00f518645c610bf81e9a363",
+      "width": 512,
+      "height": 512,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            244.0,
+            73.0,
+            268.99999744,
+            95.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            231.0,
+            75.00000256000001,
+            241.0,
+            92.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_000270",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000270.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_000270.txt",
+      "image_sha256": "a150ce3eb666ca6d412674993886cef9815f9c1853c1d5b831951302890d308d",
+      "label_sha256": "d35c7b84d7cf289582e586a14186936da6bfa8067a3120b7772ac5643fff931f",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            294.999999,
+            461.000001,
+            428.00000100000005,
+            531.999999
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            81.000003,
+            429.999999,
+            176.00000100000003,
+            512.999997
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            99.000003,
+            442.000002,
+            158.000001,
+            496.00000200000005
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            182.999997,
+            403.99999800000006,
+            243.999999,
+            505.999998
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_000343",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000343.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_000343.txt",
+      "image_sha256": "de6b0b3b1f18d2cdd21da0e50d8ca33bf26bd00afcd928439cbf9ed4ef34cbc0",
+      "label_sha256": "c86fd7ea191cc9824ea3d4f37807948ccda78119c77d5ab233a1ca4bf90de7bb",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            216.999999,
+            409.000002,
+            251.99999699999998,
+            436.000002
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            176.00000100000003,
+            402.0,
+            210.999999,
+            429.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_000454",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000454.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_000454.txt",
+      "image_sha256": "0812eb365851c054d8981943b2b32fd96b2a8d158ebe2a312b1476cf1f7d66fa",
+      "label_sha256": "c5bac81c951e22558356e880c8d50b55069625b413f82f05a990aea8f1a09eda",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            274.999998,
+            401.00000099999994,
+            310.999998,
+            426.999999
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            404.99999699999995,
+            476.000001,
+            450.999999,
+            504.00000300000005
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_000568",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000568.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_000568.txt",
+      "image_sha256": "4605496ce6705d3266c8cf6707304315c8e2f8156c952d1998604b225a8e3ead",
+      "label_sha256": "f92404e069c55f0e55f663fc933c480def22cd32021f3533f7c03b7ae2f81645",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            159.99999899999997,
+            490.00000199999994,
+            197.000001,
+            520.000002
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_000612",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000612.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_000612.txt",
+      "image_sha256": "fbabc889bd7200392192d71a91bb8dd60772d37decacddb722b0ab1942ce094e",
+      "label_sha256": "abb2deb33cd8c37785c1e40725fcf4dc92f3f9552668d0377bc844519ccd0355",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            188.000001,
+            436.999998,
+            285.000003,
+            469.99999799999995
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_000645",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000645.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_000645.txt",
+      "image_sha256": "4c4a9541be9cb07398e1dcd998158a5daefb647e88b07fe60ea6a6acdfeef293",
+      "label_sha256": "f455882258ede3fc865f04e916ba7f06959159e0a3789cc0ca3080532ad21373",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            421.00000199999994,
+            471.999999,
+            463.000002,
+            506.999997
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_000762",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000762.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_000762.txt",
+      "image_sha256": "d27bbbb968d124fb76c8b97e0c251cb77af03a74bd94217558c5961b7626c227",
+      "label_sha256": "ed6814dddb07ad94cefeef74152c1a85bf517f3205d3a79be89251f933f8d27c",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            96.000003,
+            458.999997,
+            137.00000100000003,
+            507.999999
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            396.999999,
+            435.999999,
+            467.999997,
+            476.000001
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_000842",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000842.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_000842.txt",
+      "image_sha256": "c2bee00916f8baf8a26d03dc29a7913b145b3b62675b891ed83ba29b31cc3a1b",
+      "label_sha256": "28c5cd4c7f3fd9aff69e981ab8fa4aa955eafdbff0e3b17ef17d4430b781cd67",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            153.99999899999997,
+            432.999999,
+            197.000001,
+            446.999997
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            273.00000299999994,
+            440.999997,
+            362.000001,
+            456.999999
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_000881",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000881.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_000881.txt",
+      "image_sha256": "eeca78042a7957109c13014cd1b73306ed839b7d566cf3ae5cd242e730ac37b7",
+      "label_sha256": "04d1d411d87f5d936f3c2a52f45025a45f5ce07c080b6fbb8448bcb4fb16d04a",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            360.999999,
+            467.000001,
+            413.999997,
+            501.00000300000005
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_001054",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001054.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_001054.txt",
+      "image_sha256": "8c9e80650a1d937a7a9d5af44caa59d9b54b6e17429e6b9cb9a026860a53342e",
+      "label_sha256": "96a874294104b8d0f4d7f2ca4a7a45b5a4f55d95224a4eac25db183acccacfa7",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            3.0000000000000027,
+            431.000001,
+            96.0,
+            447.000003
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            351.0,
+            456.999999,
+            407.99999999999994,
+            509.999997
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            195.000003,
+            412.999998,
+            248.00000099999997,
+            436.999998
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_001114",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001114.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_001114.txt",
+      "image_sha256": "e3e89a423370c96f9c3ad55da12f835c743edb2c8c8dde33c3daa707edaa97ee",
+      "label_sha256": "ed809a6c5b53033ea774f3f2c25235b6e0ed6eacdf3e5f1ba5dcac182a728dd2",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            219.0,
+            424.999998,
+            261.00000000000006,
+            463.99999799999995
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            242.999997,
+            443.000001,
+            306.999999,
+            459.000003
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_001240",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001240.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_001240.txt",
+      "image_sha256": "7d49df65af12b0ab2fca700e3f92ccd21a462e9a67cb2440d4be1423c0286f06",
+      "label_sha256": "896a3d7afd9ae586920b7d25273b52fc563853d80fdffd69d769541b1bf53d62",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            153.99999899999997,
+            438.00000300000005,
+            236.999997,
+            506.000001
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            317.00000099999994,
+            438.00000000000006,
+            405.000003,
+            528.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_001251",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001251.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_001251.txt",
+      "image_sha256": "490b3405a83af621a5316d5ea2cb89ffe7974c589cb949e45a5cbd424fa9baf3",
+      "label_sha256": "ed61a795c72d534cc735ee7b7341d2f351a41c1bb834c17b40653e3bfbe71b97",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            348.999999,
+            417.000003,
+            389.99999699999995,
+            431.00000100000005
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            465.000003,
+            447.999999,
+            491.00000100000005,
+            512.000001
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            279.999999,
+            489.00000299999994,
+            341.00000099999994,
+            527.000001
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_001278",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001278.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_001278.txt",
+      "image_sha256": "c756995ea74523ed5df10bdec4e041fa60767889c9f97e4779d2b5287d735463",
+      "label_sha256": "090fbc9440fa75584e9b6748e763105e85e5d7eeb0c01e7fce2ce8372554bc0c",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            173.00000100000003,
+            407.99999700000006,
+            231.000003,
+            432.999999
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            324.99999899999995,
+            427.999998,
+            395.000001,
+            493.99999800000006
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_001437",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001437.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_001437.txt",
+      "image_sha256": "1eb64b60f106e730f55fe0014c0d0637d4dee958dd023b3358ddcbd58fa44c6f",
+      "label_sha256": "b62228c5d8fd7d12cf0a6c681c389c6bc51fe11ff0e0c7475a1d69619797e83c",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            180.0,
+            435.000003,
+            213.00000000000003,
+            524.000001
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            357.0,
+            472.999998,
+            411.00000000000006,
+            541.999998
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_001495",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001495.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_001495.txt",
+      "image_sha256": "444e245f450b4206e61d58f8acd785be5c00d92d2f1a2768e45aebd78d443d3a",
+      "label_sha256": "e4d1f5c854a57e5a74dc17292a12139fdde3a25047c3ec2899420985223f2394",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 5,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            168.00000000000003,
+            448.000002,
+            228.0,
+            466.000002
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            90.00000000000001,
+            420.00000000000006,
+            144.0,
+            447.0
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            244.999998,
+            425.999997,
+            310.999998,
+            441.999999
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            16.999998,
+            439.000002,
+            106.999998,
+            469.000002
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            225.00000300000002,
+            407.000001,
+            254.000001,
+            423.00000300000005
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            126.00000000000001,
+            383.999997,
+            204.00000000000003,
+            420.999999
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_001514",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001514.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_001514.txt",
+      "image_sha256": "25efab49f6bcbf6a6c3de0d349a3123bedab74c3a2ee84466df29367257e36f5",
+      "label_sha256": "bb5bdecfd8748757a93363e7b036df8f6ef64b10ac29ab8ea801a4f8e4af946e",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            99.99999899999999,
+            422.00000100000005,
+            119.000001,
+            438.999999
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_001825",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001825.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_001825.txt",
+      "image_sha256": "6893b4ba1fe73e8317e7cdaaac41113fbb520533361d2be26d779e8d2bf59b40",
+      "label_sha256": "4a90e29db08f964cececfab82f5a72b5af79a3c52955f52b34d2633a0fe178ab",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 3,
+      "boxes": [
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            118.99999799999999,
+            456.99999899999995,
+            178.999998,
+            512.999997
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            226.999998,
+            403.99999799999995,
+            298.999998,
+            463.999998
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            447.0,
+            458.000001,
+            485.99999999999994,
+            483.99999900000006
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            507.0,
+            456.999999,
+            546.0,
+            482.99999700000006
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_001917",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001917.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_001917.txt",
+      "image_sha256": "444dbdbcf5503f44cfb2cd5df3d44ab8a6bd6173ea5f5642eff3116f8fa7fcf2",
+      "label_sha256": "4a2753cfabb10d9bd071eb76d0c6c54c46d773fe1d5e742c8391bad58b997169",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            277.000002,
+            448.000002,
+            295.000002,
+            472.000002
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_002013",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002013.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_002013.txt",
+      "image_sha256": "9763a318841eeddd6d174accc474a4928dd9059ae8f753259faa082b49c1f6bb",
+      "label_sha256": "5eaef1117425611fa92ba92be5172f97cbb4176262ccd3f266d2ff07d60c4b61",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            1.0000019999999887,
+            436.99999799999995,
+            277.000002,
+            514.999998
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            342.00000299999994,
+            495.00000300000005,
+            392.000001,
+            530.000001
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            402.00000299999994,
+            501.0,
+            452.000001,
+            525.0
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            363.999999,
+            450.999999,
+            473.99999699999995,
+            527.999997
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_002058",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002058.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_002058.txt",
+      "image_sha256": "67f7a81fca4a9d1b45eacfa6de530b116e9cc6a53aa2212193a24dd5e7d10c7a",
+      "label_sha256": "69cbd7f5926e289fc14bcbc9845339aa57060a0452fa6ae9f42560e85092492e",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            341.00000099999994,
+            430.999998,
+            393.000003,
+            448.999998
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_002063",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002063.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_002063.txt",
+      "image_sha256": "aad78e2a4351fcc1352ea047ebac32171bf6fcd6e8906097dc8dc8124ec95b32",
+      "label_sha256": "b8f778d5b1791c051b8fd70af302673bffcfe51862435c6b6dabf7a18dde7a99",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            408.99999899999995,
+            425.00000100000005,
+            443.000001,
+            441.999999
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            162.000003,
+            444.999999,
+            227.000001,
+            500.000001
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_002095",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002095.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_002095.txt",
+      "image_sha256": "923e3e6284399fff51fac140662d12a1a794db58fe2439bd7f41dbfeaaea97f1",
+      "label_sha256": "3d698d0e204ae4f4d696a22e71d3269767deb27dcd66fdfa6b9931f1518e7733",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            275.999997,
+            453.000003,
+            294.999999,
+            473.000001
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_002365",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002365.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_002365.txt",
+      "image_sha256": "6724c8556cc0ce691aa9c3701bb06edcd08dc8c776c42238d632955f494e08d0",
+      "label_sha256": "2fbc7fd2333c10c405f49aa3f66ce125d359bc2262f5fa6f326abc1b39b032f9",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            453.999999,
+            495.999999,
+            521.000001,
+            530.999997
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_002682",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002682.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_002682.txt",
+      "image_sha256": "3f4f264613e21304f2c712eb2aa97cc5746990fdc5f30d181833277577381397",
+      "label_sha256": "c99caa81231323153b117b9bc8085d0918331f7dcd1682fdd58b6d8efb16756c",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 2,
+      "boxes": [
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            160.000002,
+            429.999999,
+            364.000002,
+            521.9999969999999
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            46.999998,
+            426.00000299999994,
+            142.999998,
+            458.000001
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            5.000000999999998,
+            420.0,
+            102.000003,
+            501.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_002792",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002792.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_002792.txt",
+      "image_sha256": "6c462367fa278ef736d5975542ce45005df57427d3c8edaa1b5aee8f17ac56a5",
+      "label_sha256": "85f263719db07f8f5e165f5cfae1702469643070e5b5f341616dcb6214eb306f",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            371.000001,
+            450.999999,
+            561.999999,
+            530.999997
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            228.99999899999997,
+            398.000001,
+            272.000001,
+            417.00000299999994
+          ]
+        },
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            305.99999699999995,
+            399.00000299999994,
+            363.999999,
+            455.000001
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_003001",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003001.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_003001.txt",
+      "image_sha256": "5db3db8c9eb2cf9b5ea80ff8030963eea762958ea8b48f66ef51d666dc754708",
+      "label_sha256": "6521d8d3588f523ed1acb9e5b626ed515acde6c31354ec0c13e6db978da4d8f9",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            284.000001,
+            440.00000100000005,
+            321.999999,
+            459.000003
+          ]
+        },
+        {
+          "class_id": 0,
+          "damage_code": "D00",
+          "bbox_xyxy": [
+            240.000003,
+            449.000001,
+            260.000001,
+            513.000003
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            298.000002,
+            453.999999,
+            388.000002,
+            479.99999700000006
+          ]
+        },
+        {
+          "class_id": 1,
+          "damage_code": "D10",
+          "bbox_xyxy": [
+            164.99999999999997,
+            435.000003,
+            255.0,
+            461.000001
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_003120",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003120.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_003120.txt",
+      "image_sha256": "f5dcd3e6d366e41dbe80261f3cd80c5a662c65f3e9e327cf3f6aa0bed1813a44",
+      "label_sha256": "5692839725245c026265c33dacf3e93139cd3024fc1c35b19fee13bac9b930d6",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            336.99999899999995,
+            436.000002,
+            407.000001,
+            511.000002
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_003536",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003536.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_003536.txt",
+      "image_sha256": "4de5e41f3f6951ae89478b6b95a9fc8c3c7880123f07d0d45b4aa3a3ad021d4e",
+      "label_sha256": "e3c9683f547cb0bd48f46f8855ebfa9d54a61c1f10833d3189ad94ff4a81ff3f",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            217.000002,
+            419.999997,
+            253.00000200000002,
+            453.999999
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Czech",
+      "image_id": "Czech_Czech_003565",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003565.jpg",
+      "label": "data/yolo_dataset/labels/val/Czech_Czech_003565.txt",
+      "image_sha256": "fcb9fceed0dad5381ad50ab91a047b9aeab8ca2f3932641ae3f3085ff094d7da",
+      "label_sha256": "df1a8aa5fb673c44449c577004472e445d83778ce1c2a67eaf1b2738609eafdc",
+      "width": 600,
+      "height": 600,
+      "d40_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 2,
+          "damage_code": "D20",
+          "bbox_xyxy": [
+            152.000001,
+            420.999999,
+            450.000003,
+            530.999997
+          ]
+        },
+        {
+          "class_id": 3,
+          "damage_code": "D40",
+          "bbox_xyxy": [
+            295.999998,
+            398.000001,
+            334.999998,
+            423.00000299999994
+          ]
+        }
+      ]
+    }
+  ]
+}

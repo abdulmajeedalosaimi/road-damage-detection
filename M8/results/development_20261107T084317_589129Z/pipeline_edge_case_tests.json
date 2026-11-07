@@ -1,0 +1,47 @@
+{
+  "test_type": "controlled_model_doubles",
+  "real_models_used": false,
+  "tests": [
+    {
+      "test": "No detections skip M5",
+      "status": "PASS"
+    },
+    {
+      "test": "Non-D40 detection retained; M5 skipped",
+      "status": "PASS"
+    },
+    {
+      "test": "D40 with no mask reported explicitly",
+      "status": "PASS"
+    },
+    {
+      "test": "Mask coordinates and overlap union are correct",
+      "status": "PASS"
+    },
+    {
+      "test": "None input rejected before inference",
+      "status": "PASS"
+    },
+    {
+      "test": "Grayscale input rejected before inference",
+      "status": "PASS"
+    },
+    {
+      "test": "Float input rejected before inference",
+      "status": "PASS"
+    },
+    {
+      "test": "Empty input rejected before inference",
+      "status": "PASS"
+    },
+    {
+      "test": "Four-channel input rejected before inference",
+      "status": "PASS"
+    },
+    {
+      "test": "Input image remains unchanged",
+      "status": "PASS"
+    }
+  ],
+  "passed": 10
+}

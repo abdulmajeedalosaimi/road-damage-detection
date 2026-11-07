@@ -1,0 +1,5253 @@
+{
+  "purpose": "development_backend_latency_comparison",
+  "device": "cpu",
+  "images": 180,
+  "repeats": 3,
+  "warmup_calls_per_backend": 10,
+  "measured_calls_per_backend": 540,
+  "m4_settings": {
+    "imgsz": 640,
+    "conf": 0.1,
+    "iou": 0.5,
+    "max_det": 300,
+    "rect": false
+  },
+  "m5_settings": {
+    "imgsz": 640,
+    "conf": 0.05,
+    "iou": 0.7,
+    "max_det": 100,
+    "rect": false
+  },
+  "timing_scope": "Complete standalone pipeline function call",
+  "excluded": [
+    "disk reads",
+    "HTTP",
+    "PNG encoding"
+  ],
+  "runtime_threads": "Existing backend defaults; not normalized",
+  "cases": [
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000062.jpg",
+      "image_sha256": "d56676890181efc675d9a3bb1bd084e081687d2fb8336d7ff0531a0aea60d579"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000066.jpg",
+      "image_sha256": "1381c7e05bdd60db854aefdd07bee7b6eae04af4aee2872f1e407ac0f91a4661"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000076.jpg",
+      "image_sha256": "6f6f39788da55ca68ac7796f04f57cb3c01cba94a570ea5d4e6698cc8a7ec8e0"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000081.jpg",
+      "image_sha256": "430d0bb5fd5f74ec706ed4df1dcc72e75e6203b84d0465e54b4e525c6faf9cb8"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000213.jpg",
+      "image_sha256": "71410b317d57cf2947ad364f6ba0c47a5a71ea2b1f6da6c139ddbf3c19e4e5e8"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000229.jpg",
+      "image_sha256": "2823c4db75827f2adb53aac043b650d99a34f60166d23c4c7bfc26b0cbe14eb3"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000256.jpg",
+      "image_sha256": "86771f772b7cd3fc0feaf825b65559feb1b59ab857c8b5beaa2d785c5cae1116"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000280.jpg",
+      "image_sha256": "17a71b57dbbbb0df0ed354158b65e740e8cd7b56b8227d5610f6ead467c3731f"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000351.jpg",
+      "image_sha256": "a09746919445bf86869aa05a5cd71aa89a3ffcfbd71585dc50fb8c7bf6de0118"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000503.jpg",
+      "image_sha256": "21ef3786c9eaf0b0814a29d4ab8dd6a9328b541d7862e85f0d1eb6fa902f7027"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000551.jpg",
+      "image_sha256": "2dae909e11455e8c302ca7aab6bd98caad35a0016b6d26c6c78fc1ca70d1112c"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000563.jpg",
+      "image_sha256": "c2fe171e02f8de40421afd8e696db48298a2c158df5b85ab5f08ac00e95b07ef"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000586.jpg",
+      "image_sha256": "c8d0826f55e73d09558853f14e14c1f20bd36ec8ea35ec923c0918bd46b87b09"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000617.jpg",
+      "image_sha256": "71d54b6d5c36c6505d196cf2c7f5cfedf0e1b6b318d586f983229c06cfe5a2c3"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000691.jpg",
+      "image_sha256": "6bc8970cafd404664d37c83ccadc4ec20fcfe71d0b8efe87ac47427cd8a11a77"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001077.jpg",
+      "image_sha256": "8e75cdca21581dbc85d10524068a233d1543991d4e16482556e71f7f1ae89491"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001283.jpg",
+      "image_sha256": "b150a6d1158d823c8a1ad02646975f12127b0dbfb2ffb194267eac5edfaf1227"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001398.jpg",
+      "image_sha256": "53cbfc90cb0a6bc6c5c38a34157078022084a0f9c31fc3634a70d1367849c7f0"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001441.jpg",
+      "image_sha256": "dedfa74e933c8f1879e57c8a8938ed42d6f25304996115e2bd5de3af5242a71e"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001516.jpg",
+      "image_sha256": "c4b06d22f3d60684eb858afcb9760632ce2d6e7b7703113e581fa0eddb0ae6e6"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001541.jpg",
+      "image_sha256": "999dbac86e419cabbff5c023aa43038513a91149ff0f96c1ca019b57c9b8d91f"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001636.jpg",
+      "image_sha256": "71a41847ef28e55b0c6b1eae3d27fcf0966e9752ca693fe7275bc95548977dda"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001662.jpg",
+      "image_sha256": "96c15562f40c8b730e5b888a776798d4f66390f7772a9bcf75aaca785cf42469"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001730.jpg",
+      "image_sha256": "259cd17129ffea06ea6ef71434b66979678a05e3627bc1cc733e5edcf3824f16"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001791.jpg",
+      "image_sha256": "afa1c619d6244b42e55007fce1a3023a7730fc6ff428a8c20ed260b76fdf7ee2"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001827.jpg",
+      "image_sha256": "b71b57d4908b26863afde31203e801e83300c5c38030ea23ecfe63aa32556715"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001884.jpg",
+      "image_sha256": "015b35cb9073e2b098d595e7c26318bc2491ab6d251da882bc89ac489235128d"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001894.jpg",
+      "image_sha256": "b319316acefee38a2d2e27f754d9c587c10304a7badcc88aeb8f421aa1d7459d"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001896.jpg",
+      "image_sha256": "afdd7d4506cd5107c9d29d758514f1a697198e8a7a9362f5e28994fb2f8a3c3f"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002286.jpg",
+      "image_sha256": "82a2400095fc1d054988f44a53457f95b3b19e28af0f9bc3069d481d14128175"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000013.jpg",
+      "image_sha256": "47dc8f8f3160b52b961b9962fc01f0146f1cc8703dea9d5e3c463cbd421d9684"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000092.jpg",
+      "image_sha256": "c0233710cb5b484b5fca7ed6e855bf9c16ac401ee36ab847f38ec13a251dab1d"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000197.jpg",
+      "image_sha256": "a3e2087cfa0c6c3f91d172a558be452204dd004be0a1cc93b527f6bcbf662252"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000208.jpg",
+      "image_sha256": "9c545f762732d3dd61e8bdaa7950ad62a984541be0b76d3bc50ee06f7cfecd0f"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000219.jpg",
+      "image_sha256": "9ef10746301408282c292d271d1b15eaf8c25ff6d05d379b40f426e255400768"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000330.jpg",
+      "image_sha256": "b2740c4cbf5b024724476d955fb876c0e35e147959db6423f4793876dcaac0e0"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000338.jpg",
+      "image_sha256": "85a3fe6512d36f01d4edeb34dd90796f4ac5f2accf06b358b87fe297a011c011"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000455.jpg",
+      "image_sha256": "09f29fbada5c584c9e7e0a30120cceae479d446d853246dde64886725cb059bb"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000466.jpg",
+      "image_sha256": "17b7b89660ba493263d9cb6de689bc7f8bba69750cf2feed5956fd447f55efb7"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000556.jpg",
+      "image_sha256": "b719554b7dc8d1397305029fb588f3e6bc4837b85682f0b062983a73367c300d"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000586.jpg",
+      "image_sha256": "8067b4894f64f3f8c1ff90c2a09dfbd85bfc3c2a0870c86ab3c7ddf2d356baa6"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000708.jpg",
+      "image_sha256": "82cd521be76f8825ef6bf940b1fa5a1a89508e895b4eb0f618af18d95c016356"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000715.jpg",
+      "image_sha256": "553c0c5f60e4a36ac4370426012ee38f9c68690a2077f00f3fa1df34f9bc35c4"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000723.jpg",
+      "image_sha256": "d90b44cf5becdf9770f9628d346abae7a59e02911f9b4fbd04d573de4aa4fd16"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000754.jpg",
+      "image_sha256": "b81f577767f65b20dd6641b75382dd68f0a6a3b8f72e56d6443f1d5ab01e8046"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000797.jpg",
+      "image_sha256": "5583fbb03b64220403fc97e5aa53704517dc74abf1578fa7931516f5a0bfd771"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000879.jpg",
+      "image_sha256": "f27d859b58d576e30f08a477b0fb9f930ab668856e9bf50409e20edb31929168"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000885.jpg",
+      "image_sha256": "964ad920a0d4efbe3af755be068620d999ef617a35cc05e3a614353ef8f279bd"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000941.jpg",
+      "image_sha256": "2bbdf48bdfd69c1bf703d877d7002562e8ba473abfcbb2a432c541c636d10d88"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001144.jpg",
+      "image_sha256": "280a029106734f0f6109798978a2b2d9d0d440e413497798e5bdbbd9b241bbba"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001234.jpg",
+      "image_sha256": "fb44003338f17e4f309ffabb257f51e18d24bcba018764fa1570c27af527372e"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001264.jpg",
+      "image_sha256": "5219de732f05d2da17bbcbfce2c6ebb883373e346b1be6a432571e3ad2d8de27"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001459.jpg",
+      "image_sha256": "6bf0a24d9a1a2d7c171d2af0309a32e03bb79bd48611dc8724bf16d884651cf6"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001588.jpg",
+      "image_sha256": "cb1eccc5f038a834e84af4d284f5edd0799ee2f83143969f29e24941b81e2712"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001597.jpg",
+      "image_sha256": "fd1782752fc6801ae2850bd894d93ba0c26afcb46f400f7de5f118e4b49ae6b5"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001687.jpg",
+      "image_sha256": "4d54f3a0f16da6e5709b656c673cb0d5fc10624d3ed3c356301c475b2dfbc630"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001689.jpg",
+      "image_sha256": "f5a9a6d5287df4efc0aa98674fe3f12daa496e3865f161e2f0e596d4356bfd73"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001695.jpg",
+      "image_sha256": "4f44d7d6b48d42fe36a02e4c359f610a4a4c6ed71611f0b4087f090879359270"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001775.jpg",
+      "image_sha256": "baaa58dafe028fb28cd5e2a13d697cec3352c39124722aaadeb468bb82a9193b"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001820.jpg",
+      "image_sha256": "d80bd8ae560957ccec178ba49db4f6fd113e33ae31aa87a42bf0896f59132d79"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000243.jpg",
+      "image_sha256": "315f279ba5442d87f2ba975f3e975c2a99c062c8bf010208536d22f003903bed"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000366.jpg",
+      "image_sha256": "526479dff2143fa88cbbfdec9f2703d88f11925830e419c92fdc885b80fee237"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000419.jpg",
+      "image_sha256": "614602d3dc1c7223c6275302deb88db0f1bef87881b3b5539cc5890b9ed97f19"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000425.jpg",
+      "image_sha256": "948236f7d67d0ae90d9d90b9b0ac1a422ae15243c406cbbb7262b981ef6ae934"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000531.jpg",
+      "image_sha256": "addfd549b2a2fc80da2370a8ec6e35d2864537111c953d0d4448e456b132c5bc"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000647.jpg",
+      "image_sha256": "1e4d681902bea4df7d5d0c719dd39ebf0f3145756d7ab7697f89ae4cac578bcc"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000838.jpg",
+      "image_sha256": "f65d025dec5488cae027d296a39f1d06929bf842de4e4a67b42f6a2a12a862a2"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000987.jpg",
+      "image_sha256": "5c94a2161db20fa1c425c43274324dbfc7c136267bd8cd8f28286d6b6841e772"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001079.jpg",
+      "image_sha256": "9d3f101915a161903e48ac6c17085699f61dfb5ffbc2736350cb705af575b606"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001177.jpg",
+      "image_sha256": "67ecd086eddf77a53f56a4749f4fb8d56ceda284e60ff1df916cd8882208bbb5"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001205.jpg",
+      "image_sha256": "3e5afcd02b7846a8702e3f8f4f49ed93cb1ea80d0ba4179f3c4c9ecf581cca9d"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001453.jpg",
+      "image_sha256": "cd53aa2246fa77bc8ec92fa33bb6f93b87b0b94345380b837ac3ff17570874e8"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001515.jpg",
+      "image_sha256": "0df6be9d088560b4c990c4c19366a7e8937b61ae6fadf25fa82cab75ad822e93"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001531.jpg",
+      "image_sha256": "0703e9c14019401782a702277fdf035e932aebb6f98b675197a7b4c19f27c4d0"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001855.jpg",
+      "image_sha256": "c713d8e0fd775754be1876f48b43d07f1b675635e63ea48913cce90235db4fc2"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001883.jpg",
+      "image_sha256": "ed22a4bf98b5f7cd68d0d6db75214e11bc29988addb52dd4cc56ff55d4c97a2c"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001901.jpg",
+      "image_sha256": "dc2029477520c04e5fd791fbc9f3699d7527ea563e865f068290288ad1e1c190"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001932.jpg",
+      "image_sha256": "9be3669cb6b9090177cf9d0b34a71fc49a1f822e2e82fefe771cbc1630dedf21"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001969.jpg",
+      "image_sha256": "bc8bab94207abf748c2b9873fb5b86b8235de63c5b5353930d8759786fb10508"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001979.jpg",
+      "image_sha256": "73361bbda5e73721f51f92b5c141e95ffc692c5a28e468a14a1cfcc13c8c2e2f"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002372.jpg",
+      "image_sha256": "565d48c1e0f52f742881f02e3cc4455e9ba79a0345b7469a4386c75b86dde5e9"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002405.jpg",
+      "image_sha256": "202e00ddc82d388c55e0ebca516e56fb4f643dda07baf010e6a583d2bfc749b9"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002811.jpg",
+      "image_sha256": "c11705034e730e00010328fd3a8f2eca8d6003e7353f117d659292ed7fa362dc"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002900.jpg",
+      "image_sha256": "b2ef6a9139a0afe9164b03c40ccf66a5323a96b79b1f1b5194c358dbd7798db6"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003033.jpg",
+      "image_sha256": "08751777b0116a42ea99c1ba3af6d9471ae25c03399265be247167cf16582221"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003237.jpg",
+      "image_sha256": "d3e02244965198691203e8e8495090663e582214fd5ea22375309ad9a7049f63"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003286.jpg",
+      "image_sha256": "a81e72e77fb38d88362045f9c9ea31ce3aa288aa1b1d4bb9d6fc6649487e27ae"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003323.jpg",
+      "image_sha256": "04e5adbfc6f9fb7155b28f4d456c3196604bf7cee56b1e35f9e43afec36224ef"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003449.jpg",
+      "image_sha256": "acaad38b9b86d2d4ee5b67f5279a50f7d0bb8ad2bd30111225126ef09b2a3b1e"
+    },
+    {
+      "cohort": "general",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003494.jpg",
+      "image_sha256": "bcddc099f50a56745d65cc6832e4886990928f00e1f6a8424b0cf6e07110e190"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000057.jpg",
+      "image_sha256": "0e03be24543223b140c7761a1b5a732e35e956e4d779f96a6ea113ccf43913fe"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000061.jpg",
+      "image_sha256": "167f7cd8b0d68148dfb44c770515314818f7d64389569ab7051328ff786c8661"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000160.jpg",
+      "image_sha256": "270696f32290febdd416e326c8275927dd325b6a603706846e625f2b80a29f61"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000205.jpg",
+      "image_sha256": "d1fca0bd34927bc920d9b5a3e324d4cd5723f35805c0720fc651da1249ef977d"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000237.jpg",
+      "image_sha256": "5bf04af8ee2dd0eec6ef95d185dfd0f6001433397bbdf9c4c6d6c4eb1286650f"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000286.jpg",
+      "image_sha256": "8fc504e43b86c1587274a9e75796b0b9244dc5c3c52ea8834a6354bbb556a2e8"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000435.jpg",
+      "image_sha256": "75ec75d58af427169c982fe1e0359401dda8c280af9a4b73fb5ed4c9f7fe210d"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000451.jpg",
+      "image_sha256": "0d8e2e6719e7ff4fd262324e38010ba504374428a1173d1da496a18e43dad2ba"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000487.jpg",
+      "image_sha256": "74072deed261b0c02f7fcf321c56d2a4300905bf92e1c15e790d19876d526303"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000541.jpg",
+      "image_sha256": "e014ea6f662b60479c97defe2d7698e9ba7d98eb5f3f3b849b37ea54bdf9ef06"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_000695.jpg",
+      "image_sha256": "f7a7c4752a1480617d07fc53745444913c389fca836f3d05edc293ab0e33c5dc"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001050.jpg",
+      "image_sha256": "8c061dbd410a2ef9ec86ae41aad1a1c609cd2f01ccbf016612d854dfae569dbd"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001067.jpg",
+      "image_sha256": "42dfbe47360b14793275f07cf9f25bb2a2a01681a3b74f5d29e5e9420a1dc4b0"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001287.jpg",
+      "image_sha256": "04f0f4ba7275a47873bc4a0dc8e1d07c0325321aefe4cffc4c3e0b13e4be9b14"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001446.jpg",
+      "image_sha256": "10760b3c46800c921a32c51648023dece7b025401000a53d1c80df5e79d3910f"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001522.jpg",
+      "image_sha256": "bff4eabec96dacd333e40d16d32cdc730b4529491f9d880fd0a5a84bd5a87ad5"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001531.jpg",
+      "image_sha256": "275d2c48e3f5eb27fb383a89f8b656c0b27871dbff99f4e3eba7f9e785caefa0"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001555.jpg",
+      "image_sha256": "525af07a721e014db051a4519f5ac940add27253093349c638ff2abcf909f7a4"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001628.jpg",
+      "image_sha256": "563ccf5c6985a9e3e0e84391dc9e0bc5f24b027b7dae4cbef6f3a7616e660fac"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001732.jpg",
+      "image_sha256": "1a950b72c84b6ee90dcc4e4f04469eea98f3b88f9a1e687ac0caf19320870b95"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001773.jpg",
+      "image_sha256": "24abf01fc9d8a04cf4c6656f3dd095c7b120281368f953c090748c8cdf7db265"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001811.jpg",
+      "image_sha256": "9d1c95f54a45cf8fe782eaf9dfc135a559df2bc25ff7f65869f339bf906a28d3"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001847.jpg",
+      "image_sha256": "75185df3a399cab34ba124cfae9f5e2b00a1a6bab2ee787d73b9751be2e7cf9f"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001961.jpg",
+      "image_sha256": "282c370963e908a7f99735da319dd8b2b6d6e7e8b80623b96ba81df0880807ea"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_001990.jpg",
+      "image_sha256": "919b54776e3d14abfeaabda45746b78ad0b0ef8042f03eb53c021f5f9eae1b11"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002007.jpg",
+      "image_sha256": "90b8554e2627cc4bc9de09de4e35e59cd0a42343be230fbb29777b63dfaaef09"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002137.jpg",
+      "image_sha256": "9a1281d036bdd53ba3fd5ab5a3a8176aa51939794fcf101cc5c9390f7c64d2cc"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002144.jpg",
+      "image_sha256": "0bdd1abef6ebe04fb37971765af4b80cb0863f459c846a30a97796448b0e2d54"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002190.jpg",
+      "image_sha256": "a8505e7af32a94ad0e67fbefc2a439f7c4d08f58c6b3e6dd7f964f16820a9d69"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_Drone_China_Drone_002245.jpg",
+      "image_sha256": "8669f467bf95970279a859092637fecc3fc9d1df675f6013e98c18ac4efdbda0"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000004.jpg",
+      "image_sha256": "ad29bc20587b1e674943fd200db4d6e039b9472260c39ab854f37bb792aa1320"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000099.jpg",
+      "image_sha256": "b86122b975d60d25aea927439a51afea035bc0670320acf5c8cc9dbc42182210"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000163.jpg",
+      "image_sha256": "0fcc4d78cc0b81596656975630742c4543c0c25b7cbd567e75227790a1ece9d1"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000195.jpg",
+      "image_sha256": "0c4032cacd2ed7adef463dbe5c81b202c9c4f2c3b8f39356a5034cd3b2f6c320"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000266.jpg",
+      "image_sha256": "38380716c150616a1d4663de4dc595e43ef33217d3da08591ab0f526c6bb8a9c"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000296.jpg",
+      "image_sha256": "8ae603589d31f2a8eee4b850970e70ace6690b51b59751b508c0cfee9de2e3cb"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000328.jpg",
+      "image_sha256": "25d4cc053d714c5b2181be76de828ac4c85b666e09665cd708af451e641caf1d"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000363.jpg",
+      "image_sha256": "d2a3f287113bbd53984a1d11b606312895a41e0c37db744d160bfa6d873cfbfb"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000453.jpg",
+      "image_sha256": "85e3d9f82bcabf76abba7d12df14c1be18232c97fdb980d5aae4664be38acff6"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000473.jpg",
+      "image_sha256": "86a36b5b4eaa6b8372d895bd70ef142f7c6577a0c3a52bf825cff25040123a98"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000582.jpg",
+      "image_sha256": "042f202c6ceae31d54b988a41bc1419f9391426e11af9b48bcb5cf39d396e1a1"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000709.jpg",
+      "image_sha256": "f558ff555d901b29927c59370f7e854fb4a281fc2d27fb3aebe330c66a7faaba"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000755.jpg",
+      "image_sha256": "762fde0da6a01d8cd613eccdff96276a6fd29ceb8690f398c63031aea52e7e0b"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000940.jpg",
+      "image_sha256": "ce136d256879c29a3e95b85567f3718fee7d93a7c50e1f222900b192d593cafc"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_000985.jpg",
+      "image_sha256": "edd002f142ed4a4db976c94ddb7ed2fc3c2d6b176552399fc81e41047b303817"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001001.jpg",
+      "image_sha256": "de19cad6ce58797dadc5c36699be46d7c82e49b6de4c9a848cfe348817223074"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001002.jpg",
+      "image_sha256": "186b36d7490b5e290afa6181da7079ee6c124a653ef518a9a82ec264b34b2a76"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001073.jpg",
+      "image_sha256": "613654b3bcd9c58a757050164aa6fa8e31d8d646d5927e4d308ba8e44203997c"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001084.jpg",
+      "image_sha256": "0e28ad9264284b599e27a712de2e8876231ad7d5131876ab972c1e87b65c137c"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001090.jpg",
+      "image_sha256": "4bd8d59ef52bd4e5ba9fc9029b19bf7c6873c5d68ec1e681ac2d9eb184ed8f0f"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001139.jpg",
+      "image_sha256": "12dcf0e030976986fd9edb01f332b479de53d996cdb6994345a54c2118ae0594"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001152.jpg",
+      "image_sha256": "f694b14d921e0268aab4f4242448305ef138409c038ed8e6ba526e732c7bef83"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001204.jpg",
+      "image_sha256": "5e669439f3cd5b8ab77af4e9cbc13c5b02aeffe20d4fbb0dcbf43a4bd43603cd"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001217.jpg",
+      "image_sha256": "690057954727853bd2cc1f366c405a199a50e94adb6c0575ba82bcb0751c109a"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001419.jpg",
+      "image_sha256": "d066ee9c77635e5143751db61f2cb6d999849a29fd2ceb79bae4feb0c2f89ccd"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001521.jpg",
+      "image_sha256": "87209f590a36f100e16abc3eb65320cd691ff2a5a31f112daa98777d0eeb13d5"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001661.jpg",
+      "image_sha256": "f864c4ab48f66b9c2a2704d09eb6ab010e54936e5fc21e418455daa1cf9b349e"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001766.jpg",
+      "image_sha256": "2441a1b55a532d6ef6468d132595d2c6112b873741f9896e63f6c11da3011724"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001816.jpg",
+      "image_sha256": "d0a215d03ab1bc203ec055dbb2d9bbeb94392a50a05c410d84042d0c99abc6a9"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/China_MotorBike_China_MotorBike_001925.jpg",
+      "image_sha256": "654c77b1bdf3461d2f4c46325e400c9bbb3a3ecb9743cc4712d54bcc25e0f009"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000270.jpg",
+      "image_sha256": "a150ce3eb666ca6d412674993886cef9815f9c1853c1d5b831951302890d308d"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000343.jpg",
+      "image_sha256": "de6b0b3b1f18d2cdd21da0e50d8ca33bf26bd00afcd928439cbf9ed4ef34cbc0"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000454.jpg",
+      "image_sha256": "0812eb365851c054d8981943b2b32fd96b2a8d158ebe2a312b1476cf1f7d66fa"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000568.jpg",
+      "image_sha256": "4605496ce6705d3266c8cf6707304315c8e2f8156c952d1998604b225a8e3ead"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000612.jpg",
+      "image_sha256": "fbabc889bd7200392192d71a91bb8dd60772d37decacddb722b0ab1942ce094e"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000645.jpg",
+      "image_sha256": "4c4a9541be9cb07398e1dcd998158a5daefb647e88b07fe60ea6a6acdfeef293"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000762.jpg",
+      "image_sha256": "d27bbbb968d124fb76c8b97e0c251cb77af03a74bd94217558c5961b7626c227"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000842.jpg",
+      "image_sha256": "c2bee00916f8baf8a26d03dc29a7913b145b3b62675b891ed83ba29b31cc3a1b"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_000881.jpg",
+      "image_sha256": "eeca78042a7957109c13014cd1b73306ed839b7d566cf3ae5cd242e730ac37b7"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001054.jpg",
+      "image_sha256": "8c9e80650a1d937a7a9d5af44caa59d9b54b6e17429e6b9cb9a026860a53342e"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001114.jpg",
+      "image_sha256": "e3e89a423370c96f9c3ad55da12f835c743edb2c8c8dde33c3daa707edaa97ee"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001240.jpg",
+      "image_sha256": "7d49df65af12b0ab2fca700e3f92ccd21a462e9a67cb2440d4be1423c0286f06"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001251.jpg",
+      "image_sha256": "490b3405a83af621a5316d5ea2cb89ffe7974c589cb949e45a5cbd424fa9baf3"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001278.jpg",
+      "image_sha256": "c756995ea74523ed5df10bdec4e041fa60767889c9f97e4779d2b5287d735463"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001437.jpg",
+      "image_sha256": "1eb64b60f106e730f55fe0014c0d0637d4dee958dd023b3358ddcbd58fa44c6f"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001495.jpg",
+      "image_sha256": "444e245f450b4206e61d58f8acd785be5c00d92d2f1a2768e45aebd78d443d3a"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001514.jpg",
+      "image_sha256": "25efab49f6bcbf6a6c3de0d349a3123bedab74c3a2ee84466df29367257e36f5"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001825.jpg",
+      "image_sha256": "6893b4ba1fe73e8317e7cdaaac41113fbb520533361d2be26d779e8d2bf59b40"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_001917.jpg",
+      "image_sha256": "444dbdbcf5503f44cfb2cd5df3d44ab8a6bd6173ea5f5642eff3116f8fa7fcf2"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002013.jpg",
+      "image_sha256": "9763a318841eeddd6d174accc474a4928dd9059ae8f753259faa082b49c1f6bb"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002058.jpg",
+      "image_sha256": "67f7a81fca4a9d1b45eacfa6de530b116e9cc6a53aa2212193a24dd5e7d10c7a"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002063.jpg",
+      "image_sha256": "aad78e2a4351fcc1352ea047ebac32171bf6fcd6e8906097dc8dc8124ec95b32"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002095.jpg",
+      "image_sha256": "923e3e6284399fff51fac140662d12a1a794db58fe2439bd7f41dbfeaaea97f1"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002365.jpg",
+      "image_sha256": "6724c8556cc0ce691aa9c3701bb06edcd08dc8c776c42238d632955f494e08d0"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002682.jpg",
+      "image_sha256": "3f4f264613e21304f2c712eb2aa97cc5746990fdc5f30d181833277577381397"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_002792.jpg",
+      "image_sha256": "6c462367fa278ef736d5975542ce45005df57427d3c8edaa1b5aee8f17ac56a5"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003001.jpg",
+      "image_sha256": "5db3db8c9eb2cf9b5ea80ff8030963eea762958ea8b48f66ef51d666dc754708"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003120.jpg",
+      "image_sha256": "f5dcd3e6d366e41dbe80261f3cd80c5a662c65f3e9e327cf3f6aa0bed1813a44"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003536.jpg",
+      "image_sha256": "4de5e41f3f6951ae89478b6b95a9fc8c3c7880123f07d0d45b4aa3a3ad021d4e"
+    },
+    {
+      "cohort": "d40_diagnostic",
+      "image": "data/yolo_dataset/images/val/Czech_Czech_003565.jpg",
+      "image_sha256": "fcb9fceed0dad5381ad50ab91a047b9aeab8ca2f3932641ae3f3085ff094d7da"
+    }
+  ],
+  "schedule": [
+    {
+      "repeat": 1,
+      "case_index": 169,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 53,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 15,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 42,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 13,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 36,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 60,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 123,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 61,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 19,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 65,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 30,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 149,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 2,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 118,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 127,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 119,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 160,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 170,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 66,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 95,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 174,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 25,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 94,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 121,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 144,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 175,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 74,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 142,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 146,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 14,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 52,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 162,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 105,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 44,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 99,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 69,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 80,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 155,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 0,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 116,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 16,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 137,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 126,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 101,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 64,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 140,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 83,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 38,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 131,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 43,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 73,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 122,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 76,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 102,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 156,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 145,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 3,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 141,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 5,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 124,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 32,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 79,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 90,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 112,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 157,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 54,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 176,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 133,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 128,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 33,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 18,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 115,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 158,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 63,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 78,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 103,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 72,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 27,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 167,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 130,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 51,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 153,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 4,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 120,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 166,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 41,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 104,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 178,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 147,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 138,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 100,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 113,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 135,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 179,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 111,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 134,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 93,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 68,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 21,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 161,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 77,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 9,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 82,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 148,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 89,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 34,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 85,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 159,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 45,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 47,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 132,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 46,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 106,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 81,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 58,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 173,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 48,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 12,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 110,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 125,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 109,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 10,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 37,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 98,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 29,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 84,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 136,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 17,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 49,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 92,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 75,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 20,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 96,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 31,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 117,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 11,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 67,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 88,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 91,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 24,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 97,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 165,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 172,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 86,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 164,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 39,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 152,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 87,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 168,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 40,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 1,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 71,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 150,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 114,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 56,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 107,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 171,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 50,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 143,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 177,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 154,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 129,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 59,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 55,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 23,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 7,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 8,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 108,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 151,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 22,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 139,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 26,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 35,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 57,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 62,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 70,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 6,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 28,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 1,
+      "case_index": 163,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 165,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 96,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 105,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 53,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 94,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 99,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 46,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 97,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 137,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 73,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 41,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 66,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 114,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 44,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 28,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 166,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 74,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 39,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 64,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 14,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 163,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 75,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 29,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 107,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 90,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 139,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 40,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 50,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 22,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 76,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 89,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 150,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 100,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 78,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 26,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 134,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 2,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 87,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 167,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 91,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 152,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 25,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 142,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 128,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 38,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 4,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 85,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 148,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 156,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 122,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 10,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 72,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 171,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 123,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 101,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 92,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 157,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 177,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 80,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 3,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 34,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 47,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 65,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 77,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 159,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 37,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 106,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 19,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 81,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 98,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 36,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 147,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 173,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 49,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 0,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 48,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 88,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 117,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 109,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 27,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 179,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 129,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 119,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 176,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 153,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 11,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 144,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 69,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 113,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 154,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 111,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 70,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 178,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 9,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 127,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 118,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 35,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 23,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 120,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 170,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 151,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 68,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 103,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 126,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 31,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 13,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 158,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 43,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 116,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 160,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 7,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 133,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 82,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 83,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 149,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 6,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 93,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 110,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 59,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 52,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 164,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 45,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 55,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 161,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 125,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 12,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 24,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 104,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 130,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 62,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 169,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 33,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 162,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 175,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 71,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 60,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 131,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 143,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 84,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 8,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 174,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 146,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 15,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 18,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 1,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 56,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 58,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 141,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 5,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 86,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 16,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 57,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 63,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 30,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 115,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 132,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 112,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 95,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 102,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 79,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 51,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 138,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 54,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 108,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 155,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 135,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 67,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 42,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 140,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 121,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 168,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 172,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 32,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 136,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 17,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 124,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 21,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 20,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 145,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 2,
+      "case_index": 61,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 179,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 15,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 91,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 169,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 1,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 147,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 49,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 75,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 160,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 132,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 96,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 118,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 161,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 117,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 123,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 47,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 82,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 84,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 18,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 74,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 5,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 83,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 133,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 63,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 6,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 55,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 17,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 173,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 128,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 142,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 127,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 124,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 43,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 54,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 126,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 158,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 57,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 21,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 152,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 59,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 150,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 86,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 148,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 178,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 73,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 146,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 56,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 119,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 177,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 16,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 12,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 36,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 80,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 7,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 131,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 62,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 61,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 97,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 50,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 46,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 66,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 164,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 136,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 92,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 90,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 143,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 107,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 144,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 14,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 81,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 159,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 68,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 116,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 65,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 98,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 176,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 8,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 35,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 101,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 51,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 24,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 104,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 88,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 165,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 162,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 44,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 58,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 25,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 138,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 60,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 4,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 48,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 120,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 89,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 140,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 174,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 122,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 149,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 121,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 105,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 100,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 42,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 134,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 106,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 3,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 114,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 22,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 103,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 102,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 20,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 30,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 137,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 95,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 79,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 175,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 111,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 163,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 71,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 99,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 153,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 151,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 145,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 31,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 157,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 168,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 45,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 115,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 130,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 93,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 78,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 10,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 32,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 110,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 37,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 94,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 9,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 38,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 19,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 28,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 172,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 109,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 113,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 41,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 155,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 33,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 85,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 0,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 11,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 70,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 108,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 23,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 13,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 64,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 125,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 129,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 166,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 52,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 87,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 53,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 154,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 72,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 69,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 39,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 171,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 27,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 29,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 67,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 34,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 26,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 76,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 141,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 170,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 2,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 135,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 167,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 156,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 77,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 139,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 112,
+      "backend_order": [
+        "PyTorch",
+        "ONNX"
+      ]
+    },
+    {
+      "repeat": 3,
+      "case_index": 40,
+      "backend_order": [
+        "ONNX",
+        "PyTorch"
+      ]
+    }
+  ]
+}
