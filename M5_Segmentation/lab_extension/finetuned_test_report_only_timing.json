@@ -1,0 +1,1 @@
+{"images":1476,"device_counts":{"Tesla T4":1476},"mean_ms_per_image":39.50016316327996,"scope":"Warm-up excluded; image loading, inference, postprocessing and RLE serialization included. Cached timings retain their original execution device."}

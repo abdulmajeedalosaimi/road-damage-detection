@@ -1,0 +1,15 @@
+{
+  "model": "yolo11n-seg.pt",
+  "imgsz": 640,
+  "threshold": 0.05,
+  "nms_iou": 0.7,
+  "max_det": 100,
+  "resize": "Square resize to 640; image INTER_AREA; masks INTER_NEAREST",
+  "m5_class_id": 0,
+  "m4_class_id": 3,
+  "damage_code": "D40",
+  "checkpoint_sha256": "5fb5f6925489060792d160f4a04bc3620c0b59a5de5aba013f2e6f5523254d44",
+  "protocol_hash": "afa31e30cdda91decf7cf693f6c0b0b9fc9f7a25177ca4746eb41a456f8c725b",
+  "area_definition": "Union foreground pixels / all pixels of the supplied image",
+  "limitations": "Area fraction is a visual proxy, not physical area or pothole depth. Vehicle-mounted/cropped input needs separate validation."
+}

@@ -1,0 +1,11 @@
+{
+  "archive_sha256": "34a98a297f2e29c646cbdada37d820d2c8648e2ed5d15a28f72744d365fe9522",
+  "videos_checked": 619,
+  "frame_indices": [
+    0,
+    24,
+    47
+  ],
+  "candidates": [],
+  "limitations": "Heuristic screening can miss different viewpoints, temporal shifts and crops of the same pothole."
+}

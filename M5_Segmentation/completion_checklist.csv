@@ -1,0 +1,12 @@
+requirement,status,evidence
+"Paired RGB/masks, clip-level split and technical audits",COMPLETE,video_manifest.csv; integrity/decode/similarity audit JSON files
+SAM-generated proposals and visual verification,COMPLETE,sam_review/proposals.json; visual_review.json; six comparison figures
+Fine-tuned segmentation model,COMPLETE,best.pt; training/results.csv
+Validation-only selection; final test metrics,COMPLETE,selection.json; test_lock.json; metrics_summary.csv
+"Mask mAP50-95, mean IoU and Dice",COMPLETE,Reference-raster evaluation; connected-region AP caveat is documented
+Area-based severity error,COMPLETE,Severity MAE/RMSE/bias in percentage points; area scatter plot
+At least one failure case and analysis,COMPLETE,failure_analyses.json; qualitative galleries
+"Model, configuration and reproducibility handoff",COMPLETE,exports folder
+Cross-check any additional M5 lab-specific deliverables,REVIEWED AND ADAPTED,lab_extension/lab_alignment.csv; architecture-specific substitutions explicitly documented
+Additional lab comparisons and analysis,COMPLETE,lab_extension/M5_Lab_Supplement.md
+Supplementary W&B tracking,COMPLETE,https://wandb.ai/alharby6626-a/rdd2022-road-damage/runs/1bbce280

@@ -1,0 +1,1 @@
+{"video_id":"0061","frame_index":26,"prompt_source":"Validation reference mask; assisted prompt comparison, not automatic model performance.","point_xy":[285,83],"point_predicted_quality":[0.7896630764007568,0.9186828136444092,0.9570739269256592],"point_measured_iou":[0.3063308903789178,0.43602263899678173,0.9189978107516419],"box_measured_iou":0.9211943220753793}

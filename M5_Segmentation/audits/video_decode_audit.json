@@ -1,0 +1,12 @@
+{
+  "archive_sha256": "34a98a297f2e29c646cbdada37d820d2c8648e2ed5d15a28f72744d365fe9522",
+  "checked_pairs": 619,
+  "rgb_frames_decoded": 29712,
+  "mask_frames_decoded": 29712,
+  "problem_pairs": [],
+  "pairs_with_empty_or_full_masks": [],
+  "status": "VIDEO_CHECKS_PASSED",
+  "reused_verified_audit": true,
+  "reference_mask_rule": "grayscale > 127",
+  "visual_alignment": "Technical agreement does not prove every mask boundary is correct."
+}

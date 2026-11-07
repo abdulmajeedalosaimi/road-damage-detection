@@ -1,0 +1,25 @@
+{
+  "protocol_hash": "afa31e30cdda91decf7cf693f6c0b0b9fc9f7a25177ca4746eb41a456f8c725b",
+  "checkpoint_sha256": "5fb5f6925489060792d160f4a04bc3620c0b59a5de5aba013f2e6f5523254d44",
+  "threshold": 0.05,
+  "selection_split": "val",
+  "selection_metric": "mean foreground Dice",
+  "tie_break": "higher threshold",
+  "validation_fingerprint": "4fb733c087749f723a16f916732793d403025e6a8916d3caed31c7e01453dca0",
+  "validation_ap": {
+    "mask_map50_95": 0.6648646279370661,
+    "mask_ap50": 0.9320889699075506,
+    "mask_ap75": 0.7943702421269806
+  },
+  "validation_operating_metrics": {
+    "threshold": 0.05,
+    "frames": 1488,
+    "videos": 124,
+    "mean_iou": 0.8824185517784722,
+    "foreground_iou": 0.8145952893810113,
+    "dice": 0.8854648218356183,
+    "severity_mae_pp": 2.9357166905556955,
+    "severity_rmse_pp": 8.071529812665233,
+    "severity_bias_pp": 1.5789448727843582
+  }
+}

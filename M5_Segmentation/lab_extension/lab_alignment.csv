@@ -1,0 +1,17 @@
+lab_task,topic,evidence,application_adaptation
+1,Training annotation summary,data_exercises.json,One pothole class; derived-region counts and size bins; no source crowd labels.
+2,Polygon simplification,polygon_simplification.csv,"Up to 150 training regions per size bin; eps 0,1,2,4 at evaluation resolution."
+3,RLE encoding/decoding,data_exercises.json,Manual column-major round trip checked against pycocotools; wrong-order IoU recorded.
+4,Experiment configuration,../protocol.json; extension_protocol.json,Retain the original YOLO recipe and frozen operating threshold.
+5,Transferred and newly adapted weights,weight_transfer.csv; initialization_details.json,YOLO class adaptation instead of a new Mask R-CNN mask head; initialization reconstructed retrospectively.
+6,COCO prediction format,coco_val100_reference.json; coco_val100_finetuned.json,"Explicit detector boxes, masks, confidence and one pothole category."
+7,Initialization baseline AP,initialization_vs_finetuned.csv,Same fixed 100 validation images; COCO classes are not mislabeled as potholes.
+8,Manual mask AP50,object_operating_point.json,Score-ordered one-to-one matching and 101-point interpolation agree with COCOeval.
+9,Training curves,training_component_curves.png,Original successful training only. Mask R-CNN ln(2) stalled-head training is not repeated for YOLO.
+10,Box/mask AP overall and by size,box_mask_ap_by_size.csv; initialization_vs_finetuned.csv,Mask AP uses mask areas. COCO size bins refer to 640x640 derived regions.
+11,Diagnosing a mask-specific failure,mask_failure_sanity_check.csv,"Synthetic empty-mask control: same detector boxes, deliberately corrupted masks. Not a second trained run."
+12,Object-level threshold analysis,validation_object_thresholds.csv,Validation-only PR/F1 diagnostic; does not replace the threshold already chosen by Dice.
+13,"Test metrics, gallery and handoff",box_mask_ap_by_size.csv; ../figures/test_qualitative_gallery.png; ../HANDOFF.md,Frozen checkpoint/threshold; additional test box reporting is explicitly post-hoc; original test results stay primary.
+14,SAM point versus box,sam_point_vs_box.png; sam_point_vs_box.json,Three point interpretations and one reference-box prompt on a validation pothole.
+15,SAM from predicted boxes,sam_vs_model_ap.csv; sam_paired_by_size.csv; sam_details.json,100 distinct validation videos; same detections/scores/classes; paired IoU by size and measured timing.
+16,Comparison gallery,sam_comparison_gallery.png,"Three predetermined validation images: reference, YOLO and SAM."

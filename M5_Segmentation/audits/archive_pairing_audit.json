@@ -1,0 +1,10 @@
+{
+  "matched_pairs": 619,
+  "counts": {
+    "train": 372,
+    "val": 124,
+    "test": 123
+  },
+  "issues": [],
+  "status": "PAIRING_PASSED"
+}
